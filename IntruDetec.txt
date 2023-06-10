@@ -1,0 +1,19 @@
+IP port detection Keywords:
+"line printers" & "recorders" on all incoming ports to capture "keystrokes"
+"traffic print-out" with the help of a Lan and a offline logbook of activities.
+
+intruder entered via X.25 ports,  so we recorded bidirectional traffic through that set of lines
+Off-line monitors have several advantages over monitors embedded in an operating system
+
+RS-232 serial lines can easily be sent to multiple receivers, we used this type of off-line monitor and avoided tampering with our operating systems.
+
+We noticed that line noise, which appeared to be network glitches, could be inserted into the communications link.
+
+When the intruder transferred files, we timed round-trip packet acknowledgments over the network links. Later, we measured the empirical delay times to a variety of different sites and estimated average network delay times as a function of distance.
+
+Abnormal activity watchers:
+-Proceedings of the Intrusion Detection Expert Systems Conference (Nov. 17), 1987.
+
+"gnu-emacs movemail rename exploit "
+
+"German Chaos computer club"
