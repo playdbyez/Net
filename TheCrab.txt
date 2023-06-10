@@ -1,0 +1,15 @@
+! ZERO TRUST !
+
+Read: RFC 3552
+Standard X.509 of network protection
+Threat Models:
+.STRIDE
+.DREAD  
+.PASTA
+.Trike
+.VAST
+
+PKI providers:
+Certificate Authorities 
+Web of Trust
+Pretty Good Privacy
