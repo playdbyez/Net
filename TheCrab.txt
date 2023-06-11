@@ -2,14 +2,23 @@
 
 Read: RFC 3552
 Standard X.509 of network protection
+
+
+PKI providers:
+Certificate Authorities 
+Web of Trust
+Pretty Good Privacy
+
+
+
+Threat Model 
+describes the capabilities that an attacker is assumed to be able to delpoy against a resource in order to accurately identify possible threats and rule our others.
+These capabilities of the attacker include: 
+(Ammount of information, Computing power & Control of the System)
+
 Threat Models:
 .STRIDE
 .DREAD  
 .PASTA
 .Trike
 .VAST
-
-PKI providers:
-Certificate Authorities 
-Web of Trust
-Pretty Good Privacy
