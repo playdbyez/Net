@@ -1,0 +1,17 @@
+-Meltdown and Spectre atake-
+
+relies on 'speculative execution' from the kernel/CPU
+
+STAGE 1
+A speculative.exe is forced, causing a gap between loading the info into the cache, and if the info requested has any security restriction.
+
+STAGE 2
+If the CPU is interrupted during this gap (transient instruction)
+the info gets left loaded into the cache with no restriction.
+
+STAGE 3
+To recover the info from cache withouth triggering any direct memory operation, side-channel atakes are used
+
+TASK:COMPLETE
+recover sensitive information stored in the kernel, using
+nothing more than an unprivileged application!
