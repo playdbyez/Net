@@ -82,5 +82,3 @@ Refer to : Bellovin, S., "Guidelines for Mandating the Use of IPsec",Work in Pro
 Provide channel security for a TCP connection at layer 6 (Application)
 and they both run over TCP however TLS is susceptible to IP layer attacks that IPsec is not.
 
-
-
