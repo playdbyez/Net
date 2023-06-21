@@ -22,3 +22,9 @@ Threat Models:
 .PASTA
 .Trike
 .VAST
+
+Wireless Mobile Broadband
+>LTE
+>HSPA
+>UMTS
+>EV-DO
