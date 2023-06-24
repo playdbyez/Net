@@ -19,11 +19,27 @@ Systems Security [SYSSEC]
 
 
 		:: A T T A C K S ::
+		
+//FORMS 0f ATTACK
+
+I    - Evesdropping
+II   - Replay
+III  - Deletion
+IV   - Message Insertion
+V    - Modification
+VI   - Man-in-the-middle
+VII  - Denial of Service
+
 
 //DENIAL 0F SERVCE
 These are attacks designed to consume machine resources or crash systems.
 Easy to mount but difficult to stop.
 
+//BLIND DoS ATTACKS
+A dos not designed to retrieve any information
+
+//FORGED TCP RST ATTACKS
+Implemented to affect the TCP secion of a network...
 
 //REPLAY ATTACKS
 The attacker records a sequence of messages off of the wire and plays them back to the party which originally received them.
@@ -31,6 +47,9 @@ The attacker records a sequence of messages off of the wire and plays them back 
 
 //BLIND ATTACKS
 Sending forged packets but not receiving the responses.
+
+//OFFINE CRYPTOGRAPHIC ATTTACKS
+These refer to recovering data processed by the victim's secret key and then mounting a cryptanalytic attack on that key.
 
 
 //PASSIVE ATTACKS
@@ -42,23 +61,12 @@ These are for attackers with limited control and with only read priviledges of a
 These are for attackers with write priviledges within the network
 
 
-//OFFINE CRYPTOGRAPHIC ATTTACKS
-These refer to recovering data processed by the victim's secret key and then mounting a cryptanalytic attack on that key.
+//DOWNGRADE ATTACK
+Tampering with the negotiation of security mechanisms in order to force the partaking parties to negotiate weaker protection
 
 
-		-"Foiling the Cracker: A Survey of and Improvements to Password Security", 1990.
-		- isaac.cs.berkeley.edu/isaac/wep-draft.pdf
-		-"On Internet Authentication", RFC 1704, October 1994.
-		-"Intercepting Mobile Communications: The Insecurity of 802.11". 
-		-"Telnet Protocol Specification", STD 8, RFC 854, May 1983.
-		-"Post Office Protocol - Version 3", STD 53, RFC 1939, May 1996
-		-"Network News Transfer Protocol", RFC 977, February 1986.
-		-"TCP SYN Flooding and IP Spoofing Attacks", CERT Advisory CA-1996-21,
-		-"A Weakness in the 4.2 BSD UNIX TCP/IP Software", AT&T 1985
-		-"A One-Time Password System", STD 61, RFC 2289, February 1998.
-		-"Domain Name System Security Extensions", RFC 2535, March 1999
+
 		
-
 		:: A U T H E N T I C A TI O N S ::
 		
 
@@ -81,4 +89,64 @@ Refer to : Bellovin, S., "Guidelines for Mandating the Use of IPsec",Work in Pro
 //SSL & TLS
 Provide channel security for a TCP connection at layer 6 (Application)
 and they both run over TCP however TLS is susceptible to IP layer attacks that IPsec is not.
+
+//Authentication & Authorization
+Authentication refers to identifying the user
+Authorization refers to weather the authentic user can perform an action
+Authorization necessarily relies on authentication!
+
+
+Access Control List [ACL] is common mechanism of authorization that lists authorized users
+ 
+ 
+ 
+ 
+ 
+General
+		-"Foiling the Cracker: A Survey of and Improvements to Password Security",1990
+		- isaac.cs.berkeley.edu/isaac/wep-draft.pdf
+		-"On Internet Authentication", RFC 1704, October 1994.
+		-"Intercepting Mobile Communications: The Insecurity of 802.11". 
+		-"Telnet Protocol Specification", STD 8, RFC 854, May 1983.
+		-"Post Office Protocol - Version 3", STD 53, RFC 1939, May 1996
+		-"Network News Transfer Protocol", RFC 977, February 1986.
+		-"A One-Time Password System", STD 61, RFC 2289, February 1998.
+		-"Domain Name System Security Extensions", RFC 2535, March 1999
+		-"Generic Security Services Application Program Interface Version 2, Update 1"
+		-"Simple Authentication and Security Layer (SASL)"
+		-"InternetX.509 "Public Key Infrastructure Certificate and Certificate Restoration List (CRL) Profile" 2002
+		-"SPKI Certificate Theory" 1999
+
+
+
+IP 
+-IP Authentication header 1998 [AH]
+-IP Encapsulation Security Payload 1998 [ESP]
+-The TLS Protocol Version 1.0 1999 [TLS]
+-Guidelines for Mandating the Use of IPsec 
+
+//Protocols mentioned above rely on setsockopt() calls but not much configuration
+
+
+
+TCP / SCTP connections require TLS/SSL implementations:
+[HTTPTLS]  "HTTP over TLS", RFC2818 2000
+[UPGRADE]  "Upgrading to TLS Within HTTP/1.1" 2000
+[STARTTLS] "SMTP Service Extension for Secure SMTP over TLS" 2002
+[TLSEXT]   "Transport Layer Security (TLS) Extensions",RFC 3546, 2003
+[SEQNUM]   "A Weakness in the 4.2 BSD UNIX TCP/IP Software", AT&T 1985
+[TCPSYN]   "TCP SYN Flooding and IP Spoofing Attacks", CERT Advisory CA-1996-21, www.cert.org/advisories/CA-1996-21.html
+[TCPMD5]
+[PHOTURIS]
+
+IPv6 requires IP[AH], IP[ESP] and Automatic Key Management[IKE]
+
+
+Mail Security
+[S/MIME] + [PGP/MIME] "S/MIME Version 3 Message Specification" 1999
+
+
+[Section 4.6.3]
+
+
 
