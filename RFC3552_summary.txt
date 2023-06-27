@@ -56,7 +56,6 @@ These refer to recovering data processed by the victim's secret key and then mou
 These are for attackers with limited control and with only read priviledges of a network
 
 
-
 //ACTIVE ATTACKS
 These are for attackers with write priviledges within the network
 
@@ -137,6 +136,7 @@ TCP / SCTP connections require TLS/SSL implementations:
 [SEQNUM]   "A Weakness in the 4.2 BSD UNIX TCP/IP Software", AT&T 1985
 [TCPSYN]   "TCP SYN Flooding and IP Spoofing Attacks", CERT Advisory CA-1996-21, www.cert.org/advisories/CA-1996-21.html
 [TCPMD5]
+[SFR04]    "UNIX Network Programming,Volume 1, Third Edition" 2004 [sockets]
 [PHOTURIS]
 
 IPv6 requires IP[AH], IP[ESP] and Automatic Key Management[IKE]
@@ -149,4 +149,9 @@ Mail Security
 [Section 4.6.3]
 
 
+
+
+
+pg 26
+Look into "Spool files"
 
