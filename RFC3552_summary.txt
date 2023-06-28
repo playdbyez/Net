@@ -147,10 +147,4 @@ Mail Security
 
 
 [Section 4.6.3]
-
-
-
-
-
-pg 26
-Look into "Spool files"
+ "Spool files"
