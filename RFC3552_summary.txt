@@ -115,6 +115,7 @@ General
 		-"Simple Authentication and Security Layer (SASL)"
 		-"InternetX.509 "Public Key Infrastructure Certificate and Certificate Restoration List (CRL) Profile" 2002
 		-"SPKI Certificate Theory" 1999
+		-"Virtual Router Redundancy Protocol", RFC 2338,1998
 
 
 
@@ -143,8 +144,26 @@ IPv6 requires IP[AH], IP[ESP] and Automatic Key Management[IKE]
 
 
 Mail Security
+S/MIME and PGP/MIME are both message oriented security protocols
 [S/MIME] + [PGP/MIME] "S/MIME Version 3 Message Specification" 1999
 
 
 [Section 4.6.3]
- "Spool files"
+
+ 
+[Section 6] 
+The rest of RFC 3552 document proceeds to administer SMTP solutions for protectiong against,
+replay attacks
+dns spoofing
+packet corruption
+forged rts packets
+forged ARP packets
+spool files
+
+through the implementation of,
+HMAC
+S/MIME
+PGP/MIME
+IPsec
+VRRP
+
