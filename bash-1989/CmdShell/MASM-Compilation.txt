@@ -1,0 +1,44 @@
+                  Ax86 (ASM)
+
+Is System Architecture specific.
+Controls the Central Processing Unit
+
+Assembler == Compiler
+
+DOS Compiler = MASM
+Unix compiler = NASM
+
+
+Executable = Assembler + Linker
+1>Assemlber - Creates the object file (file.obj)
+2>Linker - Links object to libraries (support.lib)
+3>Output - Compiled into an Executable (program.exe)
+
+
+              Necessary resources for Assmbly/compilation
+1.ml64.exe 
+2.link.exe 
+3.program.asm
+ALL RESOURCES MUST BE WITHIN THE SAME DIR BEFORE COMPILING VIA CMD
+
+
+MASM/DOS Assembly Commands
+
+$ ml64 code.asm /link / SUBSYSTEM:console /ENTRY:main
+//OUTPUT: code.exe
+
+$ code
+//OUTPUT: Hello World!
+
+
+
+                INFORMATION
+
+ml64 = Microsoft Macro Assembler
+link = Microsfot Incremental Linker
+Subsystem = Execution mode option (console or windows)
+Entry point = First line of execution
+
+
+
+

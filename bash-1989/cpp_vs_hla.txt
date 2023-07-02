@@ -1,0 +1,20 @@
+
+Save as file1.cpp											Save as file2.hla
+###################											######################
+##   cpp       ###						 					## High Level Assem ##
+################# 											######################
+ #include<iostream>											#include("stdlib.hhf")
+ 
+ int init = 5;												static
+ int jay;													InitDemo:       int32 := 5;
+														NotInitialized: int32;
+
+int main()													begin Demo;
+{
+std::cout << "init's value is " << i << "\n" <<endl;								stdout.put("initDemo's value is ", InitDemo, nl);
+std::cout << "enter an integer value: " <<endl;								stdout.put("Enter an integer value: ");
+std::cin >> jay;												stdin.get(NotInitialized);
+std::cout << "you entered: " << jay << "\n" <<endl;								stdout.put("You entered: ", NotInitialized, nl);
+
+return 0;
+}														end Demo;

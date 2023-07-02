@@ -1,0 +1,37 @@
+################
+#      VIM     #
+################
+
+.Vim file screapping (letters/text)
+.via stream editor command or via hard editing the file  
+
+sed -i " ".file
+//hard editing file
+
+
+
+
+
+
+
+sed "s/c/ /g".file
+//searches for 'c' and replaces it with ' ' throughout the whole file
+
+sed "s/c/wtv/g".file
+//searches for 'c' and replaces it with 'wtv' throughout the whole file
+
+
+sed "s/v/p".file
+//searches for 'v' and prints all instances of 'v' throughout the whole file 
+
+
+
+
+sed "s/ \s*#.*/ /g; /^$/ d".file
+//searches for 'break spaces' and replaces it with ' ' throughout the whole file including ...
+
+
+sed "s/ \#.*/ /g".file
+//searches for '# lines' and replaces it with ' ' throughout the whole file
+
+

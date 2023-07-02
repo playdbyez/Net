@@ -1,0 +1,89 @@
+cmdlets
+powershell
+
+$get-(Tab)
+
+$ get-process
+
+$ Get-Command -commandType cmdlet
+
+$ Get-Command -verb get
+
+$ Get-Command *help* -CommandType cmdlet
+
+$ Get-Help Get-Command -detailed
+
+
+
+
+
+$ $host.ui.rawui
+
+
+$ $host.ui.rawui.WindowTitle = "wtv"
+
+
+
+$ dir | Sort-Object -property  Lenght, Name
+
+$ dir | Sort-Object -property  Lenght -descending
+
+$ dir | Format-List *
+
+$ dir | Sort-Object @{expression="Lenght";descending=$true}, 
+@{expression="Name";ascending=$true}
+
+
+
+
+
+$ Cmd /c help >> help.txt
+
+
+$ $result = ping 10.10.10.10
+$ $result
+pinging..
+
+
+$ (Dir *.txt).Count
+12
+
+
+$ 1mb
+1048576
+
+$ 4GB / 720MB
+5.68
+
+$ 0xAFFE
+45054
+
+$ 12+0xAF
+187
+
+
+
+$ cmd
+
+$ cmd /c Help
+
+$ cmd /c help vol
+
+
+
+$ $env:Path
+prints trustworthy folders
+
+$ $env:Path += "C:\programs\WindowsNT\accessories"
+wordpad.exe
+
+adds folder to trustworthy golders group
+
+
+
+
+
+$ dir = $ ls
+$ cls = $ clear
+$ ./help.txt  = xdg-open help.txt
+$ Help > help.txt  = print command to a file
