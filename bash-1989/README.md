@@ -1,2 +1,0 @@
-# UbunTomate
-basicc auts
