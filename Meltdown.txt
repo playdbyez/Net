@@ -1,11 +1,11 @@
 -Meltdown and Spectre atake-
 
-relies on 'speculative execution' from the kernel/CPU (Memory)
+
 
 Speculative Execution:
       Used only by Intel and Arm chips (not AMD)
       Since the max execution time is 4.0 Ghz
-      in this type of execution the processor guesses the out of a command
+      in this type of execution the processor guesses the output of a command
       and runs it in the background
       Restrictions are not enforcewhen this type of procesing is being executed
 
@@ -19,20 +19,28 @@ Memory:
 
 
 
-  ::MELTDOWN::
+  ::MELTDOWN:: Possible Patch
 Allows exploit to read protected memory off the CPU cache. (wifi pass)
+Relies on 'speculative execution' from the kernel/CPU (Memory)
 
+I.E.
 When exchanging Data a website//application will write data to RAM
 A cache (copy) of RAM is kept in the CPU...<continue>
 
 
 
-    ::SPECTER::
+    ::SPECTER:: No patch
 Allows exploit to read memory from other apps running on the system (chrome info)
 
 
+
+
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+                  Basic concept for both
 STAGE 1
-A speculative.exe is forced, causing a gap between loading the info into the cache, and if the info requested has any security restriction.
+A speculative.exe is forced, causing a gap between loading the info into the cache, 
+and if the info requested has any security restriction.
 
 STAGE 2
 If the CPU is interrupted during this gap (transient instruction)
