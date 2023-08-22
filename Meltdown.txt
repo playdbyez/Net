@@ -1,6 +1,35 @@
 -Meltdown and Spectre atake-
 
-relies on 'speculative execution' from the kernel/CPU
+relies on 'speculative execution' from the kernel/CPU (Memory)
+
+Speculative Execution:
+      Used only by Intel and Arm chips (not AMD)
+      Since the max execution time is 4.0 Ghz
+      in this type of execution the processor guesses the out of a command
+      and runs it in the background
+      Restrictions are not enforcewhen this type of procesing is being executed
+
+CPU cache:
+    Memory type of the CPU 
+    It reads and writes to RAM
+    CPU uses a cache system when retrieving info from RAM (copies small initiations)
+
+Memory:
+    RAM speed < CPU cache speed
+
+
+
+  ::MELTDOWN::
+Allows exploit to read protected memory off the CPU cache. (wifi pass)
+
+When exchanging Data a website//application will write data to RAM
+A cache (copy) of RAM is kept in the CPU...<continue>
+
+
+
+    ::SPECTER::
+Allows exploit to read memory from other apps running on the system (chrome info)
+
 
 STAGE 1
 A speculative.exe is forced, causing a gap between loading the info into the cache, and if the info requested has any security restriction.
@@ -15,3 +44,9 @@ To recover the info from cache withouth triggering any direct memory operation, 
 TASK:COMPLETE
 recover sensitive information stored in the kernel, using
 nothing more than an unprivileged application!
+
+
+
+:::::::::::::::::::::::::::::
+
+
