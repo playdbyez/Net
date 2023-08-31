@@ -1,0 +1,20 @@
+Socket Statistics
+
+//Session of 0.0.0.0 means ALL Sessions
+
+//ID Listening ports
+$ ss -alpe
+OUTPUT:
+Will display -All -Listening -Process Name -Extended
+
+//Kill Ports
+kill -KILL <pid>
+
+
+//ID ports
+ss -a
+
+#################################################
+List Open Files
+ 
+$ lsof -i  -P -n
