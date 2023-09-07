@@ -1,0 +1,33 @@
+
+Traffic Control
+
+$ man tc
+$ man tc-htb
+$ man tc-<className>
+
+
+SHAPING >> SCHEDULING >> POLICING >> DROPPING
+
+Processing of traffic is controled by 3 kinds of objects:
+[] Queueing Disciplines
+[] Classes 
+[] Filters
+
+
+//
+It is essential to set up a queue discipline that aims to be dequeued
+As pre-configured by its filter and encryption only when and
+If the network specified  in the pre-configuration is the one in reach.
+
+
+Traffic Control's functionality:
+limiting the bandwidth 
+prioritising one network against another
+over the encryption specified
+
+################################################################
+
+
+$ iperf3
+
+...
