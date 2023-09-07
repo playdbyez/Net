@@ -23,3 +23,9 @@ $ tcpdump -i eth0 -v dst 192.168.1.107
 
 $ tcpdump -i eth0 -v src 192.168.1.107
 //Filter for any traffic incoming from source <src>
+
+$ tcpdump -i eth0 -v dst 192.168.1.107 and src 192.168.1.1
+//Filter for  destination and source <IP>
+
+$ tcpdump -i eth0 -v net 192.168.1.0/24
+//To capture traffic from an entire range of network with subnet
