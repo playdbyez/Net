@@ -51,7 +51,7 @@ $ tcpdump -i eth0 -v src port 443 and dst 192.168.1.107
 $ tcpdump -i eth0 ether host 08:00:27e22:e9:51
 //In case a machine has changed IP, use its MAC address as a filter instead
 
-# Exporting Output to Pcap #
+########## # Exporting Output to Pcap # ##########
 
 $ tcpdump -w /home/ubuntu/Desktop/traffic.pcap -i eth0 -v tcp and net 192.168.1.0/24
 Ctrl + C [Stop Operation and save file]
