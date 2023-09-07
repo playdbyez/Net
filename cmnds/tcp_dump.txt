@@ -10,10 +10,18 @@ $ tcpdump -i wlan0mon
 
 
 $ tcpdump -i eth0 -v
-//Quick
+//Verbose option over specified Access Point
 
+$ tcpdump -c 5
+//Stop Capturing after 5 packets
+
+$ tcpdump -D
+//Display compatible interfaces
 
 # Setting Filters for capture #
+
+$ tcpdump -i eth0 src host ubuntu
+//Filter for packets originating from host <host>
 
 $ tcpdump -i eth0 -v host 192.168.1.1
 $ tcpdump -i eth0 -v host bbc.com
@@ -28,7 +36,7 @@ $ tcpdump -i eth0 -v src 192.168.1.107
 $ tcpdump -i eth0 -v dst 192.168.1.107 and src 192.168.1.1
 //Filter for destination and source <IP>
 
-$ tcpdump -i eth0 -v net 192.168.1.0/24
+$ tcpdump -i eth0 -v net 10.0.2.4 mask 255.255.255.252
 //To capture traffic from an entire range of network with subnet
 
 $ tcpdump -i eth0 -v tcp and net 192.168.1.0/24
@@ -40,6 +48,8 @@ $ tcpdump -i eth0 -v port 80
 $ tcpdump -i eth0 -v src port 443 and dst 192.168.1.107
 // Capture all data headed for src port and destinated for IP
 
+$ tcpdump -i eth0 ether host 08:00:27e22:e9:51
+//In case a machine has changed IP, use its MAC address as a filter instead
 
 # Exporting Output to Pcap #
 
