@@ -1,3 +1,26 @@
 TCP Dump
 
 Packet capturing utility
+Command line WireShark
+
+
+$ tcpdump -i wlan0mon
+//Requires the Network Interface Card to be configured into Monitor-Mode, first.
+
+
+$ tcpdump -i eth0 -v
+//Quick
+
+
+# Setting Filters for capture #
+
+$ tcpdump -i eth0 -v host 192.168.1.1
+$ tcpdump -i eth0 -v host bbc.com
+//Host Filter
+
+
+# Source & Destination #
+
+$ tcpdump -i eth0 -v dst 192.168.1.107
+
+$ tcpdump -i eth0 -v src 192.168.1.107
