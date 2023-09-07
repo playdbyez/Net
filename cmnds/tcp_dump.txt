@@ -42,7 +42,7 @@ $ tcpdump -i eth0 -v net 10.0.2.4 mask 255.255.255.252
 $ tcpdump -i eth0 -v tcp and net 192.168.1.0/24
 //Filter for any traffic using a specific protocol from the entire /24 subnet
 
-$ tcpdump -i eth0 -v port 80
+$ tcpdump -i eth0 -v port 80 -n
 //Filter for incoming and outgoing data flowing through a specific port
 
 $ tcpdump -i eth0 -v src port 443 and dst 192.168.1.107
@@ -55,4 +55,4 @@ $ tcpdump -i eth0 ether host 08:00:27e22:e9:51
 
 $ tcpdump -w /home/ubuntu/Desktop/traffic.pcap -i eth0 -v tcp and net 192.168.1.0/24
 Ctrl + C [Stop Operation and save file]
-
+//Save output to Pcap file
