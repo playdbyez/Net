@@ -16,11 +16,10 @@ $ tcpdump -i eth0 -v
 
 $ tcpdump -i eth0 -v host 192.168.1.1
 $ tcpdump -i eth0 -v host bbc.com
-//Host Filter
-
-
-# Source & Destination #
+//Filter for any traffic from or to host <host>
 
 $ tcpdump -i eth0 -v dst 192.168.1.107
+//Filter for any traffic headed for destination <dst>
 
 $ tcpdump -i eth0 -v src 192.168.1.107
+//Filter for any traffic incoming from source <src>
