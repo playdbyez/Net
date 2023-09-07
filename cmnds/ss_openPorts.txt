@@ -18,3 +18,5 @@ ss -a
 List Open Files
  
 $ lsof -i  -P -n
+
+% lsof -i <PID>
