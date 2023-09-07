@@ -18,7 +18,11 @@ $ tcpdump -c 5
 $ tcpdump -D
 //Display compatible interfaces
 
-# Setting Filters for capture #
+$ tcpdump -i eth0 not icmp
+//Filter out all transmissions using ICMP protocol 
+
+
+################# # Setting Filters for capture # #######################
 
 $ tcpdump -i eth0 src host ubuntu
 //Filter for packets originating from host <host>
@@ -55,4 +59,14 @@ $ tcpdump -i eth0 ether host 08:00:27e22:e9:51
 
 $ tcpdump -w /home/ubuntu/Desktop/traffic.pcap -i eth0 -v tcp and net 192.168.1.0/24
 Ctrl + C [Stop Operation and save file]
-//Save output to Pcap file
+//Save output to Pcap file (Not simpleText)
+
+$ tcpdump -r /home/ubuntu/Desktop/traffic.pcap
+//To output format in a readable format
+
+$ tcpdump -r /home/ubuntu/Desktop/traffic.pcap -e
+//To output Link Layer data like MAC Address
+
+$ tcpdump -r /home/ubuntu/Desktop/traffic.pcap -XX
+//To output Hex amd ASCII data from pcap
+
