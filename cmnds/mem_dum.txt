@@ -7,9 +7,12 @@ Running processes, Network Connection, Non-stored info
 #######################################################
         >   AVML  <
 Acquire Volatile Memory for Linux
+> Portable Executable
 
+
+
+DOWNLOAD (Latest)
 ~ git/microsoft/avml
-Latest Release
 
 $ chmod a+x avml
 $ sudo ./avml dump.mem
@@ -38,8 +41,34 @@ $ strings dump.mem | grep -i Wanderley
         >   LiME  <
   Linux Memory Extractor
 
->Supports memory capture from phones
+>Supports memory capture from Android devices
+>Loadable Kernel model
+>Said version of LiME must be compatible with your own kernel version 
 
-https://www.youtube.com/watch?v=Llsoo8LHhWg
+DOWNLOAD (Latest)
+~git/504ensicsLabs/LiME
+
+$ cat etc/os-release
+$ uname -r
+//Kernel Version
+
+$ cd /LiME-1.9.1/src
+$ make
+
+$ ls -l lime*.ko
+//Info on created module
+
+Copy .ko file into USB
+USB must have enough storage to handle the dump
+Plug USB into Target with compatible Kernel
 
 
+//On the Target sys
+//insmod to execute kernel module and copy output to 'path' under the designated 'format'
+$ sudo insmod /mnt/lime-5.ko "path= mnt/hd/dump.mem format=lime"
+
+//Verify module after execution is finished
+$ lsmod | grep lime
+
+//Verify output size is equal to memory size of target
+$ ls -lh  /tmp/dump.mem
