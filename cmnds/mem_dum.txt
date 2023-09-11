@@ -33,7 +33,6 @@ $ sudo ./avml dump.mem
 
 //Check usefulness
 //leave an open file with text 'Wanderley'
-
 $ strings dump.mem | grep -i Wanderley
 
 #############################################################
@@ -72,3 +71,10 @@ $ lsmod | grep lime
 
 //Verify output size is equal to memory size of target
 $ ls -lh  /tmp/dump.mem
+
+//Unload module 
+$ sudo rmmod lime
+$ lsmod | grep lime
+$ strings tmp/dump.mem | grep -i Wanderley
+
+
