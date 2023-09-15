@@ -1,0 +1,29 @@
+Cryptography 2010
+by Christof Paar
+
+//Kerckhuff's Principle [ 1883 ]
+"A crypto system should be secure even if an attacker knows of the details about the system,
+with the exception of the secret key"
+This passage remarks that a sharing keys requires lots of nuance and creative methods.
+There is no mathematical proof that any cryptographic algorithm is 100% secure.
+Only the duration of how many years a given crypto-algorithm has remained unbroken can be ascertained.
+Algorithms should be released public but not the key.
+
+-        Cryptology          -
+Although Security is a bigger concept that encompasses cryptology,
+Security cannot be achieved only by cryptology 
+but with standardized algorithms, cipher-text, encrypt/decrypt keys
+
+
+
+<> Cryptography
+Building a secure algorithm.
+> Symmetric Algorithms
+> Asymmetric Algorithms
+
+<> Cryptanalysis
+Deconstructing a secure algorithm.
+
+
+
+
