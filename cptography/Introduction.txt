@@ -26,6 +26,7 @@ Deconstructing a secure algorithm.
 > Classical == Looking at the cipher as a blakbox, we an only infer and observe input and output with the help of a bruteforce vector, for example.
 > Analytical == Inspecting the cipher's schematic, for example, letter frequencies are maintained
 
+
 <> Weaknessess
 > BruteForce
 > Exhaustive KeySearch
@@ -61,3 +62,6 @@ E > T > A > I > O > N > S > H > R > D > L > U > C > M > F > Y > W > G > P > B > 
 >Almost 13% of all letters in a string is the letter 'E' ==  every 7th or 8th letter is an E
 >About 9% of all letters in a string is the letter 'T'
 
+############::Implementation Attacks ::##############
+A Side channel attack would consist of employing an osciloscope against a microprocessor's pins
+record the ondulation  or observe  the timing behaviour in hope to decode the key being used within the chip.
