@@ -23,6 +23,8 @@ Building a secure algorithm.
 
 <> Cryptanalysis
 Deconstructing a secure algorithm.
+> Classical == Looking at the cipher as a blakbox, we an only infer and observe input and output with the help of a bruteforce vector, for example.
+> Analytical == Inspecting the cipher's schematic, for example, letter frequencies are maintained
 
 <> Weaknessess
 > BruteForce
@@ -53,8 +55,6 @@ Copacabana's max keysearch = 2^56
 ############::Letter Frequency Analysis ::##############
 Bruteforce
 E > T > A > I > O > N > S > H > R > D > L > U > C > M > F > Y > W > G > P > B > V > K > X > Q > J > Z
-
-
 
 >Letters have different frequencies in english
 >The frequency of plaintext letters  is preserved  in ciphertext
