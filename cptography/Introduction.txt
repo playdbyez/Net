@@ -31,3 +31,19 @@ Deconstructing a secure algorithm.
 
 //Substitution Cipher
 Operates on latters and its aimed at replacing every letter by a fixed ciphertext letter.
+
+//KeySearch 
+Within symmetric ciphers we consider its size in bits.
+and apply the FPGA based,cryptanalitical algorithm 'Copacobana'  (1 week)
+
+
+I.E.
+cipher key size = 64b its
+solution = 2^64 bits
+
+If the key manages a lookup table, we compare its character to 
+its possibility of being said character from the alphabet (26 letters) granting us a 26 factorial.
+cipher[0] = 1 out of 26 letters of the alphabet
+cipher[1] = 1 out of 25 letters of the alphabet
+cipher[2] = 1 out of 24 letters of the alphabet ...
+
