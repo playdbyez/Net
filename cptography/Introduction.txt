@@ -14,8 +14,6 @@ Although Security is a bigger concept that encompasses cryptology,
 Security cannot be achieved only by cryptology 
 but with standardized algorithms, cipher-text, encrypt/decrypt keys
 
-
-
 <> Cryptography
 Building a secure algorithm.
 > Symmetric Algorithms
@@ -26,4 +24,5 @@ Deconstructing a secure algorithm.
 
 
 
-
+//Substitution Cipher
+Operates on latters and its aimed at replacing every letter by a fixed ciphertext letter.
