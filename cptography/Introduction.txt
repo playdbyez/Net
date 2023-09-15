@@ -54,6 +54,8 @@ Copacabana's max keysearch = 2^56
 Bruteforce
 E > T > A > I > O > N > S > H > R > D > L > U > C > M > F > Y > W > G > P > B > V > K > X > Q > J > Z
 
+
+
 >Letters have different frequencies in english
 >The frequency of plaintext letters  is preserved  in ciphertext
 >Almost 13% of all letters in a string is the letter 'E' ==  every 7th or 8th letter is an E
