@@ -18,10 +18,15 @@ but with standardized algorithms, cipher-text, encrypt/decrypt keys
 Building a secure algorithm.
 > Symmetric Algorithms
 > Asymmetric Algorithms
+> Protocols
+> Keyspace
 
 <> Cryptanalysis
 Deconstructing a secure algorithm.
 
+<> Weaknessess
+> BruteForce
+> Exhaustive KeySearch
 
 
 //Substitution Cipher
