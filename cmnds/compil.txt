@@ -8,6 +8,12 @@ USE < BleachBit > Software for cleansing "log files" like .xml
 //gedit,nautilus,etc..
 
 
+##########################  
+#   Lib Locations        #
+##########################
+$ /usr/include/X11
+
+
 ##################################################################################
 
 $ file <fileName>
