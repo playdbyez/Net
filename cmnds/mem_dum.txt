@@ -4,6 +4,8 @@ Commands useful for capturing memory info in a frozen state
 Memory Dump Captures invaluable information such as 
 Running processes, Network Connection, Non-stored info  
 
+Requires a WriteBlocker device and for the target output drive to be wiped.
+
 #######################################################
         >   AVML  <
 Acquire Volatile Memory for Linux
