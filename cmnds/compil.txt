@@ -133,6 +133,18 @@ $ ls -laX
 $ dmesg
 //Check for physical ports active and inactive
 
+$ sudo blkid
+//Block Storage devices
+
+$ sudo lsblk
+//Block Storage devices
+
+$ usb-devices
+//List all usb
+//Note: Vendor, ProdID,Product and the DeviceID (parenthesis)
+
+$ lsusb
+//Displays DeviceID of connected usb
 $ stat file_name
 //shows file info with stat
 
