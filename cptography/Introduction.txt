@@ -21,6 +21,7 @@ www.stylesuxx.github.io
 //alphanumeric string ends with one or two assignment operator
 
 
+
 //Kerckhuff's Principle [ 1883 ]
 "A crypto system should be secure even if an attacker knows of the details about the system,
 with the exception of the secret key"
