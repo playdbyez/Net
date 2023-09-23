@@ -78,8 +78,6 @@ resulting in an absolute value of "we will meet at hours 32"
 resulting in an algebraic value based on modulus-24 value of "we will meet at 8AM the next day"
 
 
-
-
 ############::Modulo operator (%)::##############
 Definition :
 
@@ -88,9 +86,29 @@ if
             m > 0
 
 Then
-            A ≡ T (mod M)
-          meaning M devides A - T == M|(A-T)
-              
+            A ≡ R (mod M)
+            meaning M devides A - R 
+            [ M|(A-R) ]
+            R = Remainder of modulus
+            M = Modulus
+              Solution = solve A-R and relate it to M after
+
+Exercise:
+A = 13
+M = 9
+R = ?
+
+How often does the modulus 9 fit into A?
+Result is once = 1
+Remainder is  4
+                        13 ≡ 4 (mod 9)
+
+Answer Check
+13-4 = 9
+(A - R = ?)
+
+is the solution divisible by the remainder ?
+Yes 9 is divisible by 9
 
 
 ########################'############# # RESOURCES # ###########'############################
