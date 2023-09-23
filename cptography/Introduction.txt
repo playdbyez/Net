@@ -4,6 +4,9 @@ by Christof Paar
 www.decode.fr
 // Cipher database
 
+www.icyberchef.com
+//Decoding algorithms
+
 
 //Kerckhuff's Principle [ 1883 ]
 "A crypto system should be secure even if an attacker knows of the details about the system,
