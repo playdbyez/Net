@@ -71,4 +71,7 @@ E > T > A > I > O > N > S > H > R > D > L > U > C > M > F > Y > W > G > P > B > 
 
 ############::Implementation Attacks ::##############
 A Side channel attack would consist of employing an osciloscope against a microprocessor's pins
-record the ondulation  or observe  the timing behaviour in hope to decode the key being used within the chip.
+and recording the ondulation  or observe  the timing behaviour in hope to decode the key being used within the chip.
+
+
+
