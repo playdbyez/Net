@@ -7,6 +7,9 @@ www.decode.fr
 www.icyberchef.com
 //Decoding algorithms
 
+www.steghide.sourceforge.net
+//Review data within jpeg,bmp,au,wav files
+
 
 //Kerckhuff's Principle [ 1883 ]
 "A crypto system should be secure even if an attacker knows of the details about the system,
