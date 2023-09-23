@@ -16,6 +16,29 @@ $ /usr/include/X11
 
 ##################################################################################
 
+
+$ lscpu > tmp/text.txt
+
+$ lsusb > tmp/text.txt
+
+$ lsusb -v -s <bus# : devic#> > tmp/text.txt
+//note unique id 'iserial'
+
+$ lspci > tmp/text.txt
+
+$ lspci -vvv > tmp/text.txt
+//used to create drivers
+
+$ lsblk -S 
+//show scsi devices, HD
+
+$ cat proc/cpuinfo
+$ cat proc/meminfo
+$ cat proc/scsi
+$ cat proc/partitions
+$ cat proc/mdstat
+//raid device configs
+
 $ file <fileName>
 // Display info on a file including shasum
 
