@@ -10,6 +10,16 @@ www.icyberchef.com
 www.steghide.sourceforge.net
 //Review data within jpeg,bmp,au,wav files
 
+www.neatnik.net/steganographr
+//Online revealer for zero-width spacing technique
+//Stegno converts text to bin and convert bin into a string of zero width chars 
+
+www.stylesuxx.github.io
+//image decoder
+
+//Base64 encoding
+//alphanumeric string ends with one or two assignment operator
+
 
 //Kerckhuff's Principle [ 1883 ]
 "A crypto system should be secure even if an attacker knows of the details about the system,
