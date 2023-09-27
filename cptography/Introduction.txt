@@ -124,7 +124,9 @@ www.steghide.sourceforge.net
 
 www.neatnik.net/steganographr
 //Online revealer for zero-width spacing technique
-//Stegno converts text to bin and convert bin into a string of zero width chars 
+//Stegno converts text to bin and convert bin into a string of zero width chars
+// Insert string text that may have non-displayed characters 
+// Press d3steganogr4phize
 
 www.stylesuxx.github.io
 //image decoder
