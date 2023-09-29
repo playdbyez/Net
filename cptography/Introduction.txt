@@ -110,6 +110,27 @@ Answer Check
 is the solution divisible by the remainder ?
 Yes 9 is divisible by 9
 
+####################################################################
+
+
+//When implementing any sort of encryption along a channel 
+            its necessary to first determine randomness of the cypher key between both end-points
+
+<>Random Number Generator
+
+> True random number generator (TRNG)
+True random numbers stem from random physical processes.
+(coin-flip)
+
+>
+
+>
+
+
+
+
+
+
 
 ########################'############# # RESOURCES # ###########'############################
 
