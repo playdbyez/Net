@@ -33,13 +33,10 @@ Deconstructing a secure algorithm.
 > Exhaustive KeySearch
 
 
-//Substitution Cipher
-Operates on latters and its aimed at replacing every letter by a fixed ciphertext letter.
 
 ############::KeySearch::############## 
 Within symmetric ciphers we consider its size in bits.
 and apply the FPGA based,cryptanalitical algorithm 'Copacobana'  (1 week)
-
 
 I.E.
 cipher key size = 64b its
@@ -55,7 +52,11 @@ Copacabana's max keysearch = 2^56
 
 
 ############::Letter Frequency Analysis ::##############
-Bruteforce
+
+//Substitution Cipher
+Operates on latters and its aimed at replacing every letter by a fixed ciphertext letter.
+
+//0Bruteforce
 E > T > A > I > O > N > S > H > R > D > L > U > C > M > F > Y > W > G > P > B > V > K > X > Q > J > Z
 
 >Letters have different frequencies in english
@@ -67,50 +68,10 @@ E > T > A > I > O > N > S > H > R > D > L > U > C > M > F > Y > W > G > P > B > 
 A Side channel attack would consist of employing an osciloscope against a microprocessor's pins
 and recording the ondulation  or observe  the timing behaviour in hope to decode the key being used within the chip.
 
-----------
-::::::::::::::::: :: Modular Arithmetic :: ::::::::::::::::::::::::::::
-
-IDEA: computation in finite sets based in arithmetic rules
-kind of like arranging a formula into a 'circle'
-
-I.E : "Now is 12AM andwe will meet in 20 hrs" 
-resulting in an absolute value of "we will meet at hours 32"
-resulting in an algebraic value based on modulus-24 value of "we will meet at 8AM the next day"
 
 
-############::Modulo operator (%)::##############
-Definition :
 
-if
-            int A, R ,M ∈Z
-            m > 0
-
-Then
-            A ≡ R (mod M)
-            meaning M devides A - R 
-            [ M|(A-R) ]
-            R = Remainder of modulus
-            M = Modulus
-              Solution = solve A-R and relate it to M after
-
-Exercise:
-A = 13
-M = 9
-R = ?
-
-How often does the modulus 9 fit into A?
-Result is once = 1
-Remainder is  4
-                        13 ≡ 4 (mod 9)
-
-Answer Check
-13-4 = 9
-(A - R = ?)
-
-is the solution divisible by the remainder ?
-Yes 9 is divisible by 9
-
-####################################################################
+########################### :: Randomness :: #########################################
 
 
 //When implementing any sort of encryption along a channel 
@@ -127,8 +88,76 @@ True random numbers stem from random physical processes.
 >
 
 
+:::::::::::::::::::::::::: :: Modular Arithmetic :: ::::::::::::::::::::::::::::
+
+IDEA: computation in finite sets based in arithmetic rules
+kind of like arranging a formula into a 'circle' 
 
 
+I.E : "Now is 12AM andwe will meet in 20 hrs" 
+resulting in an absolute value of "we will meet at hours 32"
+resulting in an algebraic value based on modulus-24 value of "we will meet at 8AM the next day"
+
+
+############::Modulo operator (%)::##############
+Definition :
+[ Find the value of R ]
+if
+            int A, R ,M ∈Z
+            m > 0
+
+Then
+            A ≡ R (mod M)
+            meaning M devides A - R 
+            [ M|(A-R) ]
+            R = Remainder of modulus
+            M = Modulus
+            Solution = solve A-R and relate it to M after
+
+//Exercise:
+A = 13
+M = 9
+R = ?
+13 = ? x 9
+
+How often does the modulus 9 fit into A? (quotient)
+Result is once = 1
+                        13-9 = 4
+Remainder is  4
+Solution is             13 ≡ 4 (mod 9)
+
+
+
+
+//Answer Check:
+13-4 = 9
+(A - R = ?)
+
+is the solution divisible by the remainder ?
+Yes 9 is divisible by 9
+
+/The value of R/remainder can fluctuate since it is not unique 
+/The above mentioned is dependent on what value is given to R as a divisor used on A 
+/Always perform the Answer Check after the calculation
+
+
+>>Equivalence Classes:
+Given mod 9, define its set :
+include all natural numbers forming an 'equivalence class' modulo 9
+(+9   +9  +9   +9  +9  +9)
+
+... -19   -9   0   9   20  27 ... SET A
+... -18   -8   1   10  19  28 ... SET B
+... -17   -7   2   11  20  29 ... SET C
+... -16   -6   3   12  21  30 ... SET D
+... -14   -5   4   13  22  31 ... SET E
+... -13   -4   5   14  23  32 ... SET F
+... -12   -3   6   15  24  33 ... SET G
+... -11   -2   7   16  25  34 ... SET H
+... -10   -1   8   17  26  35 ... SET I
+//Every set is infinite in size 
+
+[ All members of the class behave equivalent modulo 9 ]
 
 
 
@@ -154,4 +183,5 @@ www.stylesuxx.github.io
 
 //Base64 encoding
 //alphanumeric string ends with one or two assignment operator
+
 ################################################################################################
