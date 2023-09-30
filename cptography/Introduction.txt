@@ -142,9 +142,12 @@ Yes 9 is divisible by 9
 
 
 >>Equivalence Classes:
+                        [ All members of the class behave equivalent modulo 9 ]
+
+
 Given mod 9, define its set :
 include all natural numbers forming an 'equivalence class' modulo 9
-(+9   +9  +9   +9  +9  +9)
+    (+9   +9  +9   +9  +9  +9)
 
 ... -19   -9   0   9   20  27 ... SET A
 ... -18   -8   1   10  19  28 ... SET B
@@ -155,9 +158,9 @@ include all natural numbers forming an 'equivalence class' modulo 9
 ... -12   -3   6   15  24  33 ... SET G
 ... -11   -2   7   16  25  34 ... SET H
 ... -10   -1   8   17  26  35 ... SET I
-//Every set is infinite in size 
+//Every set is infinite in size with the remainder as the centre value
 
-[ All members of the class behave equivalent modulo 9 ]
+
 
 
 
