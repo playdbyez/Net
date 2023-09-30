@@ -163,10 +163,10 @@ include all natural numbers forming an 'equivalence class' modulo 9
 ::::::::::::::::::
 
 //Exercise 2:
-A = 13
-M = 5
-R = ?
-13 = ? x 5
+Compute the following:
+13 x 16 - 8
+
+
 
 
 
