@@ -164,9 +164,9 @@ include all natural numbers forming an 'equivalence class' modulo 9
 
 //Exercise 2:
 A = 13
-M = 9
+M = 5
 R = ?
-13 = ? x 9
+13 = ? x 5
 
 
 
