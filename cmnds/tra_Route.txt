@@ -1,3 +1,0 @@
-Traceroute Command
-
-usefull for showing every hop within the network as well as its latency speed
