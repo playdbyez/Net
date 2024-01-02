@@ -194,4 +194,7 @@ www.stylesuxx.github.io
 //Base64 encoding
 //alphanumeric string ends with one or two assignment operator
 
+www.openssl.org/docs/
+//SSL Documentation
+
 ################################################################################################
