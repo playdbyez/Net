@@ -1,1 +1,53 @@
+                                                          BOOLEAN ALGEBRA
+  uses AND , NOT, OR 
+      Can be represented through Venn diagrams or truth tables
 
+
+
+                                                        NUMERAL SYSTEMS
+According to the IEEE 754 format, instead of the human tendency to use the Common Algorithm, Base10 to represent a value through decimal
+                      (452 = 4x100 5x10 2x1)
+  
+
+computers generally work with  the Binary Logarithm, Base2 to represent number values through binary
+
+Base2
+【0】 【1】 【1】 【1】 【1】 【0】 【1】 【1】  
+x128  x64   x32   x16   x8   x4    x2    x1
+
+Base16 (Hexadecimal)
+  0123456789abcdef
+
+Base32 ()
+  ABCDEFGHIKLMNOPQRSTVXYZabcdefghijklmnopqrstuvwxyz0123456789+/
+
+
+FLOATING POINT NUMBERS
+  its more precise to use scientific notation when using floats
+                              5.91x10⁻⁹      ==     0.00000000591
+                      Scientific Notation            Real Number
+
+
+32bits = Single precision
+64bits = Double precision
+
+【1】      | 【0】 【1】 【1】 【1】 【1】  |     【1】 【0】 【1】 【0】 【0】 【0】 【0】 【0】 【0】 【0】
+sign                 exponent                                    significant fraction
+
+
+
+                                                    LOGRITHMIC FUNCTIONS
+Generally used in Binary Search,  by considering a Wooden Log of 16 feet 
+We  can half its length until the minimal value of 2 feet
+      (16ft) - > (8ft) - > (4ft) - > (2ft)
+                      If we know, how many times we cut the log (exponent) we can perform Exponentitation
+                          to calculate the original length of the wooden log
+                                            (2 ^ammount cuts) - > (2⁴)
+
+                      If we know the original length of the log we can perform Logarithm
+                            to calculate the exponent of the wooden log
+                                            (log₂ (Origian Length)) - > (log₂ (16))
+
+
+
+                                                    SET THEORY
