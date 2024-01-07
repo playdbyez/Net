@@ -51,3 +51,11 @@ We  can half its length until the minimal value of 2 feet
 
 
                                                     SET THEORY
+          Used in a relational database, a set is an unorder collection of unique values
+    Sets usually come in pairs
+          To calculate an Intersection in set theory values must be present in both tables A and B
+             [ ∩  == Intersection/Inner Join]
+A = {2, 4, 6, 8, 10}
+B = {1, 2, 3, 4, 5, 6}
+A∩B = {2, 4, 6}
+
