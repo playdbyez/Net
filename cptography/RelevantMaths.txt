@@ -1,4 +1,18 @@
-                                                          BOOLEAN ALGEBRA
+
+                      -Discrete Math
+                      Structures with a finite number of elements
+                        (Boolean algebra, Set theory, Combinatronics)
+
+                                                          -Continuous Math
+                                                          Real numbers and approximations
+                                                          ( Geometry, Calculous)
+
+
+
+
+
+
+                                                        BOOLEAN ALGEBRA
   uses AND , NOT, OR 
       Can be represented through Venn diagrams or truth tables
 
@@ -54,8 +68,29 @@ We  can half its length until the minimal value of 2 feet
           Used in a relational database, a set is an unorder collection of unique values
     Sets usually come in pairs
           To calculate an Intersection in set theory values must be present in both tables A and B
-             [ ∩  == Intersection/Inner Join]
+             [ ∩  == Intersection / Inner Join]
 A = {2, 4, 6, 8, 10}
 B = {1, 2, 3, 4, 5, 6}
 A∩B = {2, 4, 6}
+
+
+          To calculate an Union in set theory, both tables A and B are displayed as one
+             [ ∪  == Union / Full Outter Join]
+A = {2, 4, 6, 8, 10}
+B = {1, 2, 3, 4, 5, 6}
+A∪B = {NULL, 2, NULL, 4, NULL, 6, NULL, 8, NULL 10}
+
+
+
+
+
+                                                    COMBINATRONICS
+
+
+
+
+
+
+                                                    GRAPH THEORY
+
 
