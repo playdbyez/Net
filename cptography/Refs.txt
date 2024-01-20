@@ -1,0 +1,16 @@
+Youtube:
+
+sha256 - lesson1
+@projectfpga5482
+
+What is a UART in an FPGA? Basics of Serial Ports, COM Port, RS-232, RS-485
+@Nandland
+
+FPGA + PCIe Hardware Accelerator Design Walkthrough (DDR3, M.2, ..) - Phil's Lab #82
+@PhilsLab
+
+EEVblog #496 - What Is An FPGA?
+@EEVblog
+
+DIY FPGA Bitcoin Miner
+@richardharris1224
