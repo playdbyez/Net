@@ -1,1 +1,22 @@
+Huffman Encoding / Binary Search Trees
+
+>> Variations
+[] n-ary Huffman coding
+[] Adaptive Huffman coding
+[] Huffman Template Algorithm
+[] Length-limited Huffman coding
+[] Huffman with unequal letter costs
+[] Canonical Huffman coding
+[] Hu-Tucker coding
+[] Modified Huffman coding
+[] Shannon-Fano coding
+
+>> Alternatives
+[] Adaptive arithmetic coding
+[] Garsia-Wachs algorithm
+[] Run-length encoding
+[] Golomb coding
+[] Arithmetic coding
+[] Bernoulli processes
+[] Asymmetric numeral systems
 
