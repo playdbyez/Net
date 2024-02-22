@@ -11,6 +11,8 @@ Huffman Encoding / Binary Search Trees/ Prefix-coding
 [] Modified Huffman coding
 [] Shannon-Fano coding
 [] PKZIP Algorithm
+[] LZW compression technique
+[] Huffman compression technique
 
 >> Alternatives
 [] Adaptive arithmetic coding
