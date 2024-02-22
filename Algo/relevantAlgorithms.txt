@@ -1,4 +1,4 @@
-Huffman Encoding / Binary Search Trees
+Huffman Encoding / Binary Search Trees/ Prefix-coding
 
 >> Variations
 [] n-ary Huffman coding
@@ -10,6 +10,7 @@ Huffman Encoding / Binary Search Trees
 [] Hu-Tucker coding
 [] Modified Huffman coding
 [] Shannon-Fano coding
+[] PKZIP Algorithm
 
 >> Alternatives
 [] Adaptive arithmetic coding
@@ -19,4 +20,5 @@ Huffman Encoding / Binary Search Trees
 [] Arithmetic coding
 [] Bernoulli processes
 [] Asymmetric numeral systems
+
 
