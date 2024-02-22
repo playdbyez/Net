@@ -1,1 +1,54 @@
-Forensic Analytics CSAS v3
+                                          ###################################
+                                                  FDS FIG 200 : Cell Site
+                                                  ISO / IEC 17020
+                                                  ISO / IEC 17025:2017
+                                          ###################################
+
+> Comes into force 02/10/2023 as a consequence of the Forensic Sciece Regulation Act 2021
+> Overseen by the Forensic Science Regulator
+> Sets standards for Digital Forensics Science Activities (What it regulates and what it does not)
+> Timeline and requentement for complience applies to forces, agencies and organiztions due from 2/10/23 to 2/10/2025
+> If done properly it is one of the strongest safeguards against false allegation and wrong conviction
+
+::: Key Elements of Quality :::
+[] Validation of Methods
+[] Competence of Documented and Controlled proceedures
+[] Competence of Personnel proceedures
+[] Competence of Auditable proceedures
+[] Competence and Commitment from Senior-leadership
+[] Enabling of continual improvement
+
+
+
+
+
+::: Activities ::
+[ ] Radio Frequence Propagation Survey (LIMA monitor)
+[ ] Cell Site Analysis (CSAS / Forensic Analytics CSAS v3)
+[ ] Inta Forensics Validation Report
+
+::: Courses :::
+
+[]RFP survey
+FA312 - 10 days
+
+[]CDR interpretation
+FA215 - 3 days
+
+[]Comms analysis
+FA217 - 2 days
+
+[]GPRS
+FA237 - 1 days
+
+[]Comms techniques
+FA238 - 2 days
+
+[]CSAS
+FA435 - 2 days
+
+[]CSAS maps
+FA441 - 1 days
+
+[]CSAS advanced
+FA405 - 3 days
