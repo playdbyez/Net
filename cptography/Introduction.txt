@@ -121,7 +121,7 @@ R = ?
 13 = ? x 9
 
 How often does the modulus 9 fit into A? (quotient)
-Result is once = 1
+Result is once == 13/9 = 1.444
                         13-9 = 4
 Remainder is  4
 Solution is             13 ≡ 4 (mod 9)
