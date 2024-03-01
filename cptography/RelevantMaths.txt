@@ -65,8 +65,41 @@ We  can half its length until the minimal value of 2 feet
 
 
                                                     SET THEORY
-          Used in a relational database, a set is an unorder collection of unique values
+    Sets are generally used in a relational database, a set is an unordered collection of unique values
     Sets usually come in pairs
+
+#######[Symbols]##############################################################
+
+( ∈ ) == element ... is whithin set ...
+I.e.  x∈Z == element x is within a set of integers
+
+( Ø ) ==  Empty set
+
+( ∀ ) ==	For all ...
+I.e.  ∀x>1  ==	for all x is greater than 1
+
+( ≡ ) == ... is equivalent to ...  
+I.e.  13≡4(mod 9) == 13 is equivalent to 4 (%9)
+
+( Σ ) == sum from val bellow SIGMA to val above SIGMA 
+
+( ∝ ) == ... is proportional to ...
+
+( ω ) ==  smallest infinite ordinal number
+
+...etc
+#######################################################################
+[Types of sets]
+
+ ℕ  = a set of natural numbers            ( 0 to 9)
+ ℤ  = a set of integers                   (-9 to 9)
+ ℤ+ = a set of only positive integers     (0 to infinity)
+ Q  = a set of quotient numbers           ( (1.5 ≡ 3/2) = (Q ≡ p/q) )
+
+...etc
+##########################################################################
+
+
           To calculate an Intersection in set theory values must be present in both tables A and B
              [ ∩  == Intersection / Inner Join]
 A = {2, 4, 6, 8, 10}
