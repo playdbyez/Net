@@ -24,3 +24,5 @@ Huffman Encoding / Binary Search Trees/ Prefix-coding
 [] Asymmetric numeral systems
 
 
+::Course by ThePrimeTime 
+https://frontendmasters.com/courses/algorithms
