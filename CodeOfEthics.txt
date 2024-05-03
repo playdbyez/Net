@@ -1,0 +1,13 @@
+############################### :: THE SOFTWARE ENGINEERING CODE OF ETHICS :: ################################
+
+Published together by:
+> Institute of Electrical and Electronics Engineers (IEEE)
+> Associaton of Computing Machinery (ACM)
+
+Its focus relies hevily on the programmers' implementation of Efficiency & Responsability
+
+----------------------------
+Research:
+Date and Time formats RFC
+Valid Email addresses' definition RFC
+
