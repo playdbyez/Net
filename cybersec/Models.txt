@@ -35,12 +35,14 @@ Threat          = taking advantage of said weakness.
 
 
 ###### Threat Models #####
-Part of the System's Development Life Cycle, these seek to anticipate an attacker's exploitation methods by taking its point of view
+Part of the System's Development Lifecycle (SDL), these seek to anticipate an attacker's exploitation methods by taking its point of view
 [] What part the system is it ?
 [] What can go wrong with it ?
 [] What can be done to prevent it ?
 [] Are these security measures enough ?
 
+insights.sei.cmu.edu/blog/threat-modeling-12-available-methods/
+eccouncil.org/threat-modeling/
 
 
 .CIA Triad
@@ -51,7 +53,7 @@ Security model defining the core elements of a system's functionality.
 +. Resiliance        = system's survivability to inevitable threats and how fast it can recuperate from attacks
 
 
-.DREAD
+.DREAD [2002]
 (Risk = DREAD)
 Risk-assesment model used by microsoft that emphasizes security through obscurity.
 1. Damage           = how bad would an attack be?
@@ -62,7 +64,7 @@ Risk-assesment model used by microsoft that emphasizes security through obscurit
 wiki.openstack.org/wiki/Security/OSSA-Metrics#DREAD
 
 
-.STRIDE
+.STRIDE [2009]
 Attack methodologies model for accessing possible ways of breaching a system.
 1. Spoofing                   = Authenticity of the attacker's traces
 2. Tampering                  = Integrity alterations that may go unnoticed
@@ -70,18 +72,36 @@ Attack methodologies model for accessing possible ways of breaching a system.
 4. Information disclosure     = Confidentiality of a system's data is breached from an unauthorized source
 5. Denial of service          = Availability to existing resources may be exhausted
 6. Elevation of privilege     = Authorization violations towards a system's access hierarchy
+adam.shostack.org/modsec08/Shostack-ModSec08-Experiences-Threat-Modeling-At-Microsoft.pdf
 
 
 
-
-.PASTA
+.PASTA [2015]
 (Process for Attack Simulation and Threat Analysis)
-Risk-centric model from the attacker's perspective curated towards large organizations [2015]
+Risk-centric model from the attacker's perspective curated towards large organizations 
+1. Objectives
+2. Technology Enumeration
+3. Application Decomposition
+4. Threat Intelligence Consumption 
+5. Vulnerability Analysis
+6. Attack Simulation
+7. Residual Risk Analysis
+https://versprite.com/blog/what-is-pasta-threat-modeling/
 
 
+.Trike [2008]
+( TRIKE = Requirements model + Implementation model)
+Open source project comprised of two metholodogies combined into one
+eccouncil.org/cybersecurity-exchange/threat-intelligence/trike-threat-modeling-methodology/
 
-.Trike
 .VAST
+
+
+
+.OCTAVE
+(Operationally Critical Threat, Asset, and Vulnerability Evaluation)
+
+
 
 
 
