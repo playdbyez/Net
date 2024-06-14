@@ -4,14 +4,6 @@
 
 Wifi Pen Test(Lifars)
 
-
-1.Authority
-2.Intimidation
-3.Consensus
-4.Scarcity
-5.Familiarity
-6.Trust
-7.Urgency
   
   
 WEP (Wired Encryption Protocol)
