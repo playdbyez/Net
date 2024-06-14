@@ -1,0 +1,71 @@
+
+##### General Threat Info #####
+Regardless of how specific the target of the attack,there are only three ways that a system can be threatned by:
+
+1. Acquiring Data     = used for re-sale & action anticipation.
+2. Misuse Credentials = used for discrete alterations & monitoring. 
+3. Hijacking          = used for unauthorized re-routing & denial of access.
+
+
+##### Attacker Capabilities #####
+Attacker's capabilities for identifying possible vulnerabilities
+
+1. Ammount of information 
+2. Computing power
+3. Control of the System
+
+After identifying weaknesses the attacker can chose to deploy from either two methods of attacks:
+Automted atks   = less cost & less profit.
+Targeted atks   = higher costs.
+
+
+##### Vulnerability Exploitation Principles #####
+Vulnerability   = a weakness in a system.
+Threat          = an actor taking advantage of said weakness.
+
+1.Authority
+2.Intimidation
+3.Consensus
+4.Scarcity
+5.Familiarity
+6.Trust
+7.Urgency
+
+
+###### Threat Models #####
+These seek to anticipate an attacker's exploitation methods by answering the following:
+[] What part the system ?
+[] What can go wrong with it ?
+[] What can be done to prevent it ?
+[] Is it enough ?
+
+
+
+.CIA Triad
+Basic security model defined for accessing risk
+1. Confidentiality   = maintaining privacy through encryption, access control and legal protections.
+2. Integrity         = maintaining confidence in a system's behaviour through accuracy of output. 
+3. Availability      = maintaining the system's permissions of access secure as appointed by its confidentility measures.
++. Resiliance        = system's survivability to inevitable threats and how fast it can recuperate from attacks.
+
+
+
+.STRIDE
+General checklist for accessing possible methods of breaching a system
+1. Spoofing                   = Authenticity of the attacker's traces
+2. Tampering                  = Integrity alterations that may go unnoticed
+3. Repudiation                = Attributing guilt to the attacker's traces through valid evidence
+4. Information disclosure     = Confidentiality of a system's data is breached from an unauthorized source
+5. Denial of service          = Availability to existing resources may be exhausted
+6. Elevation of privilege     = Authorization violations towards a system's access hierarchy
+
+
+
+.DREAD  
+.PASTA
+.Trike
+.VAST
+
+
+
+
