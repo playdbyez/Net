@@ -1,0 +1,5 @@
+Crypto_tech in the wild
+
+[ PKI ] Public Key Infrastructure
+Resposible for managing X509 digital certificates and the binding public-key encryption.
+Relies on the Certificate Management Protocol (CMP), Certificates Authorities (CA) and Public Key Cryptography 
