@@ -1,0 +1,8 @@
+This file explores current and past attempts at exloiting victims under a social engineering context
+
+
+Automted atks   = less cost & less profit.
+Targeted atks   = higher costs.
+
+TypoSquating
+Ad exploit: Advertiser financing
