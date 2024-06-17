@@ -50,6 +50,14 @@ sign                 exponent                                    significant fra
 
 
 
+                                                    MODULUS OPERATOR
+x % y = x - (x/y) *y
+
+5 % 2        = 
+5 - (5/2) *2 = 
+5 - 2 * 2    =
+5 - 4        = 1
+
                                                     LOGRITHMIC FUNCTIONS
 Generally used in Binary Search,  by considering a Wooden Log of 16 feet 
 We  can half its length until the minimal value of 2 feet
@@ -117,7 +125,7 @@ A∪B = {NULL, 2, NULL, 4, NULL, 6, NULL, 8, NULL 10}
 
 
 
-                                                    COMBINATRONICS
+                                                    COMBINATRORICS
 
 
 
