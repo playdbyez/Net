@@ -1,0 +1,3 @@
+
+Intrusion Detection Systems like antiviruses rely on Screening, Static Analysis and Heuristic detection.
+They also come equiped with prevention capabilities like connection shutdown, logging and air-gapped networks.
