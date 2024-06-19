@@ -8,7 +8,7 @@ Wifi Pen Test(Lifars)
 > Remote Administration Tool (RAT)
 > Supervisory Control And Data Acquisition systems (SCADA)
 > Advanced Persistant Threats (APT)  
-
+> Common Vulnerabilities and Exposures (CVE)
 
 WEP (Wired Encryption Protocol)
 PSK (Pre-Shared Key)
