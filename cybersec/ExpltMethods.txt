@@ -1,8 +1,10 @@
-This file explores current and past attempts at exloiting victims under a social engineering context
 
 
 Automted atks   = less cost & less profit.
 Targeted atks   = higher costs.
 
-TypoSquating
-Ad exploit: Advertiser financing
+[] TypoSquating and click frad are heavily related to advertisement reveneue however knowledge in advertiser financing is required.
+
+[] Time-dependent business models like seasonal sales are particularly sensitive to ransomware attacks threatning prolonged DoS deployment.
+
+[] Prolonged monitoring and exfiltration will entail 
