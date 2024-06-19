@@ -4,8 +4,12 @@
 
 Wifi Pen Test(Lifars)
 
-  
-  
+> RootKit
+> Remote Administration Tool (RAT)
+> Supervisory Control And Data Acquisition systems (SCADA)
+> Advanced Persistant Threats (APT)  
+
+
 WEP (Wired Encryption Protocol)
 PSK (Pre-Shared Key)
 WPA (Wifi Protected Access)
