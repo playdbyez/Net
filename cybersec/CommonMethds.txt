@@ -11,5 +11,5 @@ to ransomware attacks threatning prolonged DoS deployment.
 
 [] Prolonged monitoring and exfiltration will affect said information's economic security value.
 
-Automted atks   = less cost & less profit.
-Targeted atks   = higher costs.
+[] for common actors, automted atks entail less cost & less profit while targeted 
+atks will require higher costs.
