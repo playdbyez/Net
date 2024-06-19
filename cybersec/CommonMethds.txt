@@ -6,7 +6,8 @@ advertisement reveneue however knowledge in advertiser financing is required.
 [] It is common place to find malware on sale on the bmarket for less than $80 whereas manufacturing 
 of the Iphone is rewarded $15 for resale in the west for $630. 
 
-[] Time-dependent business models like seasonal sales are particularly sensitive to ransomware attacks threatning prolonged DoS deployment.
+[] Time-dependent business models like seasonal sales are particularly sensitive 
+to ransomware attacks threatning prolonged DoS deployment.
 
 [] Prolonged monitoring and exfiltration will affect said information's economic security value.
 
