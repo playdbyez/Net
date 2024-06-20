@@ -25,6 +25,8 @@ Targeted atks   = higher costs.
 ##### Vulnerability Exploitation Principles #####
 Vulnerability   = weakness in a system.
 Threat          = taking advantage of said weakness.
+
+- Seven Principles of Social Engineering -
 1.Authority
 2.Intimidation
 3.Consensus
@@ -32,6 +34,14 @@ Threat          = taking advantage of said weakness.
 5.Familiarity
 6.Trust
 7.Urgency
+
+- Air Force's five Ds plus one principles -
+1.Destroy
+2.Deny
+3.Degrade
+4.Disrupt
+5.Decieve
++.Defence
 
 
 ###### Threat Models #####
