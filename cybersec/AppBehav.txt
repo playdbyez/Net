@@ -3,3 +3,13 @@
 Operates at the network and checks for signatures of past malware.
 Intrusion Detection Systems like antiviruses rely on Screening, Static Analysis and Heuristic detection.
 They also come equiped with prevention capabilities like connection shutdown, logging and air-gapped networks.
+
+### SAMBA ###
+Server Message Block Protocol (SMBP)
+Windows always inclides an SMB client 
+Samba is a tool that makes use of the SMB protocol to make Unix to windows communication more convenient
+
+### DOS OS drivers ###
+Dos systems rely on digital signatures to allow hardware to interact with 
+its device drivers, these signing keys must come from trusted vendors.
+
