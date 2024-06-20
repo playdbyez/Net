@@ -13,3 +13,8 @@ to ransomware attacks threatning prolonged DoS deployment.
 
 [] for common actors, automted atks entail less cost & less profit while targeted 
 atks will require higher costs.
+
+[] SCADA systems are popular among industrial control systems for large interprises and cargo engines.
+
+[] Notable operations : unit deployment schedules, resupply rates, materiel movement schedules, readiness assessments, 
+maritime propositioning plans, logistic statuses and aerial refueling schedules.
