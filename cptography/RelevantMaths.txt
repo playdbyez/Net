@@ -125,10 +125,67 @@ A∪B = {NULL, 2, NULL, 4, NULL, 6, NULL, 8, NULL 10}
 
 
 
-                                                    COMBINATRORICS
+                                                    COMBINATORICS
 
 
+##################################:: Catalan Numbers ::#######################################
+These are definied within the combinatorics branch of discrete mathematics through the use of algebraic expressions.
+Directedly tied to permutations of certain kinds.
 
+>> Catalan Sequence [len = 20]
+1, 1, 2, 5, 14, 42, 132, 429, 1430, 4862,
+16796, 58786, 208012, 742900, 2674440, 9694845, 
+35357670, 129644790, 477638700, 1767263190,
+
+The above numbers are essentially a method of narrowing the ammount of permutations through a sequence of combined factors.
+Thus this sequence is applied to the length of the set involved such that: 
+a set of order 0 has 1 permutation 
+a set of order 1 has 1 permutation
+a set of order 2 has 2 permutations
+a set of order 3 has 5 permutations ...
+
+
+######## FORMULA #########
+Catalan number = Cn
+Cn = (2n)! / ((n + 1)! n!)
+
+
+######## EXAMPLE #########
+n = 7
+C7 = 2x7!  / (7+1)! 7!
+C7 = 14!    / 8!  7!
+(n+1 section gets ignored & from 1 to the result of n+1 gets ignored in the 2xn section before the division)
+( 8! gets canceled out & on the 14! section values from 1 to 8 gets canceled out )
+C7 = 14x13x12x11x10x9 / 1x2x3x4x5x6x7 
+C7 = 2162160 / 5040
+C7 = 429
+Cn = Catalan[7]
+
+
+############## CATALAN NUMBERS CAN BE FOUND IN: #################
+
+[] Factorials + StackSort
+(from a set of size n, there are n! permutations. Hence a set of order n has catalan[n] permutations that are stack sortable)
+( Factorial : n! = 1 x 2 x 3 x 4 x ... n )
+( StackSort : M = biggest value // a = values to the left of M // b = values to the right of M
+              Ma = largest value to the left of M // Mb = largest value to the right of M
+              if Mb < Ma then the list is not stack sortable  )
+
+
+[] Dyck Paths & Dyck Words
+...
+
+[] Binary Trees
+(a tree of size/order n has catalan[n] different possible shapes)
+
+[] Pascal's Triangle
+...
+
+[] Optimal Paths
+( Point (0,0) to point (n,n) withouth crossing the diagonal drawn inbetween the start to end (fastes route),
+
+[] Parenthesis Positions
+...
 
 
 
