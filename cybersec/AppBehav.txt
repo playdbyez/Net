@@ -13,3 +13,7 @@ Samba is a tool that makes use of the SMB protocol to make Unix to windows commu
 Dos systems rely on digital signatures to allow hardware to interact with 
 its device drivers, these signing keys must come from trusted vendors.
 
+## DOMAINS ###
+The .edu domain denotes Educause, which is made up of a list of 2000+
+education institutes and its operated by VeriSign.
+
