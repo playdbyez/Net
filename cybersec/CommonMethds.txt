@@ -18,3 +18,7 @@ atks will require higher costs.
 
 [] Notable operations : unit deployment schedules, resupply rates, materiel movement schedules, readiness assessments, 
 maritime propositioning plans, logistic statuses and aerial refueling schedules.
+
+[] The internet's core routers are mainly located in the USA, Japan, Netherlands and Sweden.
+These constitute a major part of the internet's backbone
+en.wikipedia.org/wiki/Internet_backbone
