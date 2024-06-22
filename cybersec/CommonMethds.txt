@@ -22,3 +22,6 @@ maritime propositioning plans, logistic statuses and aerial refueling schedules.
 [] The internet's core routers are mainly located in the USA, Japan, Netherlands and Sweden.
 These constitute a major part of the internet's backbone
 en.wikipedia.org/wiki/Internet_backbone
+
+[] Defense principles : Holisitc approach, Automatic lockdown measures upone detection, air-gap between internal serversand front-facing page, 
+avoid single point of failure or possible silent/undetected system failures, use dependability metrucs to measure how critical a component is to the system.
