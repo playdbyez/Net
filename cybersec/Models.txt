@@ -96,20 +96,16 @@ Risk-centric model from the attacker's perspective curated towards large organiz
 5. Vulnerability Analysis
 6. Attack Simulation
 7. Residual Risk Analysis
-https://versprite.com/blog/what-is-pasta-threat-modeling/
 
 
 .Trike [2008]
 ( TRIKE = Requirements model + Implementation model)
 Open source project comprised of two metholodogies combined into one
-eccouncil.org/cybersecurity-exchange/threat-intelligence/trike-threat-modeling-methodology/
 
 .VAST
 
 
 
-.OCTAVE
-(Operationally Critical Threat, Asset, and Vulnerability Evaluation)
 
 
 
