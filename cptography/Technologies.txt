@@ -1,6 +1,19 @@
 Crypto_tech in the wild
 
 
+[ MD5 ]
+...
+
+[ Whirlpool ]
+...
+
+[ SHA-2 ]
+...
+
+https://md5.gromweb.com/#google_vignette
+
+
+
 
 [ PKI ] Public Key Infrastructure
 Resposible for managing X509 digital certificates and the binding public-key encryption.
