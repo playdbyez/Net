@@ -58,6 +58,23 @@ x % y = x - (x/y) *y
 5 - 2 * 2    =
 5 - 4        = 1
 
+
+                                                        CATALAN NUMBERS [25] 
+
+1, 1, 2, 5, 14, 42, 132, 429, 1430, 4862,
+16796, 58786, 208012, 742900, 2674440, 9694845, 
+35357670, 129644790, 477638700, 1767263190,
+
+
+
+                                                        PRIME NUMBERS [25] 
+2, 3, 5, 7, 11, 13, 17, 19, 23, 29,
+31, 37, 41, 43, 47, 53, 59, 61, 67, 71,
+73, 79, 83, 89, 97
+
+
+
+
                                                     LOGRITHMIC FUNCTIONS
 Generally used in Binary Search,  by considering a Wooden Log of 16 feet 
 We  can half its length until the minimal value of 2 feet
@@ -132,12 +149,7 @@ A∪B = {NULL, 2, NULL, 4, NULL, 6, NULL, 8, NULL 10}
 These are definied within the combinatorics branch of discrete mathematics through the use of algebraic expressions.
 Directedly tied to permutations of certain kinds.
 
->> Catalan Sequence [len = 20]
-1, 1, 2, 5, 14, 42, 132, 429, 1430, 4862,
-16796, 58786, 208012, 742900, 2674440, 9694845, 
-35357670, 129644790, 477638700, 1767263190,
-
-The above numbers are essentially a method of narrowing the ammount of permutations through a sequence of combined factors.
+The catalan numbers are essentially a method of narrowing the ammount of permutations through a sequence of combined factors.
 Thus this sequence is applied to the length of the set involved such that: 
 a set of order 0 has 1 permutation 
 a set of order 1 has 1 permutation
