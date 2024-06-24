@@ -88,77 +88,7 @@ True random numbers stem from random physical processes.
 >
 
 
-:::::::::::::::::::::::::: :: Modular Arithmetic :: ::::::::::::::::::::::::::::
 
-IDEA: computation in finite sets based in arithmetic rules
-kind of like arranging a formula into a 'circle' 
-
-
-I.E : "Now is 12AM andwe will meet in 20 hrs" 
-resulting in an absolute value of "we will meet at hours 32"
-resulting in an algebraic value based on modulus-24 value of "we will meet at 8AM the next day"
-
-
-############::Modulo operator (%)::##############
-Definition :
-[ Find the value of R ]
-if
-            int A, R ,M ∈Z
-            m > 0
-
-Then
-            A ≡ R (mod M)
-            meaning M devides A - R 
-            [ M|(A-R) ]
-            R = Remainder of modulus
-            M = Modulus
-            Solution = solve A-R and relate it to M after
-
-//Exercise 1:
-A = 13
-M = 9
-R = ?
-13 = ? x 9
-
-How often does the modulus 9 fit into A? (quotient)
-Result is once == 13/9 = 1.444
-                        13-9 = 4
-Remainder is  4
-Solution is             13 ≡ 4 (mod 9)
-
-
-
-
-//Answer Check:
-13-4 = 9
-(A - R = ?)
-
-is the solution divisible by the remainder ?
-Yes 9 is divisible by 9
-
-/The value of R/remainder can fluctuate since it is not unique 
-/The above mentioned is dependent on what value is given to R as a divisor used on A 
-/Always perform the Answer Check after the calculation
-
-
->>Equivalence Classes:
-                        [ All members of the class behave equivalent modulo 9 ]
-
-
-Given mod 9, define its set :
-include all natural numbers forming an 'equivalence class' modulo 9
-    (+9   +9  +9   +9  +9  +9)
-
-... -19   -9   0   9   20  27 ... SET A
-... -18   -8   1   10  19  28 ... SET B
-... -17   -7   2   11  20  29 ... SET C
-... -16   -6   3   12  21  30 ... SET D
-... -14   -5   4   13  22  31 ... SET E
-... -13   -4   5   14  23  32 ... SET F
-... -12   -3   6   15  24  33 ... SET G
-... -11   -2   7   16  25  34 ... SET H
-... -10   -1   8   17  26  35 ... SET I
-//Every set is infinite in size with the remainder of modulus as the centre value
 
 ::::::::::::::::::
 
@@ -167,8 +97,30 @@ Compute the following:
 13 x 16 - 8
 
 
+########################### :: L3 :: #########################################
+
+[] Stream Cipher []
+This cipher takes a stream of bits and encrypts them individually (bit-by-bit)
+
+### Formula ###
+Formula Index :
+i = increasing variable (i++)
+Y1, Y2, Y3, ... = bits
+X1, X2, X3 ... = plaintext letters a,b,c, ...
+S1, S2, S3 ... = crypto key
+e(...)         = Encrypts on ...
+d(...)         = Decrypts on ...
+
+> Stream Encryption Operation <
+[ Yi = e(Xi) = Xi + Si mod2 ] 
+
+> Stream Decryption Operation <
+[ Xi = d(Yi) = Yi + Si mod2 ]
+
+Used in GSM when encrypting calls into a relay
 
 
+// Block Cipher
 
 
 ########################'############# # RESOURCES # ###########'############################
