@@ -117,6 +117,32 @@ d(...)         = Decrypts on ...
 > Stream Decryption Operation <
 [ Xi = d(Yi) = Yi + Si mod2 ]
 
+// Why is decryption formula using addition ?
+Mod2 addition and subtraction are the same.
+Mod2 addition is the same as XOR operation
+
+.Example of removing 2Si
+Yi + Si mod2 
+= (Yi + Si) +Si mod2  
+= Yi + 2Si mod2 
+= Yi Mod2 
+
+.Mod2 | XOR  Truth table 
+Xi   +   Si  =   Yi
+0        0        0
+0        1        1
+1        0        1
+1        1        0
+This table proves that encryption rate of bits are 50% variable 
+since a plain text zero has 50% of chance of being 1 or 0 when the key is applied. 
+
+
+
+
+Where do we get the key (Si) ?
+
+
+
 Used in GSM when encrypting calls into a relay
 
 
