@@ -50,6 +50,22 @@ sign                 exponent                                    significant fra
 
 
 
+
+:::::::::::::::::::::::::: :: Modular Arithmetic :: ::::::::::::::::::::::::::::
+
+IDEA: computation in finite sets based in arithmetic rules
+kind of like arranging a formula into a 'circle' 
+
+
+I.E : "Now is 12AM andwe will meet in 20 hrs" 
+resulting in an absolute value of "we will meet at hours 32"
+resulting in an algebraic value based on modulus-24 value of "we will meet at 8AM the next day"
+
+
+
+
+
+
                                                     MODULUS OPERATOR
 x % y = x - (x/y) *y
 
@@ -76,6 +92,15 @@ x % y = x - (x/y) *y
 
 
                                                     LOGRITHMIC FUNCTIONS
+
+Definition : 
+The inverse of exponentiation.
+The Answer (3), logarithm of a number x (1000) to the base b (log10) is 
+equal to the exponent (3) that raises the base b (log10).
+Expo. 10^3         = 1000
+Log.  log10(1000)  = 3
+
+
 Generally used in Binary Search,  by considering a Wooden Log of 16 feet 
 We  can half its length until the minimal value of 2 feet
       (16ft) - > (8ft) - > (4ft) - > (2ft)
@@ -86,6 +111,70 @@ We  can half its length until the minimal value of 2 feet
                       If we know the original length of the log we can perform Logarithm
                             to calculate the exponent of the wooden log
                                             (log₂ (Origian Length)) - > (log₂ (16))
+
+
+
+
+
+// Example Exercise
+[ Find the value of R ]
+if
+            int A, R ,M ∈Z
+            m > 0
+
+Then
+            A ≡ R (mod M)
+            meaning M devides A - R 
+            [ M|(A-R) ]
+            R = Remainder of modulus
+            M = Modulus
+            Solution = solve A-R and relate it to M after
+
+//Exercise 1:
+A = 13
+M = 9
+R = ?
+13 = ? x 9
+
+How often does the modulus 9 fit into A? (quotient)
+Result is once == 13/9 = 1.444
+                        13-9 = 4
+Remainder is  4
+Solution is             13 ≡ 4 (mod 9)
+
+
+
+
+//Answer Check:
+13-4 = 9
+(A - R = ?)
+
+is the solution divisible by the remainder ?
+Yes 9 is divisible by 9
+
+/The value of R/remainder can fluctuate since it is not unique 
+/The above mentioned is dependent on what value is given to R as a divisor used on A 
+/Always perform the Answer Check after the calculation
+
+
+>>Equivalence Classes:
+                        [ All members of the class behave equivalent modulo 9 ]
+
+
+Given mod 9, define its set :
+include all natural numbers forming an 'equivalence class' modulo 9
+    (+9   +9  +9   +9  +9  +9)
+
+... -19   -9   0   9   20  27 ... SET A
+... -18   -8   1   10  19  28 ... SET B
+... -17   -7   2   11  20  29 ... SET C
+... -16   -6   3   12  21  30 ... SET D
+... -14   -5   4   13  22  31 ... SET E
+... -13   -4   5   14  23  32 ... SET F
+... -12   -3   6   15  24  33 ... SET G
+... -11   -2   7   16  25  34 ... SET H
+... -10   -1   8   17  26  35 ... SET I
+//Every set is infinite in size with the remainder of modulus as the centre value
 
 
 
@@ -202,5 +291,6 @@ Cn = Catalan[7]
 
 
                                                     GRAPH THEORY
+
 
 
