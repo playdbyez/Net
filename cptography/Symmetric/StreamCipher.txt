@@ -1,8 +1,16 @@
 
 [] Stream Cipher []
+
 This cipher takes a stream of bits and encrypts them individually (bit-by-bit).
-The cipher is obtained from the plaintext by combining it with a stream of keys.
-Loosely based on the One-Time Pad cipher's concept of perfect security
+
+The cipher is obtained from the plaintext by combining it with a pseudorandom stream of keys.
+
+Loosely based on the One-Time Pad cipher's concept of perfect security.
+
+Unlike blocks, it is simple to implement in applications where plaintext comes 
+in unknowable lengths like a wireless connection.
+
+
 
 > symmetric encryption
 > low computing complexity requirements
