@@ -19,3 +19,5 @@
 [] In computer Science, quick is equal to a polynominal-time algorithm.
   A polynominal-time algorithm's execution time is bound by  a polynominal function of the input size.
   Proof of this assertion is found in calculous within L'Hospital Rule
+
+[] HASH = chop & mix
