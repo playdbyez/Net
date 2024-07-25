@@ -91,6 +91,45 @@ x % y = x - (x/y) *y
 
 
 
+
+
+                                                        GRATEST COMMON DIVISOR [25] 
+
+gcd(x,y) 
+ 
+[ gcd-preserving mappings ]
+	>Easiest & less computationally efficient method is similar to example 2:
+								(a,b) -> (a mod(b), b)
+ 
+	> Hardest & computationally quicker: 
+								(a,b) -> ((a-b)/2, b) -> if a and b are both odd
+								(a,b) -> ((a/2), b)   -> if a is even
+								(a,b) -> (a, (b/2))   -> if b is even
+ 
+ 
+ 
+ 
+Example 1.
+gcd (4,6)
+		4 = 2x2
+		6 = 2x3
+Hence the greates multiplication factor in common between 4 and 6 is 2
+ 
+Example 2.
+gcd (21,12)
+		=(21 mod(12), 12)
+		=(9,12)
+		=(12 mod(9), 9)
+		=(3, 9)
+		=(9 mod(3), 3)
+		=(0, 3)
+		= 3
+Hence the gratest common devisor of 21 and 12 is 3
+ 
+
+
+
+
                                                     LOGRITHMIC FUNCTIONS
 
 Definition : 
