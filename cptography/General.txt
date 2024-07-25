@@ -13,4 +13,3 @@
     The number of possible keys, usually represented as an exponent of 2
 
 
-[] Unconditionally secure systems cannot be broken even with infinite computing power
