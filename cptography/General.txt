@@ -1,1 +1,16 @@
 
+[] Cryptoanalysis should require 2⁵⁶ to 2⁸⁰ operations
+    2⁵⁶ = 72057594037927936
+    2⁸⁰ = 1208925819614629174706176
+
+[] An infeasable ammount of operations is defined as 2¹²⁸
+    2¹²⁸ = 340282366920938463463374607431768211456
+
+[] Key size/length
+    the scientific number of bits within any given key
+
+[] Key space
+    The number of possible keys, usually represented as an exponent of 2
+
+
+[] Unconditionally secure systems cannot be broken even with infinite computing power
