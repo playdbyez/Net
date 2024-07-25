@@ -1,0 +1,9 @@
+
+
+[] Vignere Cipher []
+
+Must hide underlying statistics of the language for security.
+
+> symmetric encryption
+> polyalphabetic scheme
+> not a computationally secure system
