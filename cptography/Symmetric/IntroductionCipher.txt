@@ -1,0 +1,22 @@
+
+[] Basic Symmetric Cipher []
+
+Cipher is a means of turning plaintext into ciphertext under the control of a key.
+Within a symmetric scheme the key must be known by both communicating parties only.
+ 
+.Encryption
+m = plainText
+e = function
+k = key
+c = cipherText
+ 
+c = e^k(m)
+ 
+ 
+.Decryption
+c = cipherText
+e = function
+k = key
+m = plainText
+ 
+m = d^k(c)
