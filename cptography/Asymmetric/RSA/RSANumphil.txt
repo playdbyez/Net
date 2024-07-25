@@ -1,0 +1,35 @@
+[ RSA numberphile ] 
+ 
+publick key and private key
+ 
+sign with private key and verify that signature with the public key
+pub.Key is published  on the web or on a certificate
+ 
+pubKey (e,n)
+e = 65537
+n = 2000 - 4000bits long value
+ 
+privKey (d)
+ 
+φ = phi
+euler-totient = φ (p-1 * q -1)
+ 
+if you have d then you can injuct as the shop and sell items on their behalf
+dont chose bad p and q meaning:
+- dont have closely related coprimes (exploitable by fermat's factorization algorithm)
+- dont have small coprimes
+- have it be a variation of 1024bits length each
+ 
+ 
+Lots of thought goes into generating random primes!
+ 
+Mathematical labs
+-MatLab
+-SageMath
+-Octave
+-Mathematica
+ 
+===============================
+ 
+watch?v=_lg2AEqRTjg&list=PLL4unRYxBwriwYN0LTHzk2c2cxfYTiaY9
+watch?v=NuyzuNBFWxQ
