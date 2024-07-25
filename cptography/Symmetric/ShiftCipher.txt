@@ -1,0 +1,30 @@
+[] Shift Cipher []
+This cipher functions by shifting each character to 
+an equivalent cipher value to the right of its initial value
+The max number of characters is the 26 [0 - 25]
+ 
+CRYPTOGRAPHY
+ 
+.Encryption
+m = Hello
+e =  3>>
+k =  3
+c = Khoor
+ 
+ 
+CRYPTOANALYSIS 
+ 
+[] Assuming all characters have the same key cipher
+ 
+Method 1.
+Comparing letter frequencies per char vs the underlying language's general letter frequency
+in order to find the most consistent value of shifts.
+ 
+ 
+ 
+Method 2.
+Statistical Distance's 
+Compare the cipher vs general letter distribution through the total variation distance formula that requires two variables for iterating through our two sets, in order to find the smallest distance possible
+said distance will indicate the most likely value of shifts
+ 
+ 
