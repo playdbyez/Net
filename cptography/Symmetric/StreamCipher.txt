@@ -1,1 +1,56 @@
 
+[] Stream Cipher []
+This cipher takes a stream of bits and encrypts them individually (bit-by-bit).
+The cipher is obtained from the plaintext by combining it with a stream of keys.
+
+> symmetric encryption
+> low computing complexity requirements
+> hardware centric
+> fast operation
+> used in GSM when encrypting rings into a relay
+
+
+
+
+
+### Formula ###
+Formula Index :
+i = increasing variable (i++)
+Y1, Y2, Y3, ... = bits
+X1, X2, X3 ... = plaintext letters a,b,c, ...
+S1, S2, S3 ... = crypto key
+e(...)         = Encrypts on ...
+d(...)         = Decrypts on ...
+
+> Stream Encryption Operation <
+[ Yi = e(Xi) = Xi + Si mod2 ] 
+
+> Stream Decryption Operation <
+[ Xi = d(Yi) = Yi + Si mod2 ]
+
+// Why is decryption formula using addition ?
+Mod2 addition and subtraction are the same.
+Mod2 addition is the same as XOR operation
+
+.Example of removing 2Si
+Yi + Si mod2 
+= (Yi + Si) +Si mod2  
+= Yi + 2Si mod2 
+= Yi Mod2 
+
+.Mod2 | XOR  Truth table 
+Xi   +   Si  =   Yi
+0        0        0
+0        1        1
+1        0        1
+1        1        0
+This table proves that encryption rate of bits are 50% variable 
+since a plain text zero has 50% of chance of being 1 or 0 when the key is applied. 
+
+
+
+
+Where do we get the key (Si) ?
+
+
+
