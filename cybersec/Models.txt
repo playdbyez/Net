@@ -20,7 +20,7 @@ Attacker's capabilities for identifying possible vulnerabilities
 
 Automted atks   = less cost & less profit.
 Targeted atks   = higher costs.
-
+Resistance      = Intrusion Tolerance.
 
 ##### Vulnerability Exploitation Principles #####
 Vulnerability   = weakness in a system.
@@ -105,6 +105,14 @@ Open source project comprised of two metholodogies combined into one
 .VAST
 
 
+
+Cybersecurity and Infrastructure Security's 
+.Zero Trust Maturity Model
+1. Identity
+2. Devices
+3. Network
+4. Applications and Workload 
+5. Data
 
 
 
