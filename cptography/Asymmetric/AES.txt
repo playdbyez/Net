@@ -1,0 +1,5 @@
+
+AES - Advanced Encryption Standard [2001]
+
+> key sizes: 128, 192, 256 bits
+> possible key space: 2¹²⁸, 2¹⁹², 2²⁵⁶
