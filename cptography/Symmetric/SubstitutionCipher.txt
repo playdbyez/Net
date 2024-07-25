@@ -1,5 +1,7 @@
 [] Substitution Cipher []
-This cipher functions by mapping the alphabet text to a random permutation of characters
+Operates on latters and its aimed at replacing every letter by a fixed ciphertext letter,
+Thus it functions by mapping the alphabet text to a random permutation of characters.
+
  
 CRYPTOGRAPHY
  
