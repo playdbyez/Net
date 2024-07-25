@@ -10,6 +10,13 @@ There is no mathematical proof that any cryptographic algorithm is 100% secure.
 Only the duration of how many years a given crypto-algorithm has remained unbroken can be ascertained.
 Algorithms should be released public but not the key.
 
+Expect a cryptosystem to be eventually broken, either through computing 
+improvements or an algorithmic breakthrough.
+
+Unconditionally secure systems cannot be broken even with infinite computing power.
+
+
+
 -        Cryptology          -
 Although Security is a bigger concept that encompasses cryptology,
 Security cannot be achieved only by cryptology 
