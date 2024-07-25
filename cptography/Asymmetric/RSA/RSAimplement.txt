@@ -1,0 +1,14 @@
+
+
+RSA is usually implemented in :
+SSL/TLS certs S/MIME PGP, 
+Web of Trust VPN connections SSH and SFTP smart cards
+RFID 
+fob devices software 
+license signing cloud storage encryption
+RSA SecurID tokens are used for two-factor authentication
+
+
+Favorite RSA-related pub? 'RSA Key Extraction via Low-Bandwidth Acoustic Cryptanalysis' by Genkin, Shamir, and Tromer. Yeah, same S as in RSA.
+https://dspace.mit.edu/handle/1721.1/128298
+https://eitca.org/cybersecurity/eitc-is-ccf-classical-cryptography-fundamentals/introduction-to-public-key-cryptography/the-rsa-cryptosystem-and-efficient-exponentiation/examination-review-the-rsa-cryptosystem-and-efficient-exponentiation/how-does-the-rsa-cryptosystem-address-the-problem-of-secure-key-distribution-that-is-inherent-in-symmetric-cryptographic-systems/
