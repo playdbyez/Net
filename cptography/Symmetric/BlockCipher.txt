@@ -1,0 +1,5 @@
+
+
+[] Symmetric encryption
+[] Modern Block ciphers are built on permutations and substitutions
+[] Fast block is symmetric
