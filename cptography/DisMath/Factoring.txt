@@ -1,1 +1,54 @@
 
+ [] Factoring
+Factoring is the process of finding factors to said value.
+Based off a single known value.
+Un-multiplying
+Essential when analysing publick key systems.
+Each method of factoring varies in efficiency depending on the size of the input.
+
+Well-knonw techniques:
+
+DARK AGE METHODS
+> Trial Division
+> p - 1 Method
+> p + 1 Method
+> Pollard rho Method
+
+
+MODERN METHODS
+> Continued Fraction Method (CFRAC)
+> Quadratic Sieve (QS)
+> Eliptic Curve Method (ECM)
+> Number Field Sieve (NFS)
+
+
+
+
+
+## Trial Division
+Try every prime number up to √N to see if it is a factor of N
+ [] exponent time algorithm
+ [] dark age method of factoring
+ [] best method for numbers less than 10¹² = 1000000000000
+
+
+int e  = 0;
+for ( i = 2; i < √N; i++)
+{
+if (N mod(i) == 0)
+  {
+    while (N mod(i) == 0)
+      {
+      e++;
+      N =  N/i;
+      }
+  printf("factors %d and %d", i, e);
+  }
+}
+
+
+ [] time complexity is exponential O(√N) = O(2^log2N/2) = Ln (1,1)
+ [] Only works on values that do not have a perfect square number
+ [] A pefect square is when both factors to N are the same number and hence, said squaring factor is equal to N
+    a² = N
+[] factoring is of coprime factors, int i should be only output if it is prime. 
