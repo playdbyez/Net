@@ -1,9 +1,77 @@
 
 
-[] Vignere Cipher []
 
-Must hide underlying statistics of the language for security.
+ Vigenere Cipher [1533]
+ Must hide underlying statistics of the language for security.
+ Based of the polyalphabetic version of the shift cipher
 
-> symmetric encryption
-> polyalphabetic scheme
-> not a computationally secure system
+>> CRYPTOGRAPHY
+[] symmetric cipher
+[] not computationally secure
+[] polyalphabetic substitution scheme
+[] variation of substituion cipher
+[] key is a word of specific length
+[] key is repeated throughout the length of the message
+[] sec.key + sec.msg = pub.cipherText
+[] alphabet is mapped [ 0 - 25 ]
+[] cipher is the sum of the msg character's alphabetic position 
+   plus the key character's alphabetic poisition minus 26, as denoted in the formula bellow
+ 
+enc/dec formula
+e = ( m[i] + k[i] )mod(26)
+d = ( m[i] - k[i] )mod(26)
+ 
+s.plaintext	THISISATESTMESSAGE	|  T[19]
+key		    SESAMESESAMESESAME	|  S[18]
+p.cipher	LLASUWSXWSFQWWKASI	|  19+18 mod(26) = L[11]
+ 
+
+ 
+>> CRYPTOANALYSIS
+ 
+Method 1. Frequency analysis
+
+
+
+Method 2. digrams
+
+
+
+
+
+Method 3. Kasiski Test
+kasiski test applies to the vignere cipher method of encryption, as follows:
+
+If a string of characters appears repeatedly in a polyalphabetic cipher
+It is possible that the distance between the reocorring characters isa multiple of the lenght of the key word.
+ 
+It is usually easier to start with reoccurring Trigrams.
+ 
+To work out the distance we start from the last letter of the section 
+until the same letter from the first repetition of said trigram of letters.
+This process is repeated for other repeating trigrams.
+Keep count of the number of occurences and the distance of each.
+ 
+Assuming that the most reocurring distance value is 18
+The key word must be of a length that is a factor of 18 ( 2, 3, 6, 9 )
+Eve assumes that the key word is of length 6 and so prepares a table of decryption ...
+ 
+ 
+ 
+/watch?v=Ic4BzVggNY8
+
+/watch?v=TxClRjnRNJw
+
+https://www.youtube.com/watch?v=ZFdsJ4a_3k8
+https://www.youtube.com/watch?v=QgHnr8-h0xI
+https://www.youtube.com/watch?v=9Q72dBsNIx8
+https://www.youtube.com/watch?v=LsewLHTAmsA
+https://www.youtube.com/watch?v=Ic4BzVggNY8
+https://www.youtube.com/watch?v=P4z3jAOzT9I
+https://www.youtube.com/watch?v=zNO4PTlg62k
+https://en.wikipedia.org/wiki/Comparison_of_cryptography_libraries
+geeksforgeeks.org/how-to-express-a-number-as-a-power-of-2/
+ 
+https://www.youtube.com/watch?v=cU31KavBCM4
+https://www.youtube.com/watch?v=3R-n5UTuEzA
+ 
