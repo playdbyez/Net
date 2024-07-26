@@ -2,18 +2,50 @@
 Operates on latters and its aimed at replacing every letter by a fixed ciphertext letter,
 Thus it functions by mapping the alphabet text to a random permutation of characters.
 
- 
-CRYPTOGRAPHY
+ CRYPTOGRAPHY
+
+### Mono-alphabetic version
+only one alphabet is used as a cipher and thus each plain text
+corresponds to the same cipher character throughout the message.
+key space is the cipher's range of characters
  
 plainText
 A	B	C	D	E	F	G	H	I	J	K	L	M	N	O	P	Q	R	S	T	U	V	W	X	Y	Z
-G	O	Y	D	S	I	P	E	L	U	A	V 	C	R	J	W	X	Z	N	H	B	Q	F	T	M	K
+G	O	Y	D	S	I	P	E	L	U	A	V C	R	J	W	X	Z	N	H	B	Q	F	T	M	K
 cipherKey
  
  
 plainText Message = Hello 
 cipherText Message = ESVVJ
- 
- 
-CRYPTOANALYSIS
-...
+key space = 26! 
+          = 2⁸⁸
+
+
+
+
+### Polyalphabetic version
+a number of alphabets were used for encryption in order to avoid repeated ciphers.
+renders naive frequency analysis inaffective against it.
+
+
+plainText
+A	B	C	D	E	F	G	H	I	J	K	L	M	N	O	P	Q	R	S	T	U	V	W	X	Y	Z
+T M K G O	Y	D	S	I	P	E	L	U	A	V C	R	J	W	X	Z	N	H	B	Q	F
+D C B A H G F E M L K J I Z Y X W V U T S R Q P O N
+cipher 1
+cipher 2
+
+
+message[i] 
+if i == odd then msg[i] = cipher1
+if i == even then msg[i] = cipher2
+
+plainText Message  = HELLO
+cipherText Message = SHLJV
+
+key space = (!26)² 
+          =  162644002617632464507038883409628607021056000000000000 ≈ 2^176.76391  ≈ 2 ¹⁷⁷
+
+
+
+
