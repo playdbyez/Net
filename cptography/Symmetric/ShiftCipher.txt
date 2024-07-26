@@ -15,16 +15,62 @@ c = Khoor
 CRYPTOANALYSIS 
  
 [] Assuming all characters have the same key cipher
- 
-Method 1.
+[] Assuming that the cipher is monoalphabetic
+
+
+## Method 1.
+Try each key value within the cipher's key length until the most likely result is produced
+
+
+
+## Method 2.
 Comparing letter frequencies per char vs the underlying language's general letter frequency
 in order to find the most consistent value of shifts.
  
  
- 
-Method 2.
+
+
+
+## Method 3.
 Statistical Distance's 
-Compare the cipher vs general letter distribution through the total variation distance formula that requires two variables for iterating through our two sets, in order to find the smallest distance possible
-said distance will indicate the most likely value of shifts
- 
- 
+Compare the cipher vs general letter distribution 
+through the total variation distance formula that requires two variables for iterating through our two sets, in order 
+to find the smallest distance possible, and said distance will indicate the most likely value of shifts
+
+D1 = Set english
+D2 = Set cipher
+K  = Increasing key to sizeof(x) [0-25]
+X  = Probabilities of english
+Y  = Probability of  cipher
+V  = Distance between X and Y
+
+TOTAL VARIATION DISTANCE FORMULA:
+△[X, Y] =   1/2 Σ (u∈V) | ᴾᴿx<-D1 [ X = u] - ᴾᴿY<-D2 |
+
+OUTPUT CHART
+K             △ (Xk, Yk)
+
+0             48.8
+1             44.6
+2             44.0
+3             49.5
+4             53.2
+5             52.9
+6             46.0
+7             53.9
+8             52.7
+9             43.8
+10            51.3
+11            56.8
+12            46.7
+13            10.8
+14            44.8
+15            57
+16            53.3
+17            47.0
+18            48.5
+...           ....
+
+from all distance variations, 13 is the smallest distance and thus the most probable key.
+
+
