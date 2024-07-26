@@ -22,8 +22,8 @@ e = ( m[i] + k[i] )mod(26)
 d = ( m[i] - k[i] )mod(26)
  
 s.plaintext	THISISATESTMESSAGE	|  T[19]
-key		    SESAMESESAMESESAME	|  S[18]
-p.cipher	LLASUWSXWSFQWWKASI	|  19+18 mod(26) = L[11]
+key         SESAMESESAMESESAME	|  S[18]
+p.cipher    LLASUWSXWSFQWWKASI	|  19+18 mod(26) = L[11]
  
 
  
