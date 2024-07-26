@@ -1,7 +1,7 @@
 
                       -Discrete Math
-                      Structures with a finite number of elements
-                        (Boolean algebra, Set theory, Combinatronics)
+                      					-Structures with a finite number of elements
+				                          (Boolean algebra, Set theory, Combinatronics)
 
                                                           -Continuous Math
                                                           Real numbers and approximations
