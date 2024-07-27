@@ -10,8 +10,8 @@ Well-knonw techniques:
 
 DARK AGE METHODS
 > Trial Division
-> p - 1 Method
-> p + 1 Method
+> Pollard's p - 1 Method
+> William's p + 1 Method
 > Pollard rho Method
 
 
@@ -52,3 +52,8 @@ if (N mod(i) == 0)
  [] A pefect square is when both factors to N are the same number and hence, said squaring factor is equal to N
     a² = N
 [] factoring is of coprime factors, int i should be only output if it is prime. 
+
+#############################################################################
+
+
+
