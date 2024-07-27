@@ -1,5 +1,6 @@
 
- [] Factoring
+############ Factoring ################
+
 Factoring is the process of finding factors to said value.
 Based off a single known value.
 Un-multiplying
