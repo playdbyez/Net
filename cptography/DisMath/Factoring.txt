@@ -7,8 +7,8 @@ Un-multiplying
 Essential when analysing publick key systems.
 Each method of factoring varies in efficiency depending on the size of the input.
 
-Well-knonw techniques:
 
+Well-known techniques:
 DARK AGE METHODS
 > Trial Division
 > Pollard's p - 1 Method
@@ -25,6 +25,14 @@ MODERN METHODS
 
 
 
+## Basic prime verification:
+n = prime or not
+n >= 1
+for (i =2; i < n-1;i++)
+{if i divides n = n is not a prime}
+However n-1 is an unoptimal value to increment to.
+
+##################################################################
 
 ## Trial Division
 Try every prime number up to √N to see if it is a factor of N
@@ -54,7 +62,39 @@ if (N mod(i) == 0)
     a² = N
 [] factoring is of coprime factors, int i should be only output if it is prime. 
 
+
+[1] Trial Division factoring logic
+ 
+If a divides n
+Then b should be equal to n/a
+b should divide n 
+Hence a x b = n
+ 
+ 
+Because all factors of n exist in pairs
+a and b are cofactors
+ 
+>When factoring for n
+If a = b then n is a perfect square
+then a² = n
+and  a = √n
+ 
+>When factoring for n
+If a < b 
+then a < √n and b > √n
+and viceversa
+ 
+Thus if a and b are not equal
+one of them is greater then the sqrt(n)
+ 
+[2] Trial division verification:
+n = prime or not
+n >= 1
+for (i =2; i < sqrt(n); i++)
+{if i divides n = n is not a prime}
+
 #############################################################################
 
+AKS primality testing ?
 
 
