@@ -1,0 +1,72 @@
+
+##### [] Security Metrics [] #####
+
+Since Information Theory is fundamental to computer science, it is essential to distinguish between
+information-theoretic security and computational security
+
+A cryptographic system is deemed computationally secure if the best known algorithm for breaking it requires
+more than an unfeasable ammount of operations (2¹²⁸), although it can still be broken if there is a better unknown algorithm.
+These systems also require being provably secure.
+
+A cryptographic system is deemed unconditionally secure if it cannot be broken even with infinite computing power.
+
+>> Not Computationally Secure
+  Shift cipher
+  Substitution cipher
+  Vigenere cipher
+  Enigma machine
+
+>> Not Unconditionally secure
+  DES
+  AES
+  RSA
+  ElGamal encryption
+
+
+Entropy measures the ammount of uncertainty in a random variable
+
+
+  [] Perfect Secrecy
+A system in which the public cipher gives no information about the message.
+Knowing the cipher equivalent reveals no information.
+
+if the probability that one character from the encrypted message is equal to M when we know the cipher is equal to C,
+is the same as the probability that the character is M withouth knowing that the cipher is C.
+The cipher has perfect secrecy.
+
+FORMULA
+p( C = c | P = m ) = p (C = c)
+// the probability of c being a certain cipher and the probability of a message character being a certain letter
+// is equal to the probability that the cipher is a certain cipher
+
+
+> Shannon's Theorem <
+Defines a perfectly secure system if
+  - The key is unique per message
+  - The ammount of keys is equal to the length of the message
+  - every key is used with equal probability 1 /#K
+
+#K = set of key characters      (k)
+#P = set of message characters  (m)
+#C = set of cipher characters   (c)
+
+Since each key is used with equal probability, we must define the probability of each cipher p(C = c).
+
+p( C = c ) = Σₖ p(K = k) x p(P = dₖ(c))
+           = 1 / #K Σₖ  p(P = dₖ(c))
+
+Since each message character uses an unique key
+
+Σₖ p(P = dₖ(c)) = Σₚ p (P = m) = 1
+
+hence  p(C = c) = 1/#K
+
+Since c = eₖ(m) then  p (C = C | P = m) = p(K = k) = 1/#K
+
+Through Baes' Theorem
+
+p(P = m | C = c) = p(P = m) x p (C = c | P = m) / p(C = c)
+                 = (p(P = m) x 1/#K) / (1/#K)
+                 = p(P = m)
+
+
