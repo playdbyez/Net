@@ -18,7 +18,7 @@
 [] key sizes range from 40 to 2048 bits
 
 Encryption Stages
-1. Key-schedulinng algorithm (KSA)
+1. Key-scheduling algorithm (KSA)
 2. Pseudo-random generation algorithm (PRGA)
 3. Encryption 
 
@@ -26,6 +26,17 @@ array S[256 bytes]
 array key []
 keystream K []
 
+ENCRYPTION
+KSA ##
+The KSA part of the encryption is lways the first step regrdless if its used for enc. or dec.
+Initialize S from 0 to 255
+S will end up as a randomized array
+
+
+
+PRGA##
+index i loops until S[255] and loops back to S[0]
+index j hops around
 
 https://www.youtube.com/watch?v=wW3WOLX4itc
 https://www.youtube.com/watch?v=1UP56WM4ook
