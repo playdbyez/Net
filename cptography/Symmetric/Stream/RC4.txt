@@ -1,0 +1,29 @@
+
+#### RC4 #### [1987]
+
+[] Symmetric encryption
+[] Also known as ARCFOUR or ARC4
+[] Deployed in browsers SSL/TLS to secure traffic
+[] Deployed in WEP and WPA
+[] Compatible with software due to its speed and simplicity
+[] Fast and compact byte oriented stream
+[] Encrypts byte by byte
+[] No longer used due to RC4 attacks
+[] Insecure due to bias being found on output bytes,
+   This occurs when the beginning of the output keystream is not discarded.
+   This occurs also when nonrandom or related keys are used.
+
+[] key stream is of equal size to plain text message
+[] key sizes range from 40 to 2048 bits
+
+Encryption Stages
+1. Key-schedulinng algorithm (KSA)
+2. Pseudo-random generation algorithm (PRGA)
+3. Encryption 
+
+array S[256 bytes]
+array key []
+keystream K []
+
+
+https://www.youtube.com/watch?v=wW3WOLX4itc
