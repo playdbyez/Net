@@ -14,6 +14,7 @@
    This occurs also when nonrandom or related keys are used.
 
 [] key stream is of equal size to plain text message
+[] the key must be repeated until it matches the size of array S
 [] key sizes range from 40 to 2048 bits
 
 Encryption Stages
@@ -27,3 +28,4 @@ keystream K []
 
 
 https://www.youtube.com/watch?v=wW3WOLX4itc
+https://www.youtube.com/watch?v=1UP56WM4ook
