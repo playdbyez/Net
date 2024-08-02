@@ -18,13 +18,13 @@ c = cipherText
 c = e^k(m)  
  
  
-.Decryption 
-c = cipherText 
-e = function 
-k = key 
-m = plainText 
+.Decryption  
+c = cipherText   
+e = function  
+k = key  
+m = plainText   
  
-m = d^k(c) 
+m = d^k(c)  
 
 
 
