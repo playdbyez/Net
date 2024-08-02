@@ -43,15 +43,16 @@ and recording the ondulation  or observe  the timing behaviour in hope to decode
 Within symmetric ciphers we consider its size in bits.  
 
 I.E.  
-cipher key size = 64b its
-solution = 2^64 bits
-roughly = 2^88
+cipher key size = 64bits  
+solution = 2^64 bits  
+roughly = 2^88  
+  
+If the key manages a lookup table, we compare its character to  
+its possibility of being said character from the alphabet (26 letters) granting us a 26! factorial.  
+cipher[0] = 1 out of 26 letters of the alphabet  
+cipher[1] = 1 out of 25 letters of the alphabet  
+cipher[2] = 1 out of 24 letters of the alphabet ...  
+  
 
-If the key manages a lookup table, we compare its character to 
-its possibility of being said character from the alphabet (26 letters) granting us a 26! factorial.
-cipher[0] = 1 out of 26 letters of the alphabet
-cipher[1] = 1 out of 25 letters of the alphabet
-cipher[2] = 1 out of 24 letters of the alphabet ...
-
-
+  
 https://www.youtube.com/watch?v=wlSG3pEiQdc
