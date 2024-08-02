@@ -1,7 +1,7 @@
 
 [] Basic Symmetric Cipher []
 
-Cipher is a means of turning plaintext into ciphertext under the control of a key. 
+Cipher is a means of turning plaintext into ciphertext under the control of a key.  
 Within a symmetric scheme the key must be known by both communicating parties only. 
 
 Security of the cipher depends on how hard it is to perfrom an exhaustive key search against it. 
