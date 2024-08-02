@@ -34,15 +34,15 @@ of his own message directly from the admin.
 
 
 
-############::Implementation Attacks ::##############
+############::Implementation Attacks ::##############  
 A Side channel attack would consist of employing an osciloscope against a microprocessor's pins
-and recording the ondulation  or observe  the timing behaviour in hope to decode the key being used within the chip.
+and recording the ondulation  or observe  the timing behaviour in hope to decode the key being used within the chip.  
 
+  
+############::KeySearch::##############  
+Within symmetric ciphers we consider its size in bits.  
 
-############::KeySearch::############## 
-Within symmetric ciphers we consider its size in bits.
-
-I.E.
+I.E.  
 cipher key size = 64b its
 solution = 2^64 bits
 roughly = 2^88
