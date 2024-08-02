@@ -1,34 +1,34 @@
 
 [] Basic Symmetric Cipher []
 
-Cipher is a means of turning plaintext into ciphertext under the control of a key.
-Within a symmetric scheme the key must be known by both communicating parties only.
+Cipher is a means of turning plaintext into ciphertext under the control of a key. 
+Within a symmetric scheme the key must be known by both communicating parties only. 
 
-Security of the cipher depends on how hard it is to perfrom an exhaustive key search against it.
-Symmetric schemes usually try to hide the underlying statistics of the language used within them.
-Since it is possible to turn one plaintext into two ciphers or more, the ammount of ciphers present must be bigger or equal to the mount of plaintext characters.
-Because it is possible to have used a different key per character, the key length must be bigger or equal to the ammount of ciphers
+Security of the cipher depends on how hard it is to perfrom an exhaustive key search against it. 
+Symmetric schemes usually try to hide the underlying statistics of the language used within them. 
+Since it is possible to turn one plaintext into two ciphers or more, the ammount of ciphers present must be bigger or  equal to the mount of plaintext characters. 
+Because it is possible to have used a different key per character, the key length must be bigger or equal to the ammount of ciphers 
 
-.Encryption
-m = plainText
-e = function
-k = key
-c = cipherText
+.Encryption 
+m = plainText 
+e = function 
+k = key 
+c = cipherText 
  
-c = e^k(m)
+c = e^k(m) 
  
  
-.Decryption
-c = cipherText
-e = function
-k = key
-m = plainText
+.Decryption 
+c = cipherText 
+e = function 
+k = key 
+m = plainText 
  
-m = d^k(c)
+m = d^k(c) 
 
 
 
- ############::Chosen Plaintext Attack::############## 
+ ############::Chosen Plaintext Attack::##############  
 Consists of the attacker obtaining a cipher equivalent
 of his own message directly from the admin.
 
