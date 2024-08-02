@@ -54,3 +54,4 @@ cipher[1] = 1 out of 25 letters of the alphabet
 cipher[2] = 1 out of 24 letters of the alphabet ...
 
 
+https://www.youtube.com/watch?v=wlSG3pEiQdc
