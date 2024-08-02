@@ -1,7 +1,9 @@
 
-[] Shift Cipher 
+[] Shift Cipher []
+
 This cipher functions by shifting each character to 
 an equivalent cipher value to the right of its initial value
+The Caesar cipher is a shift cipher but its key is of value 3
 
 [] the max number of characters is the 26 letter alphabet [0 - 25]
 [] not computationally secure 
