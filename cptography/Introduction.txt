@@ -24,6 +24,8 @@ but with standardized algorithms, cipher-text, encrypt/decrypt keys
 
 <> Cryptography
 Building a secure algorithm.
+Complexity theory + Information theory
+
 > Symmetric Algorithms
 > Asymmetric Algorithms
 > Protocols
@@ -31,7 +33,7 @@ Building a secure algorithm.
 
 <> Cryptanalysis
 Deconstructing a secure algorithm.
-> Classical == Looking at the cipher as a blakbox, we an only infer and observe input and output with the help of a bruteforce vector, for example.
+> Classical == Looking at the cipher as a blackbox, we an only infer and observe input and output with the help of a bruteforce vector, for example.
 > Analytical == Inspecting the cipher's schematic, for example, letter frequencies are maintained
 
 
@@ -39,22 +41,28 @@ Deconstructing a secure algorithm.
 > BruteForce
 > Exhaustive KeySearch
 
+############::Cryptographic Protocols::############## 
+
+[1] Mutually trusting parties
+These types of protocols infer that both parties have the same security goals,
+they also assume that an adversary is external to the protocol.
+- Encryption
+- Hash functions
+- MACs
+- Digital Signatures
+
+[2] Mutually untrusting parties
+These assume that the parties involved have conflicting/different security goals
+The adversaies are parties within  the protocol.
+- Commitment Schemes
+- Oblivious Transfer
 
 
-############::KeySearch::############## 
-Within symmetric ciphers we consider its size in bits.
-and apply the FPGA based,cryptanalitical algorithm 'Copacobana'  (1 week)
 
-I.E.
-cipher key size = 64b its
-solution = 2^64 bits
-roughly = 2^88
 
-If the key manages a lookup table, we compare its character to 
-its possibility of being said character from the alphabet (26 letters) granting us a 26! factorial.
-cipher[0] = 1 out of 26 letters of the alphabet
-cipher[1] = 1 out of 25 letters of the alphabet
-cipher[2] = 1 out of 24 letters of the alphabet ...
+
+
+Keysearch on an FPGA based,cryptanalitical algorithm 'Copacobana' key searches can take up to 1 week
 Copacabana's max keysearch = 2^56
 
 
@@ -64,7 +72,7 @@ Copacabana's max keysearch = 2^56
 Operates on latters and its aimed at replacing every letter by a fixed ciphertext letter.
 
 //0Bruteforce
-E > T > A > I > O > N > S > H > R > D > L > U > C > M > F > Y > W > G > P > B > V > K > X > Q > J > Z
+
 
 >Letters have different frequencies in english
 >The frequency of plaintext letters  is preserved  in ciphertext
