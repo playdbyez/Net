@@ -1,5 +1,7 @@
 
+############::Letter Frequency Analysis ::##############
 [] Underlying Language Statistics []
 
-English
+- English
 
+E > T > A > I > O > N > S > H > R > D > L > U > C > M > F > Y > W > G > P > B > V > K > X > Q > J > Z
