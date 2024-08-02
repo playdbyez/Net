@@ -3,6 +3,15 @@ Operates on latters and its aimed at replacing every letter by a fixed ciphertex
 Thus it functions by mapping the alphabet text to a random permutation of characters.
 Not a computationally secure system.
 
+
+- Caesar Cipher
+- Monoalphabetic Cipher
+- Playfair Cipher
+- Polyalphabetic Ciphers
+- One-Time Pad
+
+
+
  CRYPTOGRAPHY
 
 ### Mono-alphabetic version
