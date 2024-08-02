@@ -7,7 +7,7 @@ Within a symmetric scheme the key must be known by both communicating parties on
 Security of the cipher depends on how hard it is to perfrom an exhaustive key search against it.
 Symmetric schemes usually try to hide the underlying statistics of the language used within them.
 Since it is possible to turn one plaintext into two ciphers or more, the ammount of ciphers present must be bigger or equal to the mount of plaintext characters.
-Because it is possible to have used a different key per character, the key length mut be bigger or equal to the ammount of ciphers
+Because it is possible to have used a different key per character, the key length must be bigger or equal to the ammount of ciphers
 
 .Encryption
 m = plainText
@@ -26,3 +26,6 @@ m = plainText
  
 m = d^k(c)
 
+ >> Chosen Plaintext Attack
+           Consists of the attacker obtaining a cipher equivalent
+           of his own message directly from the admin.
