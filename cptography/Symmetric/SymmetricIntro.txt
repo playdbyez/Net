@@ -1,0 +1,94 @@
+
+[] Symmetric Ciphering []
+
+
+.Encryption  
+m = plainText.priv  
+e = function.pub  
+k = random bitstream.priv  
+c = cipherText.pub  
+ 
+c = e^k(m)  
+m = 110010101  (405)
+k = 101001110  (334)
+c = m ⊕ k
+c = 011011011  (219)
+
+ 
+.Decryption  
+c = cipherText   
+e = function  
+k = key  
+m = plainText   
+ 
+m = d^k(c)  
+c = 011011011 (m)
+k = 101001110 (§)
+m = c ⊕ k
+m = 110010101 (Ê)
+
+
+> Cipher is a means of turning plaintext into ciphertext under the control of a key.  
+
+> Within a symmetric scheme the key must be known by both communicating parties only. 
+
+> The simplest and hence fastest computational operation is ⊕.
+
+> Within symmetric ciphers we consider its size in bits.  
+
+> Security of the cipher depends on how hard it is to perfrom an exhaustive key search against it.  
+
+> Symmetric schemes usually try to hide the underlying statistics of the language used within them.  
+
+> Since it is possible to turn one plaintext into two ciphers or more, the ammount of ciphers present must be bigger or  equal to the mount of plaintext characters,  
+  and because it is possible to have used a different key per character, the key length must be bigger or equal to the ammount of cipher characters.  
+
+> A typical approach is to first us a public key scheme to determine session keys/ message keys
+  then encrypt communication via either a stream or block cipher.
+
+> A bulk cipher is a speed oriented cipher of the symmetric variety, namely stream ciphers and block ciphers.
+> Bulk ciphers are broken either through:
+   - Passive Attack
+           >> Aimed at either recoverin the key or decrypting parts of the message
+           >> Only allowed to listen to encrypted transmissions (traffic analysis)
+           >> Easier to mount
+
+   - Active Attack
+           >> Allowed to insert and deleteme messages or replay them (insertion attack)
+           >> Easily detectable
+
+
+
+
+
+
+ ############::Chosen Plaintext Attack::##############  
+Consists of the attacker obtaining a cipher equivalent
+of his own message directly from the admin.
+
+
+
+############::Insertion Attack::##############  
+
+
+
+
+############::Implementation Attacks ::##############  
+A Side channel attack would consist of employing an osciloscope against a microprocessor's pins
+and recording the ondulation  or observe  the timing behaviour in hope to decode the key being used within the chip.  
+
+  
+############::KeySearch::##############   
+cipher key size = 64bits  
+solution = 2^64 bits  
+roughly = 2^88  
+  
+If the key manages a lookup table, we compare its character to  
+its possibility of being said character from the alphabet (26 letters) granting us a 26! factorial.  
+cipher[0] = 1 out of 26 letters of the alphabet  
+cipher[1] = 1 out of 25 letters of the alphabet  
+cipher[2] = 1 out of 24 letters of the alphabet ...  
+  
+
+  
+https://www.youtube.com/watch?v=wlSG3pEiQdc
