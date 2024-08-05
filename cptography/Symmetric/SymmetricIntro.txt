@@ -5,16 +5,12 @@
 .Encryption  
 m = plainText.priv  
 e = function.pub  
-k = random bitstream.priv  
+k = key.priv  
 c = cipherText.pub  
  
 c = e^k(m)  
-m = 110010101  (405)
-k = 101001110  (334)
-c = m ⊕ k
-c = 011011011  (219)
 
- 
+
 .Decryption  
 c = cipherText   
 e = function  
@@ -22,10 +18,7 @@ k = key
 m = plainText   
  
 m = d^k(c)  
-c = 011011011 (m)
-k = 101001110 (§)
-m = c ⊕ k
-m = 110010101 (Ê)
+
 
 
 > Cipher is a means of turning plaintext into ciphertext under the control of a key.  
