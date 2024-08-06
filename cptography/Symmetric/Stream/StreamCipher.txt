@@ -1,31 +1,31 @@
 
 [] Stream Cipher []
 
-This cipher takes a stream of bits and encrypts them individually (bit-by-bit).
+.Encryption  
+c = m ⊕ k
 
-The cipher is obtained from the plaintext by combining it with a pseudorandom stream of keys.
+m = plainText.priv  
+k = key + keystream generator.priv  
+e = function.pub  
+c = cipherText.pub  
+ 
+m = 1 1 0 0 1 0 1 0 1  [405 decimal]
+k = 1 0 1 0 0 1 1 1 0  [334 decimal]
 
-Natural generalizaation of the shift cipher.
-
-Loosely based on the One-Time Pad cipher's concept of perfect security.
-
-Unlike blocks, it is simple to implement in applications where plaintext comes 
-in unknowable lengths like a wireless connection.
-
-
-
-> symmetric encryption
-> low computing complexity requirements
-> hardware centric
-> faster than block ciphers
-> used in GSM when encrypting rings into a relay
-> combining operation is usually XOR
+c = 0 1 1 0 1 1 0 1 1  [219 decimal]
 
 
 
+.Decryption  
+m = c ⊕ k  
+
+c = 0 1 1 0 1 1 0 1 1  [DB  hex]
+k = 1 0 1 0 0 1 1 1 0  [14E hex]
+
+m = 1 1 0 0 1 0 1 0 1  [195 hex]
 
 
-### Formula ###
+
 Formula Index :
 i = increasing variable (i++)
 Y1, Y2, Y3, ... = bits
@@ -40,9 +40,13 @@ d(...)         = Decrypts on ...
 > Stream Decryption Operation <
 [ Xi = d(Yi) = Yi + Si mod2 ]
 
+
+
+
+
 // Why is decryption formula using addition ?
 Mod2 addition and subtraction are the same.
-Mod2 addition is the same as XOR operation
+Mod2 addition is the same as ⊕ operation
 
 .Example of removing 2Si
 Yi + Si mod2 
@@ -64,5 +68,46 @@ since a plain text zero has 50% of chance of being 1 or 0 when the key is applie
 
 Where do we get the key (Si) ?
 
+
+
+> If the same key is used repeatedly, it can reveal a relationship between messages.
+  Suppose Eve intercepts two messages:
+    c1 = m1 ⊕ k 
+    c2 = m2 ⊕ k 
+  A relationship between m1 and m2 can be determined via:
+    c1 ⊕ c2 = (m1 ⊕ k ) ⊕ (m2 ⊕ k) = m1 ⊕ m2
+
+
+
+
+> Symmetric primitive.
+
+> Low computing complexity requirements.
+
+> This cipher takes a stream of bits and encrypts them individually (bit-by-bit).
+  The cipher is then obtained from the plaintext by combining it with a pseudorandom stream of keys.
+
+> Combining operation is usually ⊕.
+
+> Hardware centric while also faster than block ciphers.
+
+> Simple to implement in applications where plaintext comes 
+  in unknowable lengths like a wireless connection.
+
+> Implemented in real-time audio, video and in GSM when encrypting calls into a relay.
+
+> Ideally, even if an attacker knows the first billion bits of the keystream k,
+  he's probability of guessing the next bit correctly should be no better than 1/2.
+
+> There is no error propagation for ciphertext bits altered while in transit.
+  If a single bit gets mangled by an attacker or poor signal, then only that
+  one bit will be affected upon decryption.
+
+> In case of the above, MACs wore designed specifically to minimise the mangling
+  of bits during transmission via stream ciphers.
+
+> Natural generalization of the shift cipher.
+
+> Loosely based on the One-Time Pad cipher's concept of perfect security.
 
 
