@@ -4,4 +4,63 @@
 
 - English
 
+
+FIRST-ORDER STATISTICS
+LETTER  --  Frequency (%)
+  A     --  8.2    
+  B     --  1.5
+  C     --  2.8
+  D     --  4.2
+  E     --  12.7
+  F     --  2.2
+  G     --  2.0
+  H     --  6.0
+  I     --  7.0
+  J     --  0.1
+  K     --  0.8
+  L     --  4.0
+  M     --  2.4
+  N     --  6.7
+  O     --  7.5
+  P     --  1.9
+  Q     --  0.1
+  R     --  6.0
+  S     --  6.3
+  T     --  9.0
+  U     --  2.8
+  V     --  1.0
+  W     --  2.4
+  X     --  0.1
+  Y     --  2.0
+  Z     --  0.1
+
+IN-ORDER OF MOST FREQUENT
+LETTER
 E > T > A > I > O > N > S > H > R > D > L > U > C > M > F > Y > W > G > P > B > V > K > X > Q > J > Z
+
+
+
+SECOND-ORDER STATISTICS 
+BIGRAM  --  Frequency (%)
+  TH    --  3.15   
+  HE    --  2.51
+  AN    --  1.72
+  IN    --  1.69
+  ER    --  1.54
+  RE    --  1.48    
+  ES    --  1.45
+  ON    --  1.45
+  EA    --  1.31
+  TI    --  1.28  
+  AT    --  1.24
+  ST    --  1.21
+  EN    --  1.20
+  ND    --  1.18
+
+IN-ORDER OF MOST FREQUENT
+TRIGRAM 
+THE > ING > AND> HER > ERE > ENT > THA > NTH > WAS > ETH > FOR
+
+
+
+www3.nd.edu/~busiforc/handouts/cryptography/Letter%20Frequencies.html
