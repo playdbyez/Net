@@ -81,17 +81,20 @@ Where do we get the key (Si) ?
 
 
 
-
-> Symmetric primitive.
-
-> Low computing complexity requirements.
-
 > This cipher takes a stream of bits and encrypts them individually (bit-by-bit).
   The cipher is then obtained from the plaintext by combining it with a pseudorandom stream of keys.
 
 > Combining operation is usually ⊕.
 
-> Hardware centric while also faster than block ciphers.
+> Fast implementation on hardware due to its per bit encryption while also faster than block ciphers.
+
+> Symmetric primitive.
+
+> Low computing complexity requirements.
+
+> Mathematical structure.
+
+> Maintains an internal state.
 
 > Simple to implement in applications where plaintext comes 
   in unknowable lengths like a wireless connection.
@@ -111,6 +114,13 @@ Where do we get the key (Si) ?
 > Natural generalization of the shift cipher.
 
 > Loosely based on the One-Time Pad cipher's concept of perfect security.
+
+> Modern implementations make use of Linear Feedback Shift Registers (LFSR)
+
+> Although frequently used in real-time voice and video, LFSR-based stream ciphers need to be augumented with a method of producing non-linear output.
+
+> LFSRs are essentially simple bit generators.
+
 
 > A key produced by a keystream generator is only secure if:
   - it has large linear complexity
