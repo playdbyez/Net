@@ -21,26 +21,29 @@ m = d^k(c)
 
 
 
-> Cipher is a means of turning plaintext into ciphertext under the control of a key.  
+> Ciphering is a means of turning plaintext into ciphertext under the 
+  control of a key.  
 
-> Within a symmetric scheme the key must be known by both communicating parties only. 
+> Within a symmetric scheme we considering the cipher's size in bits and 
+  the key must be known by both communicating parties only.
+  Sometimes two keys are employed, one for encryption and another for decryption.
+
+> Secrecy of the mesage depends on the secrecy of the key, thus they must change
+  on a per message or per session basis.
 
 > The simplest and hence fastest computational operation is ⊕.
 
-> Within symmetric ciphers we consider its size in bits.  
+> Security of the cipher depends on 
+  1. how hard it is to perfrom an exhaustive key search against it.  
+  2. how well hidden is the underlying statistics of the language used.  
 
-> Security of the cipher depends on how hard it is to perfrom an exhaustive key search against it.  
-
-> Symmetric schemes usually try to hide the underlying statistics of the language used within them.  
-
-> Since it is possible to turn one plaintext into two ciphers or more, the ammount of ciphers present must be bigger or  equal to the mount of plaintext characters,  
-  and because it is possible to have used a different key per character, the key length must be bigger or equal to the ammount of cipher characters.  
+> Since it is possible to turn one plaintext into two ciphers or more, the ammount of ciphers present must be bigger or  equal to the mount of plaintext characters,and because it is possible to have used a different key per character, the key length must be bigger or equal to the ammount of cipher characters. 
 
 > A typical approach is to first us a public key scheme to determine session keys/ message keys
   then encrypt communication via either a stream or block cipher.
 
 > A bulk cipher is a speed oriented cipher of the symmetric variety, namely stream ciphers and block ciphers.
-> Bulk ciphers are broken either through:
+  Bulk ciphers are broken either through:
    - Passive Attack
            >> Aimed at either recoverin the key or decrypting parts of the message
            >> Only allowed to listen to encrypted transmissions (traffic analysis)
@@ -49,6 +52,16 @@ m = d^k(c)
    - Active Attack
            >> Allowed to insert and deleteme messages or replay them (insertion attack)
            >> Easily detectable
+
+
+
+[] Design Goals [] 
+> Encryption and decryption functions should be public in order to ascertain that they are provably secure.
+> Computationally secure against ehxaustive key search.
+> Compromising some secrecy for efficiency since these are used for bulk encryption.
+> Reusable keys and short keys for long messages.
+> Ciphers should implement detection and recovery mechanisms against replay attacks.
+> Attackers should know some plain/cipher pairs associated with the key.
 
 
 
