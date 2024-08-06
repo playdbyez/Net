@@ -1,0 +1,22 @@
+[] Cryptoanalysis should require 2⁵⁶ to 2⁸⁰ operations
+    2⁵⁶ = 72057594037927936
+    2⁸⁰ = 1208925819614629174706176
+
+[] An infeasable ammount of operations is defined as 2¹²⁸
+    2¹²⁸ = 340282366920938463463374607431768211456
+
+[] Key size/length
+    the scientific number of bits within any given key
+
+[] Key space
+    The number of possible keys, usually represented as an exponent of 2
+
+[] For a set of Size N there are 2^N possible subsets
+
+[] 2⁴⁰⁰ is more than the number of atoms in the known universe
+
+[] In computer Science, quick is equal to a polynominal-time algorithm.
+  A polynominal-time algorithm's execution time is bound by  a polynominal function of the input size.
+  Proof of this assertion is found in calculous within L'Hospital Rule
+
+[] HASH = chop & mix
