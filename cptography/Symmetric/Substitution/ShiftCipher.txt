@@ -1,23 +1,28 @@
 
 [] Shift Cipher []
 
-This cipher functions by shifting each character to 
-an equivalent cipher value to the right of its initial value
-The Caesar cipher is a shift cipher but its key is of value 3
+> This cipher functions by shifting each character to 
+  an equivalent cipher value to the right of its initial value
 
-[] the max number of characters is the 26 letter alphabet [0 - 25]
-[] not computationally secure 
+> Historically the Caesar cipher was a shift cipher with a key value of 3
 
+> Not computationally secure since its a historical cipher.
 
->>CRYPTOGRAPHY
+> The max number of characters is the 26 letter alphabet [0 - 25]
+
  
 .Encryption
 m = Hello
-e =  3>>
+e =  3>>>
 k =  3
 c = Khoor
- 
- 
+
+**visualization**
+A B C ...
+C D E ...
+
+
+
 CRYPTOANALYSIS 
  
 [] Assuming all characters have the same key cipher
@@ -30,6 +35,7 @@ Try each key value within the cipher's key length until the most likely result i
 
 
 ## Method 2.
+Histogram
 Comparing letter frequencies per char vs the underlying language's general letter frequency
 in order to find the most consistent value of shifts.
  
@@ -38,7 +44,7 @@ in order to find the most consistent value of shifts.
 
 
 ## Method 3.
-Statistical Distance's 
+Statistical Distance 
 Compare the cipher vs general letter distribution 
 through the total variation distance formula that requires two variables for iterating through our two sets, in order 
 to find the smallest distance possible, and said distance will indicate the most likely value of shifts
