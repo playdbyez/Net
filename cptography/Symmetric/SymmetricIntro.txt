@@ -42,6 +42,9 @@ m = d^k(c)
 > A typical approach is to first us a public key scheme to determine session keys/ message keys
   then encrypt communication via either a stream or block cipher.
 
+> When implementing any sort of encryption along a channel, its necessary to 
+  first determine randomness of the cypher key between both end-points.
+
 > A bulk cipher is a speed oriented cipher of the symmetric variety, namely stream ciphers and block ciphers.
   Bulk ciphers are broken either through:
    - Passive Attack
