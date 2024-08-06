@@ -1,10 +1,9 @@
 
 ############ Factoring ################
 
-Factoring is the process of finding factors to said value.
-Based off a single known value.
-Un-multiplying
-Essential when analysing publick key systems.
+Factoring is the process of finding factors to a single known value.
+Essentially the process of un-multiplying a value.
+Necessary when analysing publick key systems.
 Each method of factoring varies in efficiency depending on the size of the input.
 
 
