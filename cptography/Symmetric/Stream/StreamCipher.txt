@@ -15,7 +15,6 @@ k = 1 0 1 0 0 1 1 1 0  [334 decimal]
 c = 0 1 1 0 1 1 0 1 1  [219 decimal]
 
 
-
 .Decryption  
 m = c ⊕ k  
 
@@ -70,6 +69,9 @@ Where do we get the key (Si) ?
 
 
 
+
+
+
 > If the same key is used repeatedly, it can reveal a relationship between messages.
   Suppose Eve intercepts two messages:
     c1 = m1 ⊕ k 
@@ -110,4 +112,8 @@ Where do we get the key (Si) ?
 
 > Loosely based on the One-Time Pad cipher's concept of perfect security.
 
+> A key produced by a keystream generator is only secure if:
+  - it has large linear complexity
+  - it has pseudo-random properties proven by passing a number of statistical random number tests.
+  - N ...
 
