@@ -32,3 +32,53 @@ for (i = 0 ; i < N; i++)
       {  if (j != i){delete F[i]} }
     }
 }
+
+
+#################################################################
+
+### [] Trial Division [] ###
+FACTORIZATION??
+
+[] Determines if N is prime or composite
+[] Only works if N doest not have a perfect square of a single value,
+   otherwise the integer would have an equal number for both factors.
+Perfect square :
+a² = N
+
+[] Best method for when N =< 10¹²
+[] N being a random number
+[] First Check if N is even through dividing it by 2
+[] If a divisor is found from 3 to √N then N is composite
+[] Only consider odd, divisors
+
+
+N = 49
+if (N / 2 == even) {N is composite}
+for ( i = 3 ; i < sqrt(N); i++)
+{
+  if (i != even)
+    {  if (N / i != a fractional value) 
+          { N is composite }
+    }
+}
+else {N is prime}
+
+#### ALTERNATIVE #####
+
+int e = 0;
+for ( i = 2 ; i < sqrt(N); i++)
+{
+  if (N mod(i) == 0)
+  {  
+      while (N mod(i) == 0)
+      {
+       e++;
+       N = N/i;
+      }
+  printf ("Factors %d and %d = N", i, e);
+  }
+}
+
+#################################################################
+
+
