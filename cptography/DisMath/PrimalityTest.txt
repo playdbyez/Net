@@ -37,7 +37,6 @@ for (i = 0 ; i < N; i++)
 #################################################################
 
 ### [] Trial Division [] ###
-FACTORIZATION??
 
 [] Determines if N is prime or composite
 [] Only works if N doest not have a perfect square of a single value,
@@ -63,21 +62,6 @@ for ( i = 3 ; i < sqrt(N); i++)
 }
 else {N is prime}
 
-#### ALTERNATIVE #####
-
-int e = 0;
-for ( i = 2 ; i < sqrt(N); i++)
-{
-  if (N mod(i) == 0)
-  {  
-      while (N mod(i) == 0)
-      {
-       e++;
-       N = N/i;
-      }
-  printf ("Factors %d and %d = N", i, e);
-  }
-}
 
 #################################################################
 
