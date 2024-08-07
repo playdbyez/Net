@@ -35,6 +35,7 @@ However n-1 is an unoptimal value to increment to.
 
 ## Trial Division
 Try every prime number up to √N to see if it is a factor of N
+ [] N is a known random number
  [] exponent time algorithm
  [] dark age method of factoring
  [] best method for numbers less than 10¹² = 1000000000000
@@ -59,7 +60,7 @@ if (N mod(i) == 0)
  [] Only works on values that do not have a perfect square number
  [] A pefect square is when both factors to N are the same number and hence, said squaring factor is equal to N
     a² = N
-[] factoring is of coprime factors, int i should be only output if it is prime. 
+[] If factoring is of coprime factors, int i should be used for calculation if it is prime. 
 
 
 [1] Trial Division factoring logic
