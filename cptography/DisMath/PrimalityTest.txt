@@ -20,14 +20,15 @@ for (i = 2 ; i < N; i++)
 
 Then for each element within F,
 all its divisors get eliminated from the list
-until all remeaining values within the set are prime
+until all remaining values within the set are prime
 
 N = 15
-F[14] = {1,2,3,4,5,6,7,8,9,10,11,12,13,14,15}
+F[13] = {2,3,4,5,6,7,8,9,10,11,12,13,14,15}
 
 for (i = 0 ; i < N; i++)
 {  for (j = 0 ; j < N; j++)
     {
-      if (F[j] / F [i] != a fraction) {delete F[i]} 
+      if (F[j] / F[i] != a fractional value ) 
+      {  if (j != i){delete F[i]} }
     }
 }
