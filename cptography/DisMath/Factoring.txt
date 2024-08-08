@@ -36,10 +36,16 @@ However n-1 is an unoptimal value to increment to.
 ## Trial Division
 Try every prime number up to √N to see if it is a factor of N
  [] N is a known random number
- [] exponent time algorithm
  [] dark age method of factoring
  [] Best method for when N =< 10¹² = 1000000000000
-
+ [] time complexity of this algorithm is exponential 
+    O(√N) = O(2^log2N/2) = Ln (1,1)
+ [] Only works if N doest not have a perfect square of a single value,
+    otherwise the integer would have an equal number for both factors.
+ Perfect square :
+ a² = N
+ [] If factoring is of coprime factors, 
+    then int i should only be used for calculation if it is prime. 
 
 int e  = 0;
 for ( i = 2; i < √N; i++)
@@ -54,13 +60,6 @@ if (N mod(i) == 0)
   printf("factors %d and %d", i, e);
   }
 }
-
-
- [] time complexity is exponential O(√N) = O(2^log2N/2) = Ln (1,1)
- [] Only works on values that do not have a perfect square number
- [] A pefect square is when both factors to N are the same number and hence, said squaring factor is equal to N
-    a² = N
-[] If factoring is of coprime factors, int i should be used for calculation if it is prime. 
 
 
 [1] Trial Division factoring logic
