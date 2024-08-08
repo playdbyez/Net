@@ -39,12 +39,6 @@ for (i = 0 ; i < N; i++)
 ### [] Trial Division [] ###
 
 [] Determines if N is prime or composite
-[] Only works if N doest not have a perfect square of a single value,
-   otherwise the integer would have an equal number for both factors.
-Perfect square :
-a² = N
-
-[] Best method for when N =< 10¹²
 [] N being a random number
 [] First Check if N is even through dividing it by 2
 [] If a divisor is found from 3 to √N then N is composite
