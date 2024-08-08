@@ -38,7 +38,7 @@ Try every prime number up to √N to see if it is a factor of N
  [] N is a known random number
  [] exponent time algorithm
  [] dark age method of factoring
- [] best method for numbers less than 10¹² = 1000000000000
+ [] Best method for when N =< 10¹² = 1000000000000
 
 
 int e  = 0;
