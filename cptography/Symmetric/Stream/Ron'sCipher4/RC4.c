@@ -1,13 +1,20 @@
+//gcc 7.4.0
+
 #include  <stdio.h>
 #include <math.h>
 
 int main()
 {
-    // 40 bit message
-    int m = 1099511627776;
-    //Message's binnary length is 40 with a 41 digits number
+ 
+    // 2⁴⁰ =  1099511627776
+    // 40 bit key
+    //int k[40] = {1,0,9,9,5,1,1,6,2,7,7,7,6};
+    //Key's binnary length is 40 
+    //Key's 41 digit binary value
     //"10000000000000000000000000000000000000000";
     
+    
+    int k [8]= {1,2,3,4,5,6,7,8};
    int s[256];
     
     // Array S initiallization
@@ -20,8 +27,24 @@ int main()
         if (i % 16 == 0 && i != 0){printf("\n");} 
         printf("%3X", s[i]); 
     }
-
-  
+    
+    
+    //KSA
+    // is wrong cuz i didnt implement the key value
+    int j = 0;
+    int p = 0;
+    for (int i = 0; i < 256; i++)
+    { 
+        j += s[i];
+        j = j % 256;
+        
+        p = s[i];
+        s[i] = s[j];
+        s[j] = p;
+        
+    }
+    
+    
 
 }
 
