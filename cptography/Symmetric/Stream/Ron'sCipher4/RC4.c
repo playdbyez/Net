@@ -1,4 +1,4 @@
-//gcc 7.4.0
+
 
 #include  <stdio.h>
 #include <math.h>
@@ -13,30 +13,30 @@ int main()
     //Key's 41 digit binary value
     //"10000000000000000000000000000000000000000";
     
-    
+    char *m = "helloworld";
     int k [8]= {1,2,3,4,5,6,7,8};
    int s[256];
-    
+
+ // malloc to one bit per value [TODO] 
+    int *ck; 
+    printf("%d\n\n", strlen(m));
     // Array S initiallization
     for (int i = 0; i < 256; i++)
     {  s[i] = i; }
     
     // Array S visualization
-    for (int i = 0; i < 256; i++)
-    { 
-        if (i % 16 == 0 && i != 0){printf("\n");} 
-        printf("%3X", s[i]); 
-    }
     
     
     //KSA
-    // is wrong cuz i didnt implement the key value
+    //[OK]
     int j = 0;
     int p = 0;
+    int n = 0;
     for (int i = 0; i < 256; i++)
     { 
-        j += s[i];
+        j += s[i] + k[n % 8];
         j = j % 256;
+        n++;
         
         p = s[i];
         s[i] = s[j];
@@ -45,7 +45,20 @@ int main()
     }
     
     
+    //PRGA
+    
+    
+    
+    
 
+    for (int i = 0; i < 256; i++)
+    { 
+        if (i % 16 == 0 && i != 0){printf("\n");} 
+        printf("%3X", s[i]); 
+    }
+    
+    
+    
 }
 
 
