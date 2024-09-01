@@ -8,11 +8,11 @@ int main()
 {
     // highest vallue of a 40 bit key
     // 2⁴⁰ =  1099511627776
+    //Key's 41 digit bit count
+    //"10000000000000000000000000000000000000000";
     
     //int k[13] = {1,0,9,9,5,1,1,6,2,7,7,7,6};
-    //Key's binnary length is 40 
-    //Key's 41 digit binary value
-    //"10000000000000000000000000000000000000000";
+
     
     char *m = "HELLOWORLD";
     int k [8]= {1,2,3,4,5,6,7,8};
