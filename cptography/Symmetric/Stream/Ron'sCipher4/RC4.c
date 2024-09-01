@@ -2,41 +2,43 @@
 
 #include  <stdio.h>
 #include <math.h>
+#include  <string.h>
 
 int main()
 {
- 
+    // highest vallue of a 40 bit key
     // 2⁴⁰ =  1099511627776
-    // 40 bit key
-    //int k[40] = {1,0,9,9,5,1,1,6,2,7,7,7,6};
+    
+    //int k[13] = {1,0,9,9,5,1,1,6,2,7,7,7,6};
     //Key's binnary length is 40 
     //Key's 41 digit binary value
     //"10000000000000000000000000000000000000000";
     
-    char *m = "helloworld";
+    char *m = "HELLOWORLD";
     int k [8]= {1,2,3,4,5,6,7,8};
    int s[256];
 
- // malloc to one bit per value [TODO] 
-    int *ck; 
-    printf("%d\n\n", strlen(m));
+ 
+    int ck [strlen(m)]; 
     // Array S initiallization
     for (int i = 0; i < 256; i++)
     {  s[i] = i; }
     
     // Array S visualization
-    
+      for (int i = 0; i < 256; i++)
+    { 
+        if (i % 16 == 0 && i != 0){printf("\n");} 
+        printf("%3X", s[i]); 
+    }
     
     //KSA
-    //[OK]
     int j = 0;
     int p = 0;
-    int n = 0; // mod keylength
+     // i mod keylength
     for (int i = 0; i < 256; i++)
     { 
-        j += s[i] + k[n % 8];
+        j += s[i] + k[i % 8];
         j = j % 256;
-        n++;
         
         p = s[i];
         s[i] = s[j];
@@ -46,21 +48,40 @@ int main()
     
     
     //PRGA
+    j = 0;
+    p = 0;
+    int t = 0;
+    int n = 0;
+    for (int i = 1; i <= strlen(m); i++)
+    {
+        j += s[i];
+        j = j%256;
+        
+        p = s[i];
+        s[i] = s[j];
+        s[j] = p;
+        
+        t = s[(s[i] + s[j]) % 256];
+        ck [n] = t;
+        n++;
+    }
     
+    printf("plainText: ");
+    for (int i = 0; i < strlen(m); i ++)
+    {printf("%3C",m[i]);}
     
+    printf("\n");
     
+    printf("cipherText: ");
+    for (int i = 0; i < strlen(m); i ++)
+    {printf("%3X", m[i] ^ ck[i]);}
     
 
-    for (int i = 0; i < 256; i++)
-    { 
-        if (i % 16 == 0 && i != 0){printf("\n");} 
-        printf("%3X", s[i]); 
-    }
+   
     
     
     
 }
-
 
 
  /* 
