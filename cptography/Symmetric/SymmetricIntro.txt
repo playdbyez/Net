@@ -76,6 +76,10 @@ Consists of the attacker obtaining a cipher equivalent
 of his own message directly from the admin.
 
 
+############::Known-Plaintext Attack::##############  
+- cribb dragging
+
+
 
 ############::Insertion Attack::##############  
 
