@@ -43,6 +43,7 @@ for (i = 0 ; i < N; i++)
 [] First Check if N is even through dividing it by 2
 [] If a divisor is found from 3 to √N then N is composite
 [] Only consider odd, divisors
+[] Does not produce a certificate of primality for N even when N turns out to be prime.
 
 
 N = 49
