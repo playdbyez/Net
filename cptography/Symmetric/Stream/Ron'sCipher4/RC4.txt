@@ -22,14 +22,12 @@ Encryption Stages
 2. Pseudo-random generation algorithm (PRGA)
 3. Encryption 
 
-array S[256 bytes]
-array key []
-keystream K []
+
 
 ENCRYPTION CODE
 #################################################################
 #include  <stdio.h>
-#include <math.h>
+#include  <math.h>
 #include  <string.h>
 
 int main()
