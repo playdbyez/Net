@@ -57,7 +57,7 @@ Y  = Probability of  cipher
 V  = Distance between X and Y
 
 TOTAL VARIATION DISTANCE FORMULA:
-△[X, Y] =   1/2 Σ (u∈V) | ᴾᴿx<-D1 [ X = u] - ᴾᴿY<-D2 |
+△[X, Y] =   1/2 Σ (u∈V) | ᴾᴿx<-D1 [ X = u] - ᴾᴿY<-D2 [ Y = u]|
 
 OUTPUT CHART
 K             △ (Xk, Yk)
