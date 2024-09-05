@@ -85,11 +85,11 @@ else {N is prime}
  
 [ ] Example [ ]
    After considering an unknown value x of 1024 bits in length we can estimate its probability of being prime.
+
    1. convert bit length to decimal:
    1024 bits = 2¹⁰²⁴ decimal
    2¹⁰²⁴ == 1.7976931e+308
- 
-   x <= 2¹⁰²⁴
+   We know that x <= 2¹⁰²⁴
  
   2. Natural logarithm of x:
     since e⁷⁰⁹ = 1.7976931e+308
@@ -103,6 +103,14 @@ else {N is prime}
     So on average we'd have to select 354 incorrect odd values of equal
     or lower decimal value to 2¹⁰²⁴ until we find a value that is prime.
     Thus, the average chance of hitting a prime out of 709 is 354.
+
+ 4. Ammount of primes less than x
+    π(X) = 2532737276149275690533962104853884568608941520911959662019257651653709677810526787761279107283257865122217653212028049768312
+           2606647500475495249629981525379883678323159122915430772839329573497190058599226452499689281701076144702192417433334528073519
+           4239876641837175972509039658201955663559918156457007482979.61965794070036410356
+   
+    Thus 1% of x / π(X) equals roughly 0.14088818759066220235%  of all values from 0 to x 
+
 
 ##############################################################################################
 
