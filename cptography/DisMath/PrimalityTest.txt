@@ -59,4 +59,49 @@ else {N is prime}
 
 #################################################################
 
+## [] Prime Number Theorem [] ##
+ 
+[] This function accounts for how many primes less than X
+[] The output is an accurate estimate only
+[] Values become more precise as the values become bigger and approach infinity. 
+ 
+[] Natural Logarithm
+   The output is the natural log of X based on the formula.
+      ln(X) == logₑ(X) == log(X)
+   where the natural log e = 2.718281828459
+   Hence, ln(X) can be calculated by using e as the base powered to some factor Y, until the output is equal to X.
+
+
+[] Density 
+   The density of primes within the range of X 
+   will hint at the probability that X is itself a prime.
+   Z = 1/ln(X) 
+ 
+[] Prime Number Theorem
+   By employing the use of both functions above we 
+   are able to infer on the amount of primes less than X.
+  π(X) = X / ln (X)
+ 
+[ ] Example [ ]
+   After considering an unknown value x of 1024 bits in length we can estimate its probability of being prime.
+   1. convert bit length to decimal:
+   1024 bits = 2¹⁰²⁴ decimal
+   2¹⁰²⁴ == 1.7976931e+308
+ 
+   x <= 2¹⁰²⁴
+ 
+  2. Natural logarithm of x:
+    since e⁷⁰⁹ = 1.7976931e+308
+    then ln(2¹⁰²⁴) = 709.7827128739912
+ 
+  3. Density   
+    1 / 709 = 0.14%
+    This result indicates that the chance that x is a prime is about 0.1%
+ 
+    709 / 2 = 354
+    So on average we'd have to select 354 incorrect odd values of equal
+    or lower decimal value to 2¹⁰²⁴ until we find a value that is prime.
+    Thus, the average chance of hitting a prime out of 709 is 354.
+
+##############################################################################################
 
