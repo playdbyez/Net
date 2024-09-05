@@ -112,3 +112,135 @@ p(P = m | C = c) = p(P = m) x p (C = c | P = m) / p(C = c)
 
 The main issue with a scheme with perfect secrecy as defined by Claude Shannon relates to key distribution issues,
 given that each key must be generated per message.
+
+
+ ########################### :: Probability :: #########################################
+We can compute the conditional of a likely character being represented by said cipher, given that we know that the order of the secrete keys vary based on a pre-discovered distribution probability of each key.
+Thus, previous knowledge of the encryption function and the probability distribution of each key within the set of keys and of each character within the message are required in order to piece some information about the message once the cipher is public.
+ 
+FORMULA
+ 
+PROABILITY
+p(P = m) = 0
+**probability of P being equal to m equals zero
+ 
+JOINT PROBABILITY DISTRIBUTION
+X and Y are random varibles
+for i and n >= 1
+for j and n >= 1
+rᵢⱼ = p (X = x[i] and Y = y[i])
+ 
+ 
+ 
+Previous knowledge parameters :
+Key space is K = {k1, k2, k3} with probability of being used per message character occurring at rate :
+p(K = k1) = 1/4 of the time
+p(K = k2) = 1/2 of the time
+p(K = k3) = 1/4 of the time
+ 
+Message space is P = {a,b,c,d} with probability of being used as the message character occurring at rate :
+p(P = a) = 1/4 of the time
+p(P = b) = 3/10 of the time
+p(P = c) = 3/20 of the time
+p(P = d) = 3/10 of the time
+ 
+Cipher text is  C = {1,2,3,4} with the encryption function of combinations occurring at rate :
+      a    b    c    d
+k1    3    4    2    1
+k2    3    1    4    2
+k3    4    3    1    2
+ 
+ 
+The above gives us the means to calculate the probability distribution per cipher character via the formula bellow:
+p(C=c) = Σ(k:c∈C(k)) p(K =k) x p(P = dₖ(c)) 
+ 
+Hence
+p(C = 1) = p(k1) x p(d) + p(k2) x p(b) + p(k3) x p(c) = 0.2625
+p(C = 2) = p(k1) x p(c) + p(k2) x p(d) + p(k3) x p(d) = 0.2625
+p(C = 3) = p(k1) x p(a) + p(k2) x p(a) + p(k3) x p(b) = 0.2625
+p(C = 4) = p(k1) x p(b) + p(k2) x p(c) + p(k3) x p(a) = 0.2125
+ 
+ 
+[Fortification Method]
+From a defense point of view that knows the encryption table, 
+given said input m, what is the probability of a specific c being the output cipher?
+FORMULA
+p(C=c | P=m) =  Σ(k:m=dₖ(c)) p(K =k)
+ 
+RESULTS
+p(C=1 | P=a ) = 0
+p(C=1 | P=b ) = p(k1) = 0.5
+p(C=1 | P=c ) = p(k3) = 0.25
+p(C=1 | P=d ) = p(k1) = 0.25
+ 
+p(C=2 | P=a ) = 0
+p(C=2 | P=b ) = 0
+p(C=2 | P=c ) = p(k1) = 0.25
+p(C=2 | P=d ) = 0.75
+ 
+p(C=3 | P=a ) = p(k1) + p (k2) = 0.75
+p(C=3 | P=b ) = p(k3) = 0.25
+p(C=3 | P=c ) = 0
+p(C=3 | P=d ) = 0
+ 
+p(C=4 | P=a ) = p(k3) = 0.25
+p(C=4 | P=b ) = p(k1) = 0.25
+p(C=4 | P=c ) = p(k2) = 0.25
+p(C=4 | P=d ) = 0
+ 
+ 
+ 
+[Estimation Method]
+From an attacking point of view that knows the encryption table, 
+given that c is the cipher character then what could m probably be?
+FORMULA
+p(P=m | C=c) = p(P=m) x p(C=c| P=m) / p(C=c)
+ 
+RESULTS
+p(P=a | C=1) = 0
+p(P=a | C=2) = 0
+p(P=a | C=3) = 0.714
+p(P=a | C=4) = 0.294
+ 
+p(P=b | C=1) = 0.143
+p(P=b | C=2) = 0
+p(P=b | C=3) = 0.286
+p(P=b | C=4) = 0.352
+ 
+p(P=c | C=1) = 0.571
+p(P=c | C=2) = 0.143
+p(P=c | C=3) = 0
+p(P=c | C=4) = 0.352
+ 
+p(P=d | C=1) = 0.286
+p(P=d | C=2) = 0.857
+p(P=d | C=3) = 0
+p(P=d | C=4) = 0
+
+
+ 
+############  Ciphertext Only Attacks ######
+## Sinkov ##
+When facing substitution ciphers, it is important to be able to distinguish natural language from noise. 
+For said purpose we can compute the Sinkov Statistic through the following:
+ 
+for i = A ... Z
+Set F[i] = underlying language frequency
+Set n[i] = ciphertext frequency
+S = likelyhood that said text is an extract from a natural language
+ 
+FORMULA
+ 
+S = ᵢ₌ₐΣᶻ n[i] x F[i]
+
+
+## Repeat stream cipher messages ###
+If the same key is used repeatedly, it can reveal a relationship between messages.
+  Suppose Eve intercepts two messages:
+    c1 = m1 ⊕ k 
+    c2 = m2 ⊕ k 
+  A relationship between m1 and m2 can be determined via:
+    c1 ⊕ c2 = (m1 ⊕ k ) ⊕ (m2 ⊕ k) = m1 ⊕ m2
+
+
+#############################
