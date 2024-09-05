@@ -93,4 +93,9 @@ SETI@home
 
 
 
+> BOOK: Elementary Cryptanalysis: A Mathematical Approach
+
+
 https://pastebin.com/zbwY9PGZ
+
+
