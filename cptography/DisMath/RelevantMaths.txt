@@ -1,11 +1,11 @@
 
                       -Discrete Math
-                      					-Structures with a finite number of elements
-				                          (Boolean algebra, Set theory, Combinatronics)
+-Structures with a finite number of elements
+(Boolean algebra, Set theory, Combinatronics)
 
-                                                          -Continuous Math
-                                                          Real numbers and approximations
-                                                          ( Geometry, Calculous)
+-Continuous Math
+Real numbers and approximations
+( Geometry, Calculous)
 
 
 
@@ -95,6 +95,17 @@ x % y = x - (x/y) *y
 31, 37, 41, 43, 47, 53, 59, 61, 67, 71,
 73, 79, 83, 89, 97
 
+
+
+                                                        CARMICHAEL NUMBERS [3]
+
+561, 1105, 1729, ...
+
+[] false primes
+[] always odd
+[] always has at least 3 factors that are prime
+[] always square free
+[] if p divides a Carmichael N then p-1 divides N-1
 
 
 
@@ -360,6 +371,8 @@ Cn = Catalan[7]
 
 [] Parenthesis Positions
 ...
+
+
 
 
 
