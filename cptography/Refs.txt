@@ -45,6 +45,24 @@ https://www.youtube.com/watch?v=3R-n5UTuEzA
 https://www.youtube.com/watch?v=8TjYHK804mU
  
 
+/watch?v=Ic4BzVggNY8
+
+/watch?v=TxClRjnRNJw
+
+https://www.youtube.com/watch?v=ZFdsJ4a_3k8
+https://www.youtube.com/watch?v=QgHnr8-h0xI
+https://www.youtube.com/watch?v=9Q72dBsNIx8
+https://www.youtube.com/watch?v=LsewLHTAmsA
+https://www.youtube.com/watch?v=Ic4BzVggNY8
+https://www.youtube.com/watch?v=P4z3jAOzT9I
+https://www.youtube.com/watch?v=zNO4PTlg62k
+https://en.wikipedia.org/wiki/Comparison_of_cryptography_libraries
+geeksforgeeks.org/how-to-express-a-number-as-a-power-of-2/
+ 
+https://www.youtube.com/watch?v=cU31KavBCM4
+https://www.youtube.com/watch?v=3R-n5UTuEzA
+ 
+
 ########################'############# # RESOURCES # ###########'############################
 www.decode.fr
 // Cipher database
@@ -72,3 +90,7 @@ www.openssl.org/docs/
 
 SETI@home
 //Joint computing over the net
+
+
+
+https://pastebin.com/zbwY9PGZ
