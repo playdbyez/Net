@@ -61,7 +61,14 @@ I.E : "Now is 12AM andwe will meet in 20 hrs"
 resulting in an absolute value of "we will meet at hours 32"
 resulting in an algebraic value based on modulus-24 value of "we will meet at 8AM the next day"
 
-
+[] Particular to public key cryptosystems.
+ 
+[] When used within cryptography the modulus parameter is always positive and returns
+   the smallest non-negative value equal to the argument to modulo N.
+ 
+[]  Values a and b are "congruent modulo N" if, 
+    within said equation modulus N divides b-a
+	a = b (mod N)
 
 
 
@@ -87,8 +94,6 @@ x % y = x - (x/y) *y
 2, 3, 5, 7, 11, 13, 17, 19, 23, 29,
 31, 37, 41, 43, 47, 53, 59, 61, 67, 71,
 73, 79, 83, 89, 97
-
-
 
 
 
@@ -221,7 +226,35 @@ include all natural numbers forming an 'equivalence class' modulo 9
     Sets are generally used in a relational database, a set is an unordered collection of unique values
     Sets usually come in pairs
 
+
+[Types of sets]
+
+ ℕ  = a set of natural numbers            ( 0 to 9)
+ ℤ  = a set of integers                   (-9 to 9)
+ ℤ+ = a set of only positive integers     (0 to infinity)
+ Q  = a set of quotient numbers           ( (1.5 ≡ 3/2) = (Q ≡ p/q) )
+
+
+[] A 'group' is a set with an operation on its elements which:
+	> is closed
+	> has an identity
+	> Every element has an inverse
+ 
+[] Any set that is a group which is commutative can be called  an 'abelian group'
+ 
+[] Groups under addition of the kind bellow have the identity 0
+	> integers (ℤ, +)
+	> reals    (ℝ, +)
+	> complex  (ℂ, +)
+
+
+...etc
+
+
+
 #######[Symbols]##############################################################
+
+( #S ) == sizeof(S)
 
 ( ∈ ) == element ... is whithin set ...
 I.e.  x∈Z == element x is within a set of integers
@@ -241,17 +274,14 @@ I.e.  13≡4(mod 9) == 13 is equivalent to 4 (%9)
 ( ω ) ==  smallest infinite ordinal number
 
 ...etc
-#######################################################################
-[Types of sets]
 
- ℕ  = a set of natural numbers            ( 0 to 9)
- ℤ  = a set of integers                   (-9 to 9)
- ℤ+ = a set of only positive integers     (0 to infinity)
- Q  = a set of quotient numbers           ( (1.5 ≡ 3/2) = (Q ≡ p/q) )
+#######[Representations]###
+
+( ℤₙ ) == ℤ/ℤN
+( #ℤₙ) == N
 
 ...etc
-##########################################################################
-
+#######################################################################
 
           To calculate an Intersection in set theory values must be present in both tables A and B
              [ ∩  == Intersection / Inner Join]
@@ -269,6 +299,10 @@ A∪B = {NULL, 2, NULL, 4, NULL, 6, NULL, 8, NULL 10}
 
 
 
+
+
+etc..
+##################################################
 
                                                     COMBINATORICS
 
