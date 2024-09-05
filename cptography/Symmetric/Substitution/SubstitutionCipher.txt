@@ -20,17 +20,17 @@ corresponds to the same cipher character throughout the message.
 key space is the cipher's range of characters
  
 plainText
-A	B	C	D	E	F	G	H	I	J	K	L	M	N	O	P	Q	R	S	T	U	V	W	X	Y	Z
-G	O	Y	D	S	I	P	E	L	U	A	V C	R	J	W	X	Z	N	H	B	Q	F	T	M	K
+ABCDEFGHIJKLMNOPQRSTUVWXYZ
+GOYDSIPELUAVCRJWXZNHBQFTMK
 cipherKey
  
- 
-plainText Message = Hello 
-cipherText Message = ESVVJ
+
+plainText Message = Hello  [priv]
+cipherText Message = ESVVJ [pub]
 key space = 26! 
           = 2⁸⁸
 
-
+POV : How does m map to each cipherKey per character ?
 
 
 ### Polyalphabetic version
@@ -38,12 +38,12 @@ a number of alphabets were used for encryption in order to avoid repeated cipher
 renders naive frequency analysis inaffective against it.
 
 
-plainText
-A	B	C	D	E	F	G	H	I	J	K	L	M	N	O	P	Q	R	S	T	U	V	W	X	Y	Z
-T M K G O	Y	D	S	I	P	E	L	U	A	V C	R	J	W	X	Z	N	H	B	Q	F
-D C B A H G F E M L K J I Z Y X W V U T S R Q P O N
-cipher 1
-cipher 2
+plainText [priv]
+ABCDEFGHIJKLMNOPQRSTUVWXYZ
+TMKGOYDSIPELUAVCRJWXZNHBQF
+DCBAHGFEMLKJIZYXWVUTSRQPON
+cipher 1 [pub]
+cipher 2 [pub]
 
 
 message[i] 
@@ -56,6 +56,6 @@ cipherText Message = SHLJV
 key space = (!26)² 
           =  162644002617632464507038883409628607021056000000000000 ≈ 2^176.76391  ≈ 2 ¹⁷⁷
 
-
+POV : How many cipherKeys are being used on top of m ?
 
 
