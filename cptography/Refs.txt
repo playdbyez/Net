@@ -1,5 +1,10 @@
 Youtube:
 
+
+@thesecuritybuddy/videos
+@Computerphile/videos
+@CryptographyForEverybody/videos
+
 sha256 - lesson1
 @projectfpga5482
 
@@ -14,3 +19,48 @@ EEVblog #496 - What Is An FPGA?
 
 DIY FPGA Bitcoin Miner
 @richardharris1224
+
+ 
+ecrypt-ss07.rhul.ac.uk/Slides/Wednesday/johansson-samos07-2.pdf
+//Symmetric Analysis Techniques
+ 
+kodu.ut.ee/~peeter_l/teaching/kryptoi05s/streamkil.pdf
+//LFSRs
+ 
+csrc.nist.rip/publications/nistpubs/800-12/800-12-html/chapter19.html
+//NIST streams
+ 
+ams.org/notices/199902/boneh.pdf
+// RSA attacks over twenty years
+ 
+link.springer.com/content/pdf/10.1007/s00145-007-9001-y.pdf
+// Instant GSM communication 
+
+
+########################'############# # RESOURCES # ###########'############################
+www.decode.fr
+// Cipher database
+
+www.icyberchef.com
+//Decoding algorithms
+
+www.steghide.sourceforge.net
+//Review data within jpeg,bmp,au,wav files
+
+www.neatnik.net/steganographr
+//Online revealer for zero-width spacing technique
+//Stegno converts text to bin and convert bin into a string of zero width chars
+// Insert string text that may have non-displayed characters 
+// Press d3steganogr4phize
+
+www.stylesuxx.github.io
+//image decoder
+
+//Base64 encoding
+//alphanumeric string ends with one or two assignment operator
+
+www.openssl.org/docs/
+//SSL Documentation
+
+SETI@home
+//Joint computing over the net
