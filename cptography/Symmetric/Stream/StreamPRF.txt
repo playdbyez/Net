@@ -1,0 +1,96 @@
+### [] Stream Cipher + Pseudo Random Functions [] ###
+
+> {Fₖ}ₖ = PRF family with codomain C of bitstrings where each bitstring is of length L
+
+> Simple to implement in applications where plaintext comes in unknowable lengths like a wireless connection.
+
+> Implemented in real-time audio, video and in GSM when encrypting calls into a relay.
+
+> Although frequently used in real-time data, LFSR-based stream ciphers need to be augumented with a method of producing non-linear output.
+
+
+## [LFSR] ##
+> Modern implementations of stream ciphers make use of Linear Feedback Shift Registers (LFSR)
+
+> LFSRs are essentially simple bit generators.
+
+> A key produced by a keystream generator is only secure if:
+  - it has large linear complexity
+  - it has pseudo-random properties proven by passing a number of statistical random number tests.
+  - it has a large value for the period of its sequence.
+
+The period of the sequenced is computed because the keystream is made from a finite deterministic process such as the key length.
+Once the combination repeats, there will exist an initial number N known as the period, where:
+K[i] = K[i+N]
+The smallest N that satisfies the above must be the period of the sequence.
+
+A sequence is deemed periodic if the above formula holds for all i >= 1.
+A sequence is deemed eventually periodic if the formula holds only for sufficiently large i's. 
+Secure pseudo-random streams seek to be a periodic sequence where the smallest N is a large value.
+
+
+We usually hope that the period can also be computed via 2ᴸ-1.
+The number of combinations of a state before repeating can be guessed by assuming the state's original size and the scheme of tapped bits.
+Thus we can compute its total permutations minus the permutation corresponding to a state of all zeros via the formula 2ᴸ-1.
+
+assumed tapped bits = 2
+assumed state size = L
+Total ammount of permutations = 2ᴸ-1
+
+
+
+
+Linear Feedback Shift Registers
+Consists of  a set of bits of length L that shift around per cycle according to rules set by its connection polynomial.
+The amount of tapped bits is the amount of bits being operated on and these are then feed back in linear combinations to the function.
+The selected bits must follow a specific order according to the length of the state.
+ 
+Statistical randomness on LFSRs are very random but not effective on their own.
+Thus for a robust implementation a combination of other factors are required.
+
+
+############################### [LFSR COMPOSITION] #########################################################################
+[] Register = A set of memory cells that produce one bit per cell.
+              The bit produced is tapped to an empty cell
+ 
+[] FeedBack Function = A predefined set of cells are passed to the feedback function as input for the next cycle.
+                       This function should ideally be non-linear.
+ 
+[] Output = These are the single rightmost bit of each cycle.
+###########################################################################################################################
+
+## [CONNECTION POLYNOMIAL] ##
+Properties of the output sequence are related to the properties of the binary Polynomial C(X).
+Connection polynomials have a special significance when the connection is primitive or irreducible.
+
+################### Interpretation ################ 
+[] The first X will denote the size/degree of the register.
+[] The ammount of X's will denote how many bits are tapped within the sequence.
+[] The positions of the register are from 0 to sizeof(register)-1 counting increasingly from right to left
+[] the tapped bits are denoted by 
+   the power of the first X from right to left == the ammount of hops from left to right in the register 
+   and  the number that is unique to the polynomial.
+
+C(X) = X³ + X + 1
+Thus
+S[2] S[1] S[0]
+
+tapped bits 
+S[0] because +1 equals the first value from right to left
+S[2] because X¹ the first value from left to right
+
+
+
+C(X) = X³² + X³ + 1
+Thus
+S[31] S[30] S[29] S[28] S[27] S[26] S[25] S[24] S[23] S[22] S[21] S[20] S[19] S[18] S[17] S[16] 
+S[15] S[14] S[13] S[12] S[11] S[10] S[9]  S[8]  S[7]  S[6]  S[5]  S[4]  S[3]  S[2]  S[1]  S[0]
+
+tapped bits 
+S[0] because +1 equals the first value from right to left
+S[29] because  X³ equals the third value from left to right
+############################################################################################
+
+
+
+## Paper SECRETS OF LINEAR FEEDBACK SHIFT REGISTERS by DAVID A. SINGER
