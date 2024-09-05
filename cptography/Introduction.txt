@@ -118,31 +118,3 @@ Compute the following:
 
 ########################'############# # RESOURCES # ###########'############################
 
-www.decode.fr
-// Cipher database
-
-www.icyberchef.com
-//Decoding algorithms
-
-www.steghide.sourceforge.net
-//Review data within jpeg,bmp,au,wav files
-
-www.neatnik.net/steganographr
-//Online revealer for zero-width spacing technique
-//Stegno converts text to bin and convert bin into a string of zero width chars
-// Insert string text that may have non-displayed characters 
-// Press d3steganogr4phize
-
-www.stylesuxx.github.io
-//image decoder
-
-//Base64 encoding
-//alphanumeric string ends with one or two assignment operator
-
-www.openssl.org/docs/
-//SSL Documentation
-
-SETI@home
-//Joint computing over the net
-
-################################################################################################
