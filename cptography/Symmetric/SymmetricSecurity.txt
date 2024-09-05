@@ -229,8 +229,6 @@ Set F[i] = underlying language frequency
 Set n[i] = ciphertext frequency
 S = likelyhood that said text is an extract from a natural language
  
-FORMULA
- 
 S = ᵢ₌ₐΣᶻ n[i] x F[i]
 
 
