@@ -58,7 +58,12 @@ The adversaies are parties within  the protocol.
 - Oblivious Transfer
 
 
-
+########## primitives ######
+Ciphers           [Symmetric primitive]
+MACs              [Symmetric primitive]
+Public Key        [Public key primitive]
+Digital Signature [Public key primitive]
+Hash Function     [Keyless primitive]
 
 
 
