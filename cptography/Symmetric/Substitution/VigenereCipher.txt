@@ -26,8 +26,11 @@ key         SESAMESESAMESESAME	|  S[18]
 p.cipher    LLASUWSXWSFQWWKASI	|  19+18 mod(26) = L[11]
  
 
+POV : What key word is being repeated ?
+
+
  
->> CRYPTOANALYSIS
+>> CRYPTOANALYSIS <<
  
 Method 1. Frequency analysis
 
@@ -45,20 +48,40 @@ usually computed per Nᵗʰ position after the kasiski test.
 Method 3. Kasiski Test
 kasiski test applies to the vignere cipher method of encryption, as follows:
 
+1. [Identify repetitions]
 If a string of characters appears repeatedly in a polyalphabetic cipher
-It is possible that the distance between the reocorring characters isa multiple of the lenght of the key word.
+It is possible that the distance between the reocorring characters is a multiple of the lenght of the key word.
  
 It is usually easier to start with reoccurring Trigrams.
- 
+If there are no trigrams then bigrams are the following option.
+
+2. [Identify the gaps between repetitions]
 To work out the distance we start from the last letter of the section 
 until the same letter from the first repetition of said trigram of letters.
-This process is repeated for other repeating trigrams.
+
+This process is repeated for other repeating trigrams until the most reocurring distance is found.
 Keep count of the number of occurences and the distance of each.
- 
-Assuming that the most reocurring distance value is 18
-The key word must be of a length that is a factor of 18 ( 2, 3, 6, 9 )
-Eve assumes that the key word is of length 6 and so prepares a table of decryption ...
- 
+
+
+3. [Identify key length based on gaps]
+Assuming that the most reocurring distance value is 18 there are two methods to work out the possible key length
+
+A. The key word must be of a length that is a factor of 18 ( 2, 3, 6, 9 )
+
+B. The key word must be of a length that by calculating the gcd() between all
+pairs of gaps between repeating ciphertext, recursively in the search for a reoccurring distance produced by the gcd of two distances.
+
+
+4. [Decryption table]
+Eve assumes that the key word is of length 6 and so prepares a table of decryption 
+by considering the range of different cipher characters as N,
+the statistical distance between the underlying language and every Nᵗʰ ciphertext over an increasing key that is smaller than N
+can be computed in order to determine the smallest distance.
+key length = 6
+1.StatDist (c[0], c[5], c[10], ...)
+2.StatDist (c[1], c[6], c[11], ...)
+3.StatDist (c[2], c[7], c[12], ...)
+  
  
  
 
