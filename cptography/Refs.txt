@@ -36,6 +36,14 @@ ams.org/notices/199902/boneh.pdf
 link.springer.com/content/pdf/10.1007/s00145-007-9001-y.pdf
 // Instant GSM communication 
 
+mdpi.com/2079-9292/10/16/2009
+
+geeksforgeeks.org/how-to-express-a-number-as-a-power-of-2/
+ 
+https://www.youtube.com/watch?v=cU31KavBCM4
+https://www.youtube.com/watch?v=3R-n5UTuEzA
+https://www.youtube.com/watch?v=8TjYHK804mU
+ 
 
 ########################'############# # RESOURCES # ###########'############################
 www.decode.fr
