@@ -133,7 +133,12 @@ Where do we get the key (Si) ?
 The period of the sequenced is computed because the keystream is made from a finite deterministic process such as the key length.
 Once the combination repeats, there will exist an initial number N known as the period, where:
 K[i] = K[i+N]
-for all sufficienctly large values of i
+The smallest N that satisfies the above must be the period of the sequence.
+
+A sequence is deemed periodic if the above formula holds for all i >= 1.
+A sequence is deemed eventually periodic if the formula holds only for sufficiently large i's. 
+Secure pseudo-random streams seek to be a periodic sequence where the smallest N is a large value.
+
 
 We usually hope that the period can also be computed via 2ᴸ-1.
 The number of combinations of a state before repeating can be guessed by assuming the state's original size and the scheme of tapped bits.
