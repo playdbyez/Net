@@ -71,18 +71,7 @@ Keysearch on an FPGA based,cryptanalitical algorithm 'Copacobana' key searches c
 Copacabana's max keysearch = 2^56
 
 
-############::Letter Frequency Analysis ::##############
 
-//Substitution Cipher
-Operates on latters and its aimed at replacing every letter by a fixed ciphertext letter.
-
-//0Bruteforce
-
-
->Letters have different frequencies in english
->The frequency of plaintext letters  is preserved  in ciphertext
->Almost 13% of all letters in a string is the letter 'E' ==  every 7th or 8th letter is an E
->About 9% of all letters in a string is the letter 'T'
 
 
 
