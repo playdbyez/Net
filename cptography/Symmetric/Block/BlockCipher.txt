@@ -1,5 +1,94 @@
+[] Block Cipher []
 
+.Encryption
+Cryptographic block = block cipher + mode of operation
 
+MODES OF OPERATION
+- ECB = Electronic Code Block Mode
+- CBC = Cipher Block Chaining Mode [recommended]
+- OFB = Output Feed Back Mode
+- CFB = Cipher Feed Back Mode
+- CTR = Counter Mode               [recommended]
+
+[] Operates on plain text one block at a time through a key block to produce equivalent blocks of cipher text.
 [] Symmetric encryption
 [] Modern Block ciphers are built on permutations and substitutions
 [] Fast block is symmetric
+[] These should act like a family of PRPs indexed by the key space 
+[] The key block must be of equal size to plaintext 
+[] Its goal is being a secure pseudo-random permutation
+[] Block encryption is usually tested against the Linux Penguin visual example.
+[] Faster on Software than stream ciphers
+[] Stateless and Bijective thus, uses permutations
+[] Block sizes = 64 to .. bits
+[] Due to size constrictions of the block function, it is necessary to organize its encryption scheme
+  and said schemes are created out of the block cipher model via different modes of operation.
+[] Block ciphers can also be turned into a stream cipher, given the right combination with a mode of operation.
+[] Modes and cipher blocks can be designed independently
+[] A mode should be implemented upon a secure pseudo-random permutation block cipher dictated by the PRP security game
+[] Depending on the mode, if the cipher text is altered in a given block 
+  during transmission, then said alteration may render the block un-decryptable.
+  Initialization Vectors (IVs) may be necessary depending on the mode employed.
+[] An Initialization Vector ensures that the first cipher block is different even if the message is identical.
+  This is accomplished by IVs through it being a random cipher used for encryption against the first block to be encrypted.   
+ ################################### [] MODES [] ###################################
+ 
+ 
+### [ECB] ###
+.Encryption
+c1 = eₖ (m1)
+c2 = eₖ (m2)
+c2 = eₖ (m3)
+ 
+> Can decrypt single blocks regardless of its order.
+ 
+> Multi-threading operations are supported.
+ 
+> Encryption & decryption are very fast.
+ 
+> ECB however, suffers from not being random enough to be deemed secure.
+  This means that cipher blocks will be exactly equal for identical message blocks.
+ 
+### [CBC] ###
+ 
+> Encryption & decryption are slow.
+ 
+> Does not support parallelization.
+ 
+> Employs the use of Initialization Vector to compliment the encryption scheme
+ 
+> CBC however, suffer from error propagation  which is limited from the cipher 
+  block altered to the cipher block directly after it.
+ 
+ 
+### [CTR] ###
+ 
+> Requires a shared nonce value to compliment the shared key and
+  said nonce increases per block while being public.
+ 
+> Parallelization is supported thanks to the ordering provided by the nonce value.
+ 
+> Due to encryption being on the counter to produce an output stream,
+  this mode is classed as a stream cipher also.
+ 
+> Crew draggin attack?
+ 
+ 
+ 
+ ###################################################################
+ 
+KNOWN IMPLEMENTATIONS 
+- DES
+- 3DES
+- CAMELLIA
+- AES (Rijndel)
+- AES (MARS)
+- AES (RC6)
+- AES (Twofish)
+- AES (Serpent)
+ 
+[] The above DES implementations obtain security through being Iterated Block Ciphers that me use of a simple 'round function' where the number of rounds can be varied or fixed.
+[] Each round consists of substitution, permutation and key addition.
+[] The more rounds implemented the more security is obtained.
+ 
+ 
