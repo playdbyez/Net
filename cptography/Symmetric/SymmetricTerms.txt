@@ -1,3 +1,6 @@
+
+
+
 [] Cryptoanalysis should require 2⁵⁶ to 2⁸⁰ operations
     2⁵⁶ = 72057594037927936
     2⁸⁰ = 1208925819614629174706176
@@ -9,9 +12,14 @@
     the scientific number of bits within any given key
 
 [] Key space
-    The number of possible keys, usually represented as an exponent of 2
+    The number of possible keys, usually represented as an exponent of 2.
+    For a set of Size N there are 2^N possible subsets.
 
-[] For a set of Size N there are 2^N possible subsets
+[] bit conversion
+  A data type of 40 bits in length cannot be a value larger than 2⁴⁰ in decimal.
+  2⁴⁰ =  1099511627776
+  2⁴⁰ = 10000000000000000000000000000000000000000 [41 bitLength]
+
 
 [] 2⁴⁰⁰ is more than the number of atoms in the known universe
 
