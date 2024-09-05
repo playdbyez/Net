@@ -106,3 +106,47 @@ else {N is prime}
 
 ##############################################################################################
 
+
+
+### [] Fermat's Test for Primality [] ###
+ 
+[] This algorithm builds upon Lagrange's Theorem and Fermat's Little Theorem to verify n for primality.
+[] More advanced probabilistic algorithm.
+[] Formula is computationally fast.
+[] Can only measure that n is composite.
+[] This verions of the test is avoided due to finding no witness for compositeness against actual composite values.
+ 
+n = 43040357
+Set S[]  = {2, 3, .., n-1 }
+L = #S
+ 
+for (i = 0; i < L; i++)
+{
+ a = S[i];
+ b = 0;
+ b = aⁿ⁻¹ (mod n)
+		if (b == 1) {printf("%d is a pseudo-prime to base %d\n", n, a);}
+		if (b == 1) {printf("%d is a composite with probability of %d\n", 1/2ᴸ);}
+ 
+		if (b != 1) {printf("%d is a composite given the witness %d\n", n, a);}
+}
+ 
+ 
+ 
+FORMULA LOGIC
+> Lagrange's Theorem
+	if G is a multiplicative group and #G is the group size
+	then a^#G = 1 for all values a ∈ G
+	and if G is a "group under modulo n multiplication"
+	then a^φ(n) = 1 (mod n) for all a ∈ ℤₙ
+Thus given value n, if n is prime the formula always holds but it might
+also hold if n is some specific composite called the " Carmichael Numbers".
+ 
+> Carmichael Numbers [false primes]
+[561, 1105, 1729, ...]
+	[] always odd
+	[] always has at least 3 factors that are prime
+	[] always square free
+	[] if p divides a Carmichael N then p-1 divides N-1
+ 
+#########################################################################
