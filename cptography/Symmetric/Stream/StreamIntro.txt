@@ -66,9 +66,7 @@ since a plain text zero has 50% of chance of being 1 or 0 when the key is applie
 
 
 Where do we get the key (Si) ?
-
-
-
+....
 
 
 
@@ -109,75 +107,3 @@ Where do we get the key (Si) ?
 > Loosely based on the One-Time Pad cipher's concept of perfect security.
 
 
-### [] Stream Cipher + Pseudo Random Functions [] ###
-
-> {Fₖ}ₖ = PRF family with codomain C of bitstrings where each bitstring is of length L
-
-> Simple to implement in applications where plaintext comes in unknowable lengths like a wireless connection.
-
-> Implemented in real-time audio, video and in GSM when encrypting calls into a relay.
-
-> Although frequently used in real-time data, LFSR-based stream ciphers need to be augumented with a method of producing non-linear output.
-
-
-## [LFSR] ##
-> Modern implementations of stream ciphers make use of Linear Feedback Shift Registers (LFSR)
-
-> LFSRs are essentially simple bit generators.
-
-> A key produced by a keystream generator is only secure if:
-  - it has large linear complexity
-  - it has pseudo-random properties proven by passing a number of statistical random number tests.
-  - it has a large value for the period of its sequence.
-
-The period of the sequenced is computed because the keystream is made from a finite deterministic process such as the key length.
-Once the combination repeats, there will exist an initial number N known as the period, where:
-K[i] = K[i+N]
-The smallest N that satisfies the above must be the period of the sequence.
-
-A sequence is deemed periodic if the above formula holds for all i >= 1.
-A sequence is deemed eventually periodic if the formula holds only for sufficiently large i's. 
-Secure pseudo-random streams seek to be a periodic sequence where the smallest N is a large value.
-
-
-We usually hope that the period can also be computed via 2ᴸ-1.
-The number of combinations of a state before repeating can be guessed by assuming the state's original size and the scheme of tapped bits.
-Thus we can compute its total permutations minus the permutation corresponding to a state of all zeros via the formula 2ᴸ-1.
-
-assumed tapped bits = 2
-assumed state size = L
-Total ammount of permutations = 2ᴸ-1
-
-
-
-
-Linear Feedback Shift Registers
-Consists of  a set of bits of length L that shift around per cycle according to rules set by its connection polynomial.
-The amount of tapped bits is the amount of bits being operated on and these are then feed back in linear combinations to the function.
-The selected bits must follow a specific order according to the length of the state.
- 
-Statistical randomness on LFSRs are very random but not effective on their own.
-Thus for a robust implementation a combination of other factors are required.
-
-
-######################### [LFSR COMPOSITION] #########################################################################
-[] Register = A set of memory cells that produce one bit per cell.
-              The bit produced is tapped to an empty cell
- 
-[] FeedBack Function = A predefined set of cells are passed to the feedback function as input for the next cycle.
-                       This function should ideally be non-linear.
- 
-[] Output = These are the single rightmost bit of each cycle.
-###########################################################################################################################
-
-## [CONNECTION POLYNOMIAL] ##
-Properties of the output sequence are related to the properties of the binary Polynomial C(X).
-Example Schemes: 
-
-C(X) = X³ + X + 1
-[] For a state size of 4 cells ranging from positions 0-3 couting from ...
-
-
-C(X) = X³² + X³ + 1
- 
-These have a special significance when the connection is primitive or irreducible.
