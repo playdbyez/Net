@@ -20,6 +20,8 @@ EEVblog #496 - What Is An FPGA?
 DIY FPGA Bitcoin Miner
 @richardharris1224
 
+cryptome.org/
+//news
  
 ecrypt-ss07.rhul.ac.uk/Slides/Wednesday/johansson-samos07-2.pdf
 //Symmetric Analysis Techniques
@@ -95,9 +97,9 @@ owasp.org/www-project-developer-guide/draft/foundations/crypto_principles/
 
 cryptographic signature matching
 
-> BOOK: Elementary Cryptanalysis: A Mathematical Approach
-
-
 https://pastebin.com/zbwY9PGZ
 
+
+> BOOK: Elementary Cryptanalysis: A Mathematical Approach
+> BOOK: Applied Cryptography (John Wiley & Sons)
 
