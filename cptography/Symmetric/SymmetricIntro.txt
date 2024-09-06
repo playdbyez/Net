@@ -69,17 +69,25 @@ m = d^k(c)
 
 TYPES OF ATTACKS
 
-Brute Force
-Extensive Key Search
-Cipher Only Attack
-Known Plaintext Attack
-Chosen Plaintext Attack
-Chosen Ciphertext Attack
+Brute Force / Extensive Key Search
+
+
+Ciphertext-Only Attack (COA)
+
+
+Known Plaintext Attack (KPA)
+Chosen Plaintext Attack (CPA)
+Adaptive chosen-plaintext attack (CPA2) 
+
+Chosen Ciphertext Attack (CCA)
+Lunchtime attack/Midnight attack 
+Adaptive chosen-ciphertext attack (CCA2)
+
 Key and Algorithm Attack
 Side Channel Attacks
 Replay Attacks
 
-
+https://en.wikipedia.org/wiki/Attack_model
 
  ############::Chosen Plaintext Attack::##############  
 Consists of the attacker obtaining a cipher equivalent
