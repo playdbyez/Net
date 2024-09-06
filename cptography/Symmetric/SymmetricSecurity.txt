@@ -218,27 +218,4 @@ p(P=d | C=3) = 0
 p(P=d | C=4) = 0
 
 
- 
-############  Ciphertext Only Attacks ######
-## Sinkov ##
-When facing substitution ciphers, it is important to be able to distinguish natural language from noise. 
-For said purpose we can compute the Sinkov Statistic through the following:
- 
-for i = A ... Z
-Set F[i] = underlying language frequency
-Set n[i] = ciphertext frequency
-S = likelyhood that said text is an extract from a natural language
- 
-S = ᵢ₌ₐΣᶻ n[i] x F[i]
-
-
-## Repeat stream cipher messages ###
-If the same key is used repeatedly, it can reveal a relationship between messages.
-  Suppose Eve intercepts two messages:
-    c1 = m1 ⊕ k 
-    c2 = m2 ⊕ k 
-  A relationship between m1 and m2 can be determined via:
-    c1 ⊕ c2 = (m1 ⊕ k ) ⊕ (m2 ⊕ k) = m1 ⊕ m2
-
-
 #############################
