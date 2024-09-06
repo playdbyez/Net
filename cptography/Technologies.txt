@@ -10,7 +10,7 @@ Crypto_tech in the wild
 [ SHA-2 ]
 ...
 
-https://md5.gromweb.com/#google_vignette
+https://md5.gromweb.com/
 
 
 
