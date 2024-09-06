@@ -67,7 +67,17 @@ m = d^k(c)
 > Attackers should know some plain/cipher pairs associated with the key.
 
 
+TYPES OF ATTACKS
 
+Brute Force
+Extensive Key Search
+Cipher Only Attack
+Known Plaintext Attack
+Chosen Plaintext Attack
+Chosen Ciphertext Attack
+Key and Algorithm Attack
+Side Channel Attacks
+Replay Attacks
 
 
 
