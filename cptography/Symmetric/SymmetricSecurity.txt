@@ -113,6 +113,10 @@ p(P = m | C = c) = p(P = m) x p (C = c | P = m) / p(C = c)
 The main issue with a scheme with perfect secrecy as defined by Claude Shannon relates to key distribution issues,
 given that each key must be generated per message.
 
+###### One-time Pad Sytems ####
+5-UCO
+
+
 
  ########################### :: Probability :: #########################################
 We can compute the conditional of a likely character being represented by said cipher, given that we know that the order of the secrete keys vary based on a pre-discovered distribution probability of each key.
