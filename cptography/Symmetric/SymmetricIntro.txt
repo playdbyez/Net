@@ -46,67 +46,97 @@ m = d^k(c)
   first determine randomness of the cypher key between both end-points.
 
 > A bulk cipher is a speed oriented cipher of the symmetric variety, namely stream ciphers and block ciphers.
-  Bulk ciphers are broken either through:
-   - Passive Attack
-           >> Aimed at either recoverin the key or decrypting parts of the message
-           >> Only allowed to listen to encrypted transmissions (traffic analysis)
-           >> Easier to mount
-
-   - Active Attack
-           >> Allowed to insert and deleteme messages or replay them (insertion attack)
-           >> Easily detectable
+  
 
 
-
-[] Design Goals [] 
+[] Cryptosystem Design Goals [] 
 > Encryption and decryption functions should be public in order to ascertain that they are provably secure.
 > Computationally secure against ehxaustive key search.
 > Compromising some secrecy for efficiency since these are used for bulk encryption.
 > Reusable keys and short keys for long messages.
 > Ciphers should implement detection and recovery mechanisms against replay attacks.
-> Attackers should know some plain/cipher pairs associated with the key.
+> Attackers are assumed to know some plain/cipher pairs associated with the key.
 
 
-TYPES OF ATTACKS
-
-Brute Force / Extensive Key Search
-
-
-Ciphertext-Only Attack (COA)
+############ ATK MODEL #######################
+Designed to specify the type of acess the attacker has to a system.
+The more access the easier to reverse engineer the system.
+The system is assumed by the cipher message intercepted over an insecure communication channel.
 
 
-Known Plaintext Attack (KPA)
-Chosen Plaintext Attack (CPA)
-Adaptive chosen-plaintext attack (CPA2) 
+[] TYPES OF ATTACKS
+   - Passive Attack
+           >> Aimed at either recovering the key or decrypting parts of the message
+           >> Only allowed to listen to encrypted transmissions (traffic analysis)
+           >> Easier to mount
 
-Chosen Ciphertext Attack (CCA)
-Lunchtime attack/Midnight attack 
-Adaptive chosen-ciphertext attack (CCA2)
-
-Key and Algorithm Attack
-Side Channel Attacks
-Replay Attacks
-
-https://en.wikipedia.org/wiki/Attack_model
-
- ############::Chosen Plaintext Attack::##############  
-Consists of the attacker obtaining a cipher equivalent
-of his own message directly from the admin.
-
-
-############::Known-Plaintext Attack::##############  
-- cribb dragging
+   - Active Attack
+           >> Allowed to insert and delete messages or replay them (insertion attack)
+           >> Easily detectable
 
 
 
-############::Insertion Attack::##############  
+>> Ciphertext-Only Attack (COA)
+[] The attacker has only the cipher
+[] Weakest attack
+[] Most common in real scenarios
+[] Requires previous knowledge of language, standard protocol data or framing of the plaintext.
+
+>>>> Brute Force / Extensive Key Search (COA)
+[] Attempting the entire keyspace.
+[] Depends only on the keyLength presumed.
+[] Every cipher is vulnerable to it except one-time pad.
 
 
 
+>> Known Plaintext Attack (KPA)
+[] The attacker has a number of plain and cipher pairs.
+[] Acquiring the plaintext can range from reapropriation of it by force to forcing words into the communication.
+[] Effective against shift/mono-substitution cipher.
+[] One-time pad is immune.
+[] Includes cribb dragging attack.
 
-############::Implementation Attacks ::##############  
-A Side channel attack would consist of employing an osciloscope against a microprocessor's pins
-and recording the ondulation  or observe  the timing behaviour in hope to decode the key being used within the chip.  
+
+>> Chosen Plaintext Attack (CPA)
+[] The attacker obtains a cipher equivalent of his own message.
+[] A sequence of messages is encrypted all simultaneously.
+[] Effective against Public-key systems.
+
+>>>> Adaptive Chosen-plaintext Attack (CPA2) 
+[] The attacker obtains a cipher equivalent of his series of messages.
+[] The sequence of messages can be altered on a per encryption basis.
+
+
+>> Chosen Ciphertext Attack (CCA)
+[] The attacker uses ciphertext to have its decrypted output.
+[] Requires access to the communication channel and recipient.
+
+
+>> Side Channel Attacks
+[] Other aspects are tied to the encryption process.
+[] Aspects include power consumption, timing or radiation.
+[] Other aspects include an osciloscope against a microprocessor's pins
+   to record the ondulations or observe  the timing behaviour in hope to decode the key being used within the chip. 
+
+
+>> Replay Attacks
+[] Retransmission of captured data to generate behaviour in the system or gain access.
+[] Relies on making the recipient accept duplicates due to weak distinguishing mechanisms.
+[] To mitigate it, time-stamps or message sequencing are used.
+
+
+>> Open Key Model Attack
+[] The attacker has some knowledge of the key.
+
+
+>> Key and Algorithm Attack
+[] The key is the target via public knownledge of the algorithm
+
+
+
+>> Insertion Attack
+
+
 
   
 
@@ -124,21 +154,10 @@ S = likelyhood that said text is an extract from a natural language
 S = ᵢ₌ₐΣᶻ n[i] x F[i]
 
 
-########### Repeat stream cipher messages ###
-If the same key is used repeatedly, it can reveal a relationship between messages.
-  Suppose Eve intercepts two messages:
-    c1 = m1 ⊕ k 
-    c2 = m2 ⊕ k 
-  A relationship between m1 and m2 can be determined via:
-    c1 ⊕ c2 = (m1 ⊕ k ) ⊕ (m2 ⊕ k) = m1 ⊕ m2
-
-
-
-############::KeySearch::##############   
+############::Brute Search::##############   
 cipher key size = 64bits  
 solution = 2^64 bits  
 roughly = 2^88  
-  
 If the key manages a lookup table, we compare its character to  
 its possibility of being said character from the alphabet (26 letters) granting us a 26! factorial.  
 cipher[0] = 1 out of 26 letters of the alphabet  
@@ -146,5 +165,13 @@ cipher[1] = 1 out of 25 letters of the alphabet
 cipher[2] = 1 out of 24 letters of the alphabet ...  
 
 
-  
-https://www.youtube.com/watch?v=wlSG3pEiQdc
+
+
+########### Chosen Ciphertext Attacks ###
+If the same key is used repeatedly, it can reveal a relationship between messages.
+  Suppose Eve intercepts two messages:
+    c1 = m1 ⊕ k 
+    c2 = m2 ⊕ k 
+  A relationship between m1 and m2 can be determined via:
+    c1 ⊕ c2 = (m1 ⊕ k ) ⊕ (m2 ⊕ k) = m1 ⊕ m2
+
