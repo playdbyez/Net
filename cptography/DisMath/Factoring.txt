@@ -97,3 +97,16 @@ for (i =2; i < sqrt(n); i++)
 AKS primality testing ?
 
 
+##### Euler Function #### [ φ ]
+[] Given a set of size N this function dictates the number of values which are relatively prime to N. (φN)
+[] Given the factorization of N, its easy to find φN.
+[] Most important cases for the output of φN are:
+	> after factorization of N into p x q, if p is prime then φp = p-1
+	> also after factorization, if p and q are both prime but p != q then φpxq = (p-1)x(q-1)
+
+
+####### Extended gcd/Euclidian Algorithm ########
+[] 
+
+
+
