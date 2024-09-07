@@ -73,7 +73,6 @@ c2 = eₖ (m3)
 > Due to encryption being on the counter to produce an output stream,
   this mode is classed as a stream cipher also.
  
-> Crib draggin attacks
  
 
 
@@ -94,5 +93,6 @@ KNOWN IMPLEMENTATIONS
 [] The above DES implementations obtain security through being Iterated Block Ciphers that me use of a simple 'round function' where the number of rounds can be varied or fixed.
 [] Each round consists of substitution, permutation and key addition.
 [] The more rounds implemented the more security is obtained.
- 
- 
+
+
+############ [] Key Derivation Function [] ##################
