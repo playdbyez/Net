@@ -66,6 +66,14 @@ Digital Signature [Public key primitive]
 Hash Function     [Keyless primitive]
 
 
+### [] Commercial National Security Algorithm Suite [] ####
+In the USA the National Security Agency (NSA) 
+has its own suite of algorithms including AES, ECDH,ECDSA, SHA-2, DHKE, RSA.
+However as of 2022 it has announced plans to launch its Quantum Resistant Suite.
+The algorithms implemented therein are AES, CRYSTALS_Kyber, SHA-2, XMSS and LMS.
+
+
+
 
 Keysearch on an FPGA based,cryptanalitical algorithm 'Copacobana' key searches can take up to 1 week
 Copacabana's max keysearch = 2^56
