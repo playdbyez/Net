@@ -1,0 +1,7 @@
+
+ ####### [] A5/1 [] #######
+
+[] Developed in 1987
+[] Part of the A5 security protocol.
+[] Provides over-the-air communication privacy in the GSM standard
+[] Used in the EU and USA
