@@ -34,7 +34,11 @@ int main()
 {
     
     // 2⁴⁰ =  1099511627776
-    //int k[13] = {1,0,9,9,5,1,1,6,2,7,7,7,6};
+    // the entire hex put together must have a bitlength of the desirable size
+    // since each value is a byte we need 5 bytes to equal 40 bits
+    // each byte should be from 0 to 256
+    //int k[5] = {41,8e,fe,65,ee};
+   // int k[5] = {65, 142,254, 101, 238 };
 
     
     char *m = "HELLOWORLD";
