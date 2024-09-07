@@ -90,6 +90,9 @@ KNOWN IMPLEMENTATIONS
 - AES (Serpent)
 - ECC 
 - Feistel Network
+- JUNIPER
+- BATON
+- SKIPJACK
  
 [] The above DES implementations obtain security through being Iterated Block Ciphers that me use of a simple 'round function' where the number of rounds can be varied or fixed.
 [] Each round consists of substitution, permutation and key addition.
