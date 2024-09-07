@@ -20,9 +20,17 @@ EEVblog #496 - What Is An FPGA?
 DIY FPGA Bitcoin Miner
 @richardharris1224
 
+csrc.nist.gov/publications/
 cryptome.org/
 //news
- 
+
+PKCS #11 v2.11: Cryptographic Token Interface Standard by RSA Laboratories
+//Block ciphers extended 2001
+
+Framework for Improving Critical Infrastructure Cybersecurity
+//Cybersec 2014
+
+
 ecrypt-ss07.rhul.ac.uk/Slides/Wednesday/johansson-samos07-2.pdf
 //Symmetric Analysis Techniques
  
