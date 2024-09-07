@@ -1,0 +1,11 @@
+####### A5/3 #######
+
+[] Deplyed in 
+    - Universal Mobile Telecoms System (UMTS)
+    - Global Systems (GSM)
+    - General Packet-Radio Service Mobile Comms (GPRS)
+
+[] Known as UEA1 and UIA1 when used over UMTS
+[] Known as KASUMI when used over GSM
+[] Known as GEA3 when used over GPRS
+[] KASUMI is an update of MISTY1 block cipher
