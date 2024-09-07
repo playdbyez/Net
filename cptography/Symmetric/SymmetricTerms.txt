@@ -13,7 +13,7 @@
 
 [] Key space
     The number of possible keys, usually represented as an exponent of 2.
-    For a set of Size N there are 2^N possible subsets.
+    For a keystring of N bits there are 2^N possible elements within the key space.
 
 [] bit conversion
   A data type of 40 bits in length cannot be a value larger than 2⁴⁰ in decimal.
