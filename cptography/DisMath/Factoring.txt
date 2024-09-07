@@ -20,6 +20,8 @@ MODERN METHODS
 > Quadratic Sieve (QS)
 > Eliptic Curve Method (ECM)
 > Number Field Sieve (NFS)
+> Shor's algorithm [Quantum]
+> Grover's algorithm. [Quantum Search]
 
 
 
