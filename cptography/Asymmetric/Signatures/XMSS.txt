@@ -1,0 +1,3 @@
+Xtended Merkle Signature Scheme
+
+[] digitally signing firmware and software
