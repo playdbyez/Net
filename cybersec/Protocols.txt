@@ -19,6 +19,7 @@ WPA2 (Wireless Protected Access 2)
 TLS (Tunneled Layer Standard)
 SAE (Simultaneous Authentication of Equals)
 WPA3 (Wireless Protected Access 3)
+S/MIME
 
 MGT
 
