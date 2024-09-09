@@ -18,11 +18,17 @@ https://md5.gromweb.com/
 [ PKI ] Public Key Infrastructure
 Resposible for managing X509 digital certificates and the binding public-key encryption.
 Relies on the Certificate Management Protocol (CMP), Certificates Authorities (CA) and Public Key Cryptography
+
 Present in:
 email - OpenPGP/OpenMIME
 documents - XML encryption
 authentication - smart cards and HTTPS
 communication protocols -  Internet key exchange (IKE) and SSL/TLS
+
+PKI Providers:
+Certificate Authorities 
+Web of Trust
+Pretty Good Privacy
 
 - Summary -
 A hash function maps a piece of data into a set-length with two specific properties, which 
