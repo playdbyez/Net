@@ -105,9 +105,13 @@ owasp.org/www-project-developer-guide/draft/foundations/crypto_principles/
 
 cryptographic signature matching
 
-https://pastebin.com/zbwY9PGZ
 
 
-> BOOK: Elementary Cryptanalysis: A Mathematical Approach
-> BOOK: Applied Cryptography (John Wiley & Sons)
+> BOOK: Elementary Cryptanalysis: A Mathematical Approach                             [232]
+> BOOK: Cryptography and Network Security: Principles and Practice, Global Ed									[832]
+> BOOK: Cryptography Ingineering: Design Principles 7 Practical Applications										[384]
+> BOOK: Applied Cryptography: Protocols, Algorithms, and Source Code in C 	  									[784]
+> BOOK: Cryptography : Theory and Practice+-													                             [598]
+> BOOK: Cryptography (Springer Undergraduate Mathematics Series)									            	[271]
+> BOOK: Cryptography in C and C++														                                       [504]
 
