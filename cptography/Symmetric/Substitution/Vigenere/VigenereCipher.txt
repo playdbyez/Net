@@ -79,14 +79,17 @@ the statistical distance between the underlying language and every Nᵗʰ cipher
 can be computed in order to determine the smallest distance.
 key length = 6
 1.StatDist (c[0], c[5], c[10], ...)
+table of outputs from key 0 to 26 [1]
+
 2.StatDist (c[1], c[6], c[11], ...)
+table of outputs from key 0 to 26 [2]
+
 3.StatDist (c[2], c[7], c[12], ...)
+table of outputs from key 0 to 26 [3]
+...
 
 
 
-
-KASISKI CODE
-#################################################################
  
  
 
