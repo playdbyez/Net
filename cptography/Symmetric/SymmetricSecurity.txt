@@ -39,12 +39,19 @@ rᵢⱼ = p (X = x[i] and Y = y[j])
  
  
  
-: Previously known associated probabilities :
+#####################################################################################################
+
+::: Previously known associated probabilities :::
+
+[Key Probability]
 Key space is K = {k1, k2, k3} with probability of being used per message character occurring at rate :
-p(K = k1) = 1/4 of the time
-p(K = k2) = 1/2 of the time
-p(K = k3) = 1/4 of the time
- 
+p(K = k1) = 0.25 = 1/4 of the time
+p(K = k2) = 0.5  = 1/2 of the time
+p(K = k3) = 0.25 = 1/4 of the time
+
+
+
+[Plain Probability]
 Message space is P = {a,b,c,d} with probability of being used as the message character occurring at rate :
 p(P = a) = 0.25 = 1/4  of the time
 p(P = b) = 0.3  = 3/10 of the time
@@ -57,7 +64,9 @@ k1    3    4    2    1
 k2    3    1    4    2
 k3    4    3    1    2
  
- 
+
+
+[Cipher Probability]
 The above gives us the means to calculate the probability distribution per cipher character via the formula bellow:
 p(C=c) = Σ(k:c∈C(k)) p(K =k) x p(P = dₖ(c)) 
  
@@ -66,7 +75,9 @@ p(C = 1) = p(k1) x p(d) + p(k2) x p(b) + p(k3) x p(c) = 0.2625
 p(C = 2) = p(k1) x p(c) + p(k2) x p(d) + p(k3) x p(d) = 0.2625
 p(C = 3) = p(k1) x p(a) + p(k2) x p(a) + p(k3) x p(b) = 0.2625
 p(C = 4) = p(k1) x p(b) + p(k2) x p(c) + p(k3) x p(a) = 0.2125
- 
+
+
+###################################################################################################################################
  
 [Fortification Method]
 From a defense point of view that knows the encryption table, 
@@ -127,12 +138,12 @@ p(P=d | C=4) = 0
 
 
 
- ########################### :: Entropy :: #########################################
-Entropy will aim at determining if a system leaks information about the key based on how much information about the key is revealed after a single ciphertext is observed.
-Information is measured as bits derived from the probability of ciphertext p(C = c), key distribution p(K = k) and plaintext distribution p(P = m).
-Said probabilities are calculated 
+################################### :: Entropy :: ############################################ [ A Mathematical Theory of Communication ~ 1948]
+
 Information = Uncertainty
+
 Entropy measures the ammount of uncertainty in a random variable.
+Also known as Shannon entropy, which quantifies the expected value of a message's information.
 Thus H(X) will calculate the ammount of information a variable X can reveal based on the certainty of its behaviour
 against a condition with finite outcome of length n.
 
@@ -144,6 +155,8 @@ FORMULA
 
 H(X) = - ᵢ₌₁Σⁿ pᵢ x log2(pᵢ)
 where pᵢ = (X = xᵢ)
+while removing the minus = ᵢ₌₁Σⁿ p(X = xᵢ) x log2(1/p(X = xᵢ)) 
+
 
 
 [ CASE 1 ]
@@ -162,13 +175,20 @@ p2 = p1
 H(X) = - (log2(1/2) / 2 ) - (log2(1/2) / 2) = 1 
 
 [ CASE 3 ]
-if the number of choices is 26 and my answers are unknown with equal probability of choice per option 
+If the number of choices is 26 and my answers are unknown with equal probability of choice per option 
 and said option can also be repeated,then the entropy per choice is H(X) = log2(n)
 pᵢ = 1/n for all ᵢ
 H(X) = log2(26) = 4.70
 
 
 [] Joint entropy
+
+
+
+[] Key Equivocation
+Aims at determining if a system leaks information about the key based on how much information about said key is revealed after a single ciphertext is observed.
+Information is measured as bits derived from the probability distribution of ciphertext p(C = c), key distribution p(K = k) and plaintext distribution p(P = m).
+
 
 
 
