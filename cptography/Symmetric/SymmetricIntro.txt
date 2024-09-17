@@ -61,7 +61,7 @@ m = d^k(c)
 ############ ATK MODEL #######################
 Designed to specify the type of acess the attacker has to a system.
 The more access the easier to reverse engineer the system.
-The system is assumed by the cipher message intercepted over an insecure communication channel.
+Said system is assumed by the cipher message intercepted over an insecure communication channel.
 
 
 [] TYPES OF ATTACKS
@@ -101,10 +101,6 @@ The system is assumed by the cipher message intercepted over an insecure communi
 [] The attacker obtains a cipher equivalent of his own message.
 [] A sequence of messages is encrypted all simultaneously.
 [] Effective against Public-key systems.
-
->>>> Adaptive Chosen-plaintext Attack (CPA2) 
-[] The attacker obtains a cipher equivalent of his series of messages.
-[] The sequence of messages can be altered on a per encryption basis.
 
 
 >> Chosen Ciphertext Attack (CCA)
@@ -167,7 +163,7 @@ cipher[2] = 1 out of 24 letters of the alphabet ...
 
 
 
-########### Chosen Ciphertext Attacks ###
+########### Chosen Ciphertext Attacks ####
 If the same key is used repeatedly, it can reveal a relationship between messages.
   Suppose Eve intercepts two messages:
     c1 = m1 ⊕ k 
