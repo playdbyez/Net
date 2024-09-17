@@ -155,7 +155,9 @@ FORMULA
 
 H(X) = - ᵢ₌₁Σⁿ pᵢ x log2(pᵢ)
 where pᵢ = (X = xᵢ)
-while removing the minus = ᵢ₌₁Σⁿ p(X = xᵢ) x log2(1/p(X = xᵢ)) 
+
+Simplified
+H(X) = ᵢ₌₁Σⁿ p(X = xᵢ) x log2(1/p(X = xᵢ)) 
 
 
 
