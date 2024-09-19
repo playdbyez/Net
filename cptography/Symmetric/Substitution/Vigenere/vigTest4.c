@@ -89,12 +89,12 @@ char *cip="UTPDHUGNYHUSVKCGMVCEFXLKQIBWXRKUGITZNRLSBBHZLXMSNPKDKSCEBIHHKEWIBAYYM
     for (int j =0; j < strlen(cip); j++){ 
                                     if (i != j){
                                                if (trios[i][0] == cip[j] && trios[i][1] == cip[j+1] && trios[i][2] == cip[j+2]){
-                                                   posar[i][t] = j; printf("%d [%d]", posar[i][t], t); t++; 
+                                                   posar[i][t] = j; printf("%d [%d][%d]", posar[i][t], i,t); t++; j+=2; 
                                                                                                                                }
                                                }
     
       }
-        printf("\n");
+        
         t = 0;
     }
  
