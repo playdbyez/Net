@@ -5,6 +5,10 @@ Youtube:
 @Computerphile/videos
 @CryptographyForEverybody/videos
 
+owasp.org/www-project-developer-guide/draft/foundations/crypto_principles/
+
+cryptographic signature matching
+
 sha256 - lesson1
 @projectfpga5482
 
@@ -101,10 +105,9 @@ www.openssl.org/docs/
 SETI@home
 //Joint computing over the net
 
-owasp.org/www-project-developer-guide/draft/foundations/crypto_principles/
 
-cryptographic signature matching
-
+https://www.uobabylon.edu.iq/eprints/publication_11_1011_1448.pdf
+//Lecture 3 Cryptography
 
 
 > BOOK: Elementary Cryptanalysis: A Mathematical Approach                             [232]
