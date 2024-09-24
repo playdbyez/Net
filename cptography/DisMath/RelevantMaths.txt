@@ -233,87 +233,8 @@ include all natural numbers forming an 'equivalence class' modulo 9
 
 
 
-                                                    SET THEORY
-    Sets are generally used in a relational database, a set is an unordered collection of unique values
-    Sets usually come in pairs
 
 
-[Types of sets]
-
- ℕ  = a set of natural numbers            ( 0 to 9)
- ℤ  = a set of integers                   (-9 to 9)
- ℤ+ = a set of only positive integers     (0 to infinity)
- Q  = a set of quotient numbers           ( (1.5 ≡ 3/2) = (Q ≡ p/q) )
-
-
-[] A 'group' is a set with an operation on its elements which:
-	> is closed
-	> has an identity
-	> Every element has an inverse
- 
-[] Any set that is a group which is commutative can be called  an 'abelian group'
- 
-[] Groups under addition of the kind bellow have the identity 0
-	> integers (ℤ, +)
-	> reals    (ℝ, +)
-	> complex  (ℂ, +)
-
-
-...etc
-
-
-
-#######[Symbols]##############################################################
-
-( #S ) == sizeof(S)
-
-( ∈ ) == element ... is whithin set ...
-I.e.  x∈Z == element x is within a set of integers
-
-( Ø ) ==  Empty set
-
-( ∀ ) ==	For all ...
-I.e.  ∀x>1  ==	for all x is greater than 1
-
-( ≡ ) == ... is equivalent to ...  
-I.e.  13≡4(mod 9) == 13 is equivalent to 4 (%9)
-
-( Σ ) == sum from val bellow SIGMA to val above SIGMA 
-
-( ∝ ) == ... is proportional to ...
-
-( ω ) ==  smallest infinite ordinal number
-
-...etc
-
-#######[Representations]###
-
-( ℤₙ ) == ℤ/ℤN
-( #ℤₙ) == N
-
-...etc
-#######################################################################
-
-          To calculate an Intersection in set theory values must be present in both tables A and B
-             [ ∩  == Intersection / Inner Join]
-A = {2, 4, 6, 8, 10}
-B = {1, 2, 3, 4, 5, 6}
-A∩B = {2, 4, 6}
-
-
-          To calculate an Union in set theory, both tables A and B are displayed as one
-             [ ∪  == Union / Full Outter Join]
-A = {2, 4, 6, 8, 10}
-B = {1, 2, 3, 4, 5, 6}
-A∪B = {NULL, 2, NULL, 4, NULL, 6, NULL, 8, NULL 10}
-
-
-
-
-
-
-etc..
-##################################################
 
                                                     COMBINATORICS
 
