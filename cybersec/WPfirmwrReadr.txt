@@ -1,0 +1,235 @@
+                                            #### DARK FIRMWARE @ Michigan.edu ####
+
+[]  Lower levels of the stack are more sensitive and difficult to detect.
+
+[]  System Firmware can be divided into two parts: BOOT-TIME & RUN-TIME
+    During boot time, the firmware discovers and initializes the hardware 
+    resources in prepartion for launching the Operating System.
+    During run time, it gathers and handles Machine State Information, including Power Management 
+    and System Authentication in response to hardware events.
+    These run time operations are enabled by a specific hardware interrupt that occurs before
+    passing the control to the OS, this even prompts the interrupted core to invoke firmware execution upon the processor.
+    However due to the limited execution cycles firmware is allocated during runtime, it relies heavily on the memory size and     
+    thus reclaiming compute resources beyond the intended time slice can cause the system to malfunction.
+
+[]  Paging is a mechanism for mapping a process' vitual address into a physical one.
+    The kernel must utilize translation tables to track dow the physical addresses.
+    These tables are managed by a specific CPU register for the x86 architecture (CR3)
+    And two specific registers for the ARM architecture (TTBR0 & TTBR1)
+
+[]  The map from Virtual Addresses to Physical Adresses is the Page Table.
+    Page Tables are organized in a directory like structure, consisting of at least a Page Directory Table (PDT)
+    and a Page Table Entries (PTE) which stores within the DRAM the physical addresses with flags for faster retrieval.
+
+[]  This Firmware exploit uses System Management Cycles to scrape the memory from dirty pages (pages previously updated in RAM)
+    from the pages tables directory at the application layer & it makes use of System Interrupts to scrape outgoing HTTPS     
+    POST requests with sensitive user-data.
+    This low overhead across both x86_64 and ARMv8 architectures is achieved by limiting the memory scan from the whole            
+    subsystem to only the user accessible dirty pages from the translation tables directory
+
+[] The execution begins during run-time when control is transferred from the OS to the firmware via a periodic hardware interrupt
+    This interrupt is configured into hardware during the initialization stage before the OS takes control at Boot
+
+
+################################ :: ATTACK SETUP :: ################################
+
+<> Develop System firmware using Tiano core open source project (EUFI)
+youtube.com/watch?v=n9XtJkRRvUI
+youtube.com/watch?v=t3iwBQg_Gik
+
+<> Use gem5 Simulator to test overhead of the process
+
+<> Use QEMU to buil platforms for test harnesses which also use different interrupt rates for firmware
+
+<> Inject via firmware update process or use a supply chain attack on the target's system manufacture
+  alternatively use a spear-phishing technique mentioned bellow
+
+* https://www.blackhat.com/docs/us-14/materials/us-14-Kallenberg-Extreme-Privilege-Escalation-On-Windows8-UEFI-Systems-WP.pdf
+  https://www.youtube.com/watch?v=X_Jxsl3vVcA
+// Windows 8 UEFI
+
+* securelist.com/operation-shadowhammer/89992/
+// Infecting ASUS Live update utility for a supply chain attack.
+
+* https://www.welivesecurity.com/2018/09/27/lojax-first-uefi-rootkit-found-wild-courtesy-sednit-group/
+  https://www.youtube.com/watch?v=P3yMXspLzoY
+// Sednit LoJax
+
+<> Use a daisy-chained multicore approach for parsing HTTP requests present in memory
+
+<> The developed firmware must have an automatic routine built-in from its creation
+  this routine is used for triggering  Periodic Management Interrupt at boot-time of  the mastercore (core 0)
+  before initialization is finished and ownership of the system is handled back to the Operating System
+
+<> During boot the core must be informed with the rules for searching and parsing HTTP lingering in memory,
+  specifically a valid reques-line for the HTTP header ( Starts with POST ends with CR+LF )
+  furthermore the body of the ruequest is sometimes necessary and comes in the format of Json or Key/value form fields.
+
+<> A single core, then, resumes the search until its time slice expires and the search is halted while the core issues an Inter-Processor Interrupt (IPI)
+  to the next core to continue its search operation
+
+<> Before resuming, both cores synchronize and share information:
+  - The address of the last memory location that was parsed by the exiting core
+  - A pointer the the last PTE referenced
+  - A pointer to the next data structure that stores recovered credentials
+
+<> After synchronization is finished the previous core is relinquished by the firmware for normal execution while
+the next invoked core seumes searching the OS's Page Tables for table entries that have the flags D/U/W set :
+  -dirty
+  -user/supervisor 
+  -write set 
+
+<> Once the final core completes its time slice, the system firmware 
+becomes inactive and it awaits the next periodic management interrupt to occur.
+
+<> there also time restrictions to the completion of the scan,
+purely in order to avoid affecting the system's functionality and being detected.
+These restrictions are based on the systems Storage capacity which affects the systems page eviction process of deleting its logs to free memory.
+On ubuntu 18 LTS (104 mins)
+On Android oreo 8.1 (74 mins)
+
+<> The saved data can then only be retrieved during a reboot to a Command-and-Control server (C&C) through the firmware's own network stack.
+This is enabled by including the UEFI network stack within our firmware and dispatching it during boot to enable cummunication with the C&C server
+
+<> The saved data can also be retrieved while the OS is running by tweaking the firmware's boot-time and run-time phases to dispatch the network stack as a runtime module during boot.
+This module would only consume memory availabe through run-time services and by invoking all cores vian an IPI from the mastercore to sync them and finally send the data through the network
+
+
+
+
+
+                              ################################  HTTP Pages ###########################
+
+DESKTOP                                                                                              MOBILE
+Host          : facebook.com                                                          Host         : i.instagram.com
+Method        : POST                                                                  Method       : POST
+path          : /login/device-based/regular/login                                     Path         : /api/v1/accounts/login
+Content type  : application/ x-www-form-urlencoded                                    Content type : application/ json
+
+
+
+################################  :: REFERENCES :: ###########################
+
+MEMORY
+
+https://www.youtube.com/watch?v=WYuhJzngfVc
+//JHam hiding from memory scans
+
+https://ftp.gnu.org/old-gnu/Manuals/glibc-2.2.3/html_chapter/libc_3.html
+// Manual Basic
+
+Windows via C/C++ 
+Linux Observability with BPF: Advanced Programming for Performance Analysis and Networking
+// books on mem
+
+csoonline.com/article/537628/malware-cybercrime-dexter-malware-infects-point-of-sale-systems-worldwide-researchers-say.html
+// Point of Sale malware
+
+wired.com/wp-content/uploads/2014/09/wp-pos-ram-scraper-malware.pdf
+// Point of Sale ram scraper
+
+siliconangle.com/2014/02/03/chewbacca-point-of-sale-malware-caught-stealing-credit-card-data/
+// Point of Sale 2014
+
+https://link.springer.com/chapter/10.1007/978-3-540-68979-9_5
+// Embedded Trusted Computing with Authenticated Non-volatile Memory
+
+https://www.ndss-symposium.org/wp-content/uploads/2017/09/towards-automated-dynamic-analysis-linux-based-embedded-firmware.pdf
+//
+
+https://www.blackhat.com/presentations/bh-usa-09/CHEN/BHUSA09-Chen-RevAppleFirm-PAPER.pdf
+//Reversing and exploiting an Apple firmware update
+
+https://yt.christiaan008.com/?project=black-hat-usa-2010-jackpotting-automated-teller-machines-redux-15
+//Redux
+
+
+flashpoint.io/blog/dmsniff-pos-malware-actively-leveraged-target-medium-sized-businesses/
+// DMSniff
+
+dblp.org/db/journals/sigarch/sigarch39.html
+cl.cam.ac.uk/research/srg/han/ACS-P35/readinglist/post233s2-file2.pdf
+// Gem5 Simulator
+
+youtube.com/watch?v=fXthwl6ShOg
+media.defcon.org/DEF%20CON%2024/DEF%20CON%2024%20Program.pdf
+// Direct memory attack the kernel
+
+2014.ruxconbreakpoint.com/assets/2014/slides/bpx-NSA%20Playset-%20PCIe%20-%20Breakpoint%202014c.pdf
+youtube.com/watch?v=ZcBAq4GRuZ4
+// PCIE 
+
+
+MOBILE
+
+cs1.tf.fau.de/research/system-security-group/frost/
+// Cold battery mobile Ram-scraping
+// BOOK : Applied Cryptography and Network Security: 11th International Conference, ACNS 2013, Banff, AB, Canada, June 25-28, 2013. Proceedings: 7954 (Lecture Notes in Computer Science, 7954) Paperback – 6 Jun. 2013
+
+
+imf-conference.org/imf2014/docs/Mueller.imf.2014.pdf
+wikicfp.com/cfp/servlet/event.showcfp?eventid=132555&copyownerid=45217
+//Android Scraping
+
+
+ieeexplore.ieee.org/xpl/conhome/5504620/proceeding
+//Experimental analysis of automobile
+
+csis.gmu.edu/ksun/publications/TrustICE-dsn2015.pdf
+proceedings.com/27866.html
+wikicfp.com/cfp/servlet/event.showcfp?eventid=40136&copyownerid=51678
+//  Isolated mobile computing
+
+
+INJECTION
+
+https://www.blackhat.com/docs/us-15/materials/us-15-Hudson-Thunderstrike-2-Sith-Strike.pdf
+https://darkmentor.com/prior-work/2015-08-blackhatusa/
+
+
+https://www.youtube.com/watch?v=i9ULYwRK1iU
+//Windows 8 secure boot
+
+https://papers.put.as/papers/firmware/2014/HITB2014KUL-SENTER-Sandman.pdf
+https://darkmentor.com/prior-work/2014-06-summercon/
+
+https://darkmentor.com/prior-work/2015-10-hitbgsec/
+// BIOS necromancy
+
+https://www.welivesecurity.com/2018/09/27/lojax-first-uefi-rootkit-found-wild-courtesy-sednit-group/
+https://www.youtube.com/watch?v=P3yMXspLzoY
+
+https://www.youtube.com/watch?v=A1V6vO63Kvs
+https://media.blackhat.com/bh-us-11/Miller/BH_US_11_Miller_Battery_Firmware_Public_WP.pdf
+//Battery firmware
+
+https://dl.acm.org/doi/proceedings/10.5555/2341444
+
+https://safari.ethz.ch/digitaltechnik/spring2020/lib/exe/fetch.php?media=20190603-rambleed-web-2.pdf
+https://researchr.org/publication/embc-2019
+// Ram-bleed
+
+https://core.ac.uk/download/pdf/277527637.pdf
+https://core.ac.uk/download/pdf/277527615.pdf
+// Logic controlllers
+
+https://www.usenix.org/legacy/event/sec08/tech/full_papers/halderman/halderman.pdf
+https://www.youtube.com/watch?v=JDaicPIgn9U
+//Cold Boots
+
+
+https://web.cse.ohio-state.edu/~teodorescu.1/download/papers/bacha-isca13.pdf
+https://arxiv.org/pdf/2209.12134.pdf
+https://web.cse.ohio-state.edu/~teodorescu.1/resources/papers/bacha-micro14.pdf
+https://anysbacha.github.io/publications/bacha_micro15.pdf
+//Dynamic Reduction of Voltage Margins On ECC chip
+// Authenticache
+
+http://www.wcse.org/WCSE%202021/05.pdf
+//Vuln uefi
+
+https://www.whitehouse.gov/wp-content/uploads/2024/02/PCAST_Cyber-Physical-Resilience-Report_Feb2024.pdf
+
+https://scadahacker.com/library/Documents/ICS_Vulnerabilities/DigitalBond%20-%20Leverage%20Ethernet%20Vulnerabilities%20in%20Field%20Devices.pdf
+
+https://netsec.ethz.ch/publications/papers/li_mccune_perrig_viper_ccs2011.pdf
