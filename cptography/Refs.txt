@@ -109,7 +109,7 @@ SETI@home
 https://www.uobabylon.edu.iq/eprints/publication_11_1011_1448.pdf
 //Lecture 3 Cryptography
 
-
+BOOK : Applied Cryptography and Network Security: 11th International Conference, ACNS 2013, Banff, AB, Canada, June 25-28, 2013. Proceedings: 7954 (Lecture Notes in Computer Science, 7954) Paperback – 6 Jun. 2013
 > BOOK: Elementary Cryptanalysis: A Mathematical Approach                             [232]
 > BOOK: Cryptography and Network Security: Principles and Practice, Global Ed									[832]
 > BOOK: Cryptography Ingineering: Design Principles 7 Practical Applications										[384]
