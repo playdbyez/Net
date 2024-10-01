@@ -70,6 +70,9 @@ resulting in an algebraic value based on modulus-24 value of "we will meet at 8A
     within said equation modulus N divides b-a
 	a = b (mod N)
 
+[]  In cryptography we only consider positive values
+    while in programming (-3)%2 = -1
+    within cryptography we shall assume that (−3) (mod 2) = 1 instead
 
 
 
