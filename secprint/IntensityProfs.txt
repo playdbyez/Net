@@ -1,0 +1,15 @@
+#### moiré intensity profiles ####
+
+[] Requires 2 layers of output for optical validation
+[] ...
+
+
+[1] Base Screen
+    > fills the document with a pattern
+    > B&W or Colour
+    > Not bound to document
+    > Hard to reproduce either through digital or analog means
+
+
+[2] Master Screen
+    > 
