@@ -62,9 +62,10 @@ if the result of any three elements in different orders while under the group op
  
  
 I - Identity element
-if the result of two elements within the group is equal to the same element used for the operation then e is the identity 
+if the result of two elements within the group is equal to the initial element used for the operation then e is the identity 
 [ (a + e) = (e + a) = a for all a,e ∈ G  ]
 [] e is usually zero
+[] e must apply to all elements 
 [] Groups of the kind bellow, under addition have the identity 0
 	> integers (ℤ, +)
 	> reals    (ℝ, +)
