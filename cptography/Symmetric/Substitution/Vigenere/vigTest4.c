@@ -121,3 +121,14 @@ char *cip="UTPDHUGNYHUSVKCGMVCEFXLKQIBWXRKUGITZNRLSBBHZLXMSNPKDKSCEBIHHKEWIBAYYM
      */
     
 }
+
+// one more copy string of original cipher
+// for cip for cip j =i
+// mark pos of repeat
+// calc frequency against non-repeats array to find max repetitions
+// from the max repetitions we can assume a size for the array of max hops
+
+// upon first check for trios 
+// change "Match found == @" to "Match found == tolower" then
+// return characters toupper per iteration of i
+
