@@ -1,6 +1,7 @@
 #### moiré intensity profiles ####
 
 [] Requires 2 layers of output for optical validation
+[] Similar to captcha entries
 [] ...
 
 
