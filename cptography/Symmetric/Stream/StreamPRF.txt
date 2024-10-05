@@ -45,8 +45,7 @@ Consists of  a set of bits of length L that shift around per cycle according to 
 The amount of tapped bits is the amount of bits being operated on and these are then feed back in linear combinations to the function.
 The selected bits must follow a specific order according to the length of the state.
  
-Statistical randomness on LFSRs are very random but not effective on their own.
-Thus for a robust implementation a combination of other factors are required.
+[] Statistical randomness on LFSRs are very random but not effective on their own so, for a robust implementation a combination of other factors are required.
 
 
 ############################### [LFSR COMPOSITION] #########################################################################
@@ -60,37 +59,45 @@ Thus for a robust implementation a combination of other factors are required.
 ###########################################################################################################################
 
 ## [CONNECTION POLYNOMIAL] ##
-Properties of the output sequence are related to the properties of the binary Polynomial C(X).
-Connection polynomials have a special significance when the connection is primitive or irreducible.
+[ ] Properties of the output sequence are related to the properties of the binary Polynomial C(X).
+[ ] Main properties of a LFSR are its Bits/Size, Feedback polynomial mapping,	Taps, Taps(hex), Period of its sequence
+[ ] Connection polynomials have a special significance when the connection is primitive or irreducible.
+[ ] Given a stream of output and a correct guess at the size of the register based on a KPA of some interecepted msg
+we can compute its connection polynomial via the Berlekamp-Massey algorithm in order to simulates the intended receiver and construct a LFSR of minimal size.
 
 ################### Interpretation ################ 
 [] The first X will denote the size/degree of the register.
 [] The ammount of X's will denote how many bits are tapped within the sequence.
 [] The positions of the register are from 0 to sizeof(register)-1 counting increasingly from right to left
-[] the tapped bits are denoted by 
-   the power of the first X from right to left == the ammount of hops from left to right in the register 
-   and  the number that is unique to the polynomial.
+[] the tapped bits are denoted by ..?
 
 C(X) = X³ + X + 1
 Thus
 S[2] S[1] S[0]
 
 tapped bits 
-S[0] because +1 equals the first value from right to left
-S[2] because X¹ the first value from left to right
+S[0] S[2]
 
 
 
 C(X) = X³² + X³ + 1
 Thus
-S[31] S[30] S[29] S[28] S[27] S[26] S[25] S[24] S[23] S[22] S[21] S[20] S[19] S[18] S[17] S[16] 
-S[15] S[14] S[13] S[12] S[11] S[10] S[9]  S[8]  S[7]  S[6]  S[5]  S[4]  S[3]  S[2]  S[1]  S[0]
+S[31] S[30] S[29] S[28] S[27] S[26] S[25] S[24] S[23] S[22] S[21] S[20] S[19] S[18] S[17] S[16] S[15] S[14] S[13] S[12] S[11] S[10] S[9]  S[8]  S[7]  S[6]  S[5]  S[4]  S[3]  S[2]  S[1]  S[0]
 
 tapped bits 
-S[0] because +1 equals the first value from right to left
-S[29] because  X³ equals the third value from left to right
+S[0] [29] 
+
+
+
+
+
+
+
+
 ############################################################################################
 
-
-
+## "The Conditional Correlation Attack: A Practical Attack on Bluetooth Encryption" [2005]
+## Shift Register Sequences Third editiond by Solomon W Golomb
+## Signal Design for Good Correlation by Solomon W Golomb [SUS]
+## web.archive.org/web/20200125081932/http://www.cs.technion.ac.il/users/wwwb/cgi-bin/tr-get.cgi/2006/CS/CS-2006-07.pdf
 ## Paper SECRETS OF LINEAR FEEDBACK SHIFT REGISTERS by DAVID A. SINGER
