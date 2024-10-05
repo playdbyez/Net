@@ -24,6 +24,7 @@ EEVblog #496 - What Is An FPGA?
 DIY FPGA Bitcoin Miner
 @richardharris1224
 
+rwc.iacr.org/
 csrc.nist.gov/publications/
 cryptome.org/
 //news
@@ -104,7 +105,6 @@ www.openssl.org/docs/
 
 SETI@home
 //Joint computing over the net
-
 
 https://www.uobabylon.edu.iq/eprints/publication_11_1011_1448.pdf
 //Lecture 3 Cryptography
