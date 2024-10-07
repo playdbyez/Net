@@ -2,7 +2,13 @@
  ####### [] A5/1 [] #######
 
 [] Developed in 1987
-[] over-the-air voice-privacy algorithm STRONG
+[] Core GSM Algorithm.
 [] Part of the A5 security protocol.
-[] Provides over-the-air communication privacy in the GSM standard
+[] Over-the-air voice-privacy algorithm [STRONG]
 [] Used in the EU and USA
+
+
+Feedback Polynomials            Tapped bits       Clocking     Visual  
+[1] x¹⁹ + x¹⁸ + x¹⁷ + x¹⁴ + 1   [13,16,17,18]     8            1110010000000000000
+[2] x²² + x²¹ + 1               [20,21]           10           1100000000000000000000
+[3]  x²³ + x²² + x²¹ + x⁸       [7,20,21,22]      10           11100000000000010000000
