@@ -28,3 +28,9 @@
   Proof of this assertion is found in calculous within L'Hospital Rule
 
 [] HASH = chop & mix
+
+[] One-way salted hashes are generally used for credential storage within a server
+
+[] Discrete encryption is used for non-http connections and file transmission
+
+[] Cryptographic key management within a server entails establishing a single policy
