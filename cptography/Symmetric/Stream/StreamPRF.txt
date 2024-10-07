@@ -122,7 +122,10 @@ x²⁴ + x²³ + x²² + x¹⁷ + 1
 ## "The Conditional Correlation Attack: A Practical Attack on Bluetooth Encryption" [2005]
 ## Shift Register Sequences Third editiond by Solomon W Golomb
 ## Signal Design for Good Correlation by Solomon W Golomb [SUS]
-## web.archive.org/web/20200125081932/http://www.cs.technion.ac.il/users/wwwb/cgi-bin/tr-get.cgi/2006/CS/CS-2006-07.pdf
+## web.archive.org/web/20200125081932/http://www.cs.technion.ac.il/users/wwwb/cgi-bin/tr-get.cgi/2006/CS/CS-2006-07.pdf [2006]
 ## Paper SECRETS OF LINEAR FEEDBACK SHIFT REGISTERS by DAVID A. SINGER
-## web.archive.org/web/20110927122703/http://www.qualcomm.com.au/PublicationsDocs/GSM_Attacks.pdf
-## web.archive.org/web/20181008224515/http://www.scard.org/gsm/a51.html
+## web.archive.org/web/20110927122703/http://www.qualcomm.com.au/PublicationsDocs/GSM_Attacks.pdf [ss]
+## web.archive.org/web/20181008224515/http://www.scard.org/gsm/a51.html [s]
+## Analysis of Cryptography Algorithms Implemented in Android Mobile Application [2021] [s]
+## Performance Evaluation of Encryption Algorithms in Mobile Devices [2021 / locked] [s]
+## Performance Analysis of Encryption Algorithms on Mobile Devices [2013 / locked] [s]
