@@ -101,3 +101,5 @@ S[0] [29]
 ## Signal Design for Good Correlation by Solomon W Golomb [SUS]
 ## web.archive.org/web/20200125081932/http://www.cs.technion.ac.il/users/wwwb/cgi-bin/tr-get.cgi/2006/CS/CS-2006-07.pdf
 ## Paper SECRETS OF LINEAR FEEDBACK SHIFT REGISTERS by DAVID A. SINGER
+## web.archive.org/web/20110927122703/http://www.qualcomm.com.au/PublicationsDocs/GSM_Attacks.pdf
+## web.archive.org/web/20181008224515/http://www.scard.org/gsm/a51.html
