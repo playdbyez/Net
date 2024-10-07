@@ -1,0 +1,5 @@
+####### [] A8 [] #######
+
+[] Developed in ...
+[] Voice-privacy key generation algorithm
+[] Core GSM Algorithm.
