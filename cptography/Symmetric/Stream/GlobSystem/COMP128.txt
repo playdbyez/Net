@@ -1,0 +1,13 @@
+
+ ####### []  COMP128 [] #######
+
+
+###  A3 ###
+[] Authentication algorithm
+[] Core GSM Algorithm.
+
+
+
+### A8 ### 
+[] Voice-privacy key generation algorithm
+[] Core GSM Algorithm.
