@@ -1,0 +1,18 @@
+A hash function maps a piece of data into a set-length with two specific properties, which 
+together constitute a document or email's hash fingerprint:
+- One Way encryption
+- Hard-to-replicate output
+Taking these two core aspects of encryption, it is generally applied in two forms:
+
+> Symmetric encryption relates to using sharing the same key for encryption and decryption while 
+--Stream Ciphers
+--Block Ciphers
+
+> Asymmetric encryption entails the use of a public and private keys for combined decryption and repudiation capabilities 
+of said message's digital signature.
+
+
+These fingerprints / signatures are then used for integrity checks against trusted databases 
+that are provided by a Certificate Authority (CA).
+- CAs act as a trusted third party that provide the means of checking if the public key's validity,
+this is done by tieing an entity's well known credibility to said public key.
