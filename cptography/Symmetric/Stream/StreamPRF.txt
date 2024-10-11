@@ -88,44 +88,7 @@ tapped bits
 S[0] [29] 
 
 
-#### Standard Polynominal Connections [24bits] ########
-x² + x + 1 
-x³ + x² + 1 
-x⁴ + x³ + 1 
-x⁵ + x³ + 1 
-x⁶ + x⁵ + 1 
-x⁷ + x⁶ + 1 
-x⁸ + x⁶ + x⁵ + x⁴ + 1 
-x⁹ + x⁵ + 1 
-x¹⁰ + x⁷ + 1 
-x¹¹ + x⁹ + 1 
-x¹² + x¹¹ + x¹⁰ + x⁴ + 1 
-x¹³ + x¹² + x¹¹ + x⁸ + 1 
-x¹⁴ + x¹³ + x¹² + x² + 1 
-x¹⁵ + x¹⁴ + 1
-x¹⁶ + x¹⁵ + x¹³ + x⁴ + 1 
-x¹⁷ + x¹⁴ + 1 
-x¹⁸ + x¹¹ + 1 
-x¹⁹ + x¹⁸ + x¹⁷ + x¹⁴ + 1 
-x²⁰ + x¹⁷ + 1
-x²¹ + x¹⁹ + 1 
-x²² + x²¹ + 1 
-x²³ + x¹⁸ + 1 
-x²⁴ + x²³ + x²² + x¹⁷ + 1 
-##########################################################
-
-
 
 
 ############################################################################################
-
-## "The Conditional Correlation Attack: A Practical Attack on Bluetooth Encryption" [2005]
-## Shift Register Sequences Third editiond by Solomon W Golomb
-## Signal Design for Good Correlation by Solomon W Golomb [SUS]
-## web.archive.org/web/20200125081932/http://www.cs.technion.ac.il/users/wwwb/cgi-bin/tr-get.cgi/2006/CS/CS-2006-07.pdf [2006]
 ## Paper SECRETS OF LINEAR FEEDBACK SHIFT REGISTERS by DAVID A. SINGER
-## web.archive.org/web/20110927122703/http://www.qualcomm.com.au/PublicationsDocs/GSM_Attacks.pdf [ss]
-## web.archive.org/web/20181008224515/http://www.scard.org/gsm/a51.html [s]
-## Analysis of Cryptography Algorithms Implemented in Android Mobile Application [2021] [s]
-## Performance Evaluation of Encryption Algorithms in Mobile Devices [2021 / locked] [s]
-## Performance Analysis of Encryption Algorithms on Mobile Devices [2013 / locked] [s]
