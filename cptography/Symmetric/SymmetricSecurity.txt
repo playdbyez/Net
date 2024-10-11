@@ -187,12 +187,6 @@ H(X) = log2(26) = 4.70
 
 
 
-///// [Finchlee] Key Equivocation [Finchlee] /////
-Aims at determining if a system leaks information about the key based on how much information about said key is revealed after a single ciphertext is observed.
-Information is measured as bits derived from the probability distribution of ciphertext p(C = c), key distribution p(K = k) and plaintext distribution p(P = m).
-
-
-
 
 
 
@@ -249,8 +243,6 @@ p(P = m | C = c) = p(P = m) x p (C = c | P = m) / p(C = c)
 The main issue with a scheme with perfect secrecy as defined by Claude Shannon relates to key distribution issues,
 given that each key must be generated per message.
 
-###### One-time Pad Sytems ####
-5-UCO
 
 
 
