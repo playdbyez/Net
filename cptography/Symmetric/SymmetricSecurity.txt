@@ -187,7 +187,7 @@ H(X) = log2(26) = 4.70
 
 
 
-[] Key Equivocation
+///// [Finchlee] Key Equivocation [Finchlee] /////
 Aims at determining if a system leaks information about the key based on how much information about said key is revealed after a single ciphertext is observed.
 Information is measured as bits derived from the probability distribution of ciphertext p(C = c), key distribution p(K = k) and plaintext distribution p(P = m).
 
