@@ -109,12 +109,14 @@ SETI@home
 https://www.uobabylon.edu.iq/eprints/publication_11_1011_1448.pdf
 //Lecture 3 Cryptography
 
-BOOK : Applied Cryptography and Network Security: 11th International Conference, ACNS 2013, Banff, AB, Canada, June 25-28, 2013. Proceedings: 7954 (Lecture Notes in Computer Science, 7954) Paperback – 6 Jun. 2013
-> BOOK: Elementary Cryptanalysis: A Mathematical Approach                             [232]
-> BOOK: Cryptography and Network Security: Principles and Practice, Global Ed									[832]
-> BOOK: Cryptography Ingineering: Design Principles 7 Practical Applications										[384]
-> BOOK: Applied Cryptography: Protocols, Algorithms, and Source Code in C 	  									[784]
-> BOOK: Cryptography : Theory and Practice+-													                             [598]
-> BOOK: Cryptography (Springer Undergraduate Mathematics Series)									            	[271]
-> BOOK: Cryptography in C and C++														                                       [504]
+> BOOK : Applied Cryptography and Network Security: 11th International Conference, ACNS 2013, Banff, AB, Canada, June 25-28, 2013. Proceedings: 7954 (Lecture Notes in Computer Science, 7954) Paperback – 6 Jun. 2013
+> BOOK: Elementary Cryptanalysis: A Mathematical Approach                                                         [232]
+> BOOK: Cryptography and Network Security: Principles and Practice, Global Ed									                            [832]
+> BOOK: Cryptography Ingineering: Design Principles 7 Practical Applications										                            [384]
+> BOOK: Applied Cryptography: Protocols, Algorithms, and Source Code in C 	  									                            [784]
+> BOOK: Cryptography : Theory and Practice+-													                                                         [598]
+> BOOK: Cryptography (Springer Undergraduate Mathematics Series)									            	                            [271]
+> BOOK: Cryptography in C and C++														                                                                   [504]
+> BOOK: Introduction to Finite Fields and their Applications                                                      [432]
+> BOOK: Understanding Cryptography: From Established Symmetric and Asymmetric Ciphers to Post-Quantum Algorithms  [564] 
 
