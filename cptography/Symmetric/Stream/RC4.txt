@@ -17,6 +17,13 @@
 [] the key must be repeated until it matches the size of array S
 [] key sizes range from 40 to 2048 bits
 
+[] Attacks on RC4:
+    On the security of RC4 22nd USENIX Security Symposium [14/08/2013]
+
+
+
+
+
 Encryption Stages
 1. Key-scheduling algorithm (KSA)
 2. Pseudo-random generation algorithm (PRGA)
