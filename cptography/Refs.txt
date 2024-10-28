@@ -103,6 +103,9 @@ www.stylesuxx.github.io
 www.openssl.org/docs/
 //SSL Documentation
 
+Escrow account
+// holds fund until crypto transaction completes
+
 SETI@home
 //Joint computing over the net
 
