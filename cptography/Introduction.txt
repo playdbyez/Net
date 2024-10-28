@@ -22,7 +22,7 @@ Although Security is a bigger concept that encompasses cryptology,
 Security cannot be achieved only by cryptology 
 but with standardized algorithms, cipher-text, encrypt/decrypt keys
 
-<> Cryptography
+[] Cryptography
 Building a secure algorithm.
 Complexity theory + Information theory
 
@@ -31,13 +31,13 @@ Complexity theory + Information theory
 > Protocols
 > Keyspace
 
-<> Cryptanalysis
+[] Cryptanalysis
 Deconstructing a secure algorithm.
 > Classical == Looking at the cipher as a blackbox, we an only infer and observe input and output with the help of a bruteforce vector, for example.
 > Analytical == Inspecting the cipher's schematic, for example, letter frequencies are maintained
 
 
-<> Weaknessess
+[] Weaknessess
 > BruteForce
 > Exhaustive KeySearch
 
@@ -58,7 +58,7 @@ The adversaies are parties within  the protocol.
 - Oblivious Transfer
 
 
-########## primitives ######
+############ primitives ##########
 Ciphers           [Symmetric primitive]
 MACs              [Symmetric primitive]
 Public Key        [Public key primitive]
