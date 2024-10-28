@@ -1,0 +1,6 @@
+#####################################
+####### [] Frame Types [] ##########
+
+IEEE 802.11 radio: 
+Beacon Frame:
+Wireless Lan Management Frame:
