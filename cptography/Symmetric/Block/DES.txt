@@ -1,0 +1,2 @@
+[] 64 bits per block
+[] 48 bit key
