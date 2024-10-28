@@ -10,11 +10,14 @@ There is no mathematical proof that any cryptographic algorithm is 100% secure.
 Only the duration of how many years a given crypto-algorithm has remained unbroken can be ascertained.
 Algorithms should be released public but not the key.
 
+Cryptography does not protect files from being modified but can detect if it was modified.
+
 Expect a cryptosystem to be eventually broken, either through computing 
 improvements or an algorithmic breakthrough.
 
 Unconditionally secure systems cannot be broken even with infinite computing power.
 
+Cryptography can be integrated in circuits, add-on boards or adapters, and in stand-alone units.
 
 
 -        Cryptology          -
@@ -65,8 +68,15 @@ Public Key        [Public key primitive]
 Digital Signature [Public key primitive]
 Hash Function     [Keyless primitive]
 
+[] Private Key Systems []
+Disclosure of the key would reduce or eliminate the comunication's security
 
 
+[] Public Key Systems []
+Public key is made available
+Private key is known only to its owner
+Anyone can send a message but only the owner may decrypt it.
+Effetive for mutually untrusting parties.
 
 
 
