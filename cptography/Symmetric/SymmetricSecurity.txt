@@ -43,7 +43,7 @@ rᵢⱼ = p (X = x[i] and Y = y[j])
 
 ::: Previously known associated probabilities :::
 
-[Key Probability]
+[Key Probability]<X>
 Key space is K = {k1, k2, k3} with probability of being used per message character occurring at rate :
 p(K = k1) = 0.25 = 1/4 of the time
 p(K = k2) = 0.5  = 1/2 of the time
@@ -51,7 +51,7 @@ p(K = k3) = 0.25 = 1/4 of the time
 
 
 
-[Plain Probability]
+[Plain Probability]<Y>
 Message space is P = {a,b,c,d} with probability of being used as the message character occurring at rate :
 p(P = a) = 0.25 = 1/4  of the time
 p(P = b) = 0.3  = 3/10 of the time
@@ -66,7 +66,7 @@ k3    4    3    1    2
  
 
 
-[Cipher Probability]
+[Cipher Probability]<Z>
 The above gives us the means to calculate the probability distribution per cipher character via the formula bellow:
 p(C=c) = Σ(k:c∈C(k)) p(K =k) x p(P = dₖ(c)) 
  
@@ -184,7 +184,13 @@ H(X) = log2(26) = 4.70
 
 
 [] Joint entropy
+...
 
+
+[] Key Equivocation [] 
+Aims at determining if a system leaks information about the key based on how much information about said key is revealed after a single ciphertext is observed.
+Information is measured as bits derived from the probability distribution of ciphertext p(C = c)<Z>, key distribution p(K = k)<X> and plaintext distribution p(P = m)<Y>.
+Based on the values from the above estimations, ..
 
 
 
@@ -196,7 +202,7 @@ Knowing the cipher equivalent reveals no information.
 
 if the probability that one character from the encrypted message is equal to M when we know the cipher is equal to C,
 is the same as the probability that the character is M withouth knowing that the cipher is C.
-The cipher has perfect secrecy.
+Then said cipher has perfect secrecy.
 
 FORMULA
 p( C = c | P = m ) = p (C = c)
