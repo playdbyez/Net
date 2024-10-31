@@ -11,6 +11,7 @@ Cryptography relies on an algorithm and a key
 Communicating parties rely upon both having the same algorithm for decryption or each party having different algorithms that are designed to work together
 
 Cryptography can be integrated in circuits, add-on boards or adapters, and in stand-alone units.
+Cryptography is typically implemented in a module of software, firmware, hardware or a combination
 
 [] Cryptography does not protect files from being tampered but can detect if they were infact modified.
 [] Parity bits can be used to detect if a documents has been tempered
