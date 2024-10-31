@@ -2,25 +2,31 @@ Cryptography 2010
 by Christof Paar
 
 
-//Kerckhuff's Principle [ 1883 ]
-"A crypto system should be secure even if an attacker knows of the details about the system,
-with the exception of the secret key"
-This passage remarks that a sharing keys requires lots of nuance and creative methods.
-There is no mathematical proof that any cryptographic algorithm is 100% secure.
-Only the duration of how many years a given crypto-algorithm has remained unbroken can be ascertained.
-Algorithms should be released public but not the key.
+Kerckhuff's Principle [ 1883 ]
+"A crypto system should be secure even if an attacker knows of the details about the system, with the exception of the secret key"
 
-Cryptography does not protect files from being modified but can detect if it was modified.
 
-Expect a cryptosystem to be eventually broken, either through computing 
-improvements or an algorithmic breakthrough.
-
-Unconditionally secure systems cannot be broken even with infinite computing power.
+Cryptography is used to protect data both inside and outside a computer system
+Cryptography relies on an algorithm and a key
+Communicating parties rely upon both having the same algorithm for decryption or each party having different algorithms that are designed to work together
 
 Cryptography can be integrated in circuits, add-on boards or adapters, and in stand-alone units.
 
+[] Cryptography does not protect files from being tampered but can detect if they were infact modified.
+[] Parity bits can be used to detect if a documents has been tempered
+[] Tamper resistance is usually considered better in hardware
 
--        Cryptology          -
+[] Sharing keys requires lots of nuance and creative methods.
+[] Algorithms should be publicly released for scrutiny of its security.
+[] Crypto-algorithms are judged by how long they have remained unbroken.
+[] Although unconditionally secure systems cannot be broken even with infinite computing power, there is no mathematical proof that any cryptographic algorithm is 100% secure.
+[] Expect a cryptosystem to be eventually broken, either through computing improvements or an algorithmic breakthrough.
+
+
+
+
+
+############:: Cryptology ::############
 Although Security is a bigger concept that encompasses cryptology,
 Security cannot be achieved only by cryptology 
 but with standardized algorithms, cipher-text, encrypt/decrypt keys
@@ -94,8 +100,8 @@ Copacabana's max keysearch = 2^56
 ########################### :: Randomness :: #########################################
 
 
-//When implementing any sort of encryption along a channel 
-            its necessary to first determine randomness of the cypher key between both end-points
+When implementing any sort of encryption along a channel, 
+its necessary to first determine randomness of the cypher key between both end-points
 
 <>Random Number Generator
 
