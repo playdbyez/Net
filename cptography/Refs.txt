@@ -72,11 +72,16 @@ https://www.youtube.com/watch?v=Ic4BzVggNY8
 https://www.youtube.com/watch?v=P4z3jAOzT9I
 https://www.youtube.com/watch?v=zNO4PTlg62k
 https://en.wikipedia.org/wiki/Comparison_of_cryptography_libraries
-geeksforgeeks.org/how-to-express-a-number-as-a-power-of-2/
+
  
 https://www.youtube.com/watch?v=cU31KavBCM4
 https://www.youtube.com/watch?v=3R-n5UTuEzA
  
+st.com/resource/en/product_training/STM32F7_Security_Memories_Protections.pdf
+
+
+https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-57p1.pdf
+//Key Management Using ANSI X9.17
 
 ########################'############# # RESOURCES # ###########'############################
 www.decode.fr
