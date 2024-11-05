@@ -80,7 +80,7 @@ p(C = 4) = p(k1) x p(b) + p(k2) x p(c) + p(k3) x p(a) = 0.2125
 ###################################################################################################################################
  
 [Fortification Method]
-From a defense point of view that knows the encryption table, 
+Cryptanalysing the data available from a defense point of view that knows the encryption table, 
 given said input m, what is the probability of a specific c being the output cipher?
 FORMULA
 p(C=c | P=m) =  Σ(k:m=dₖ(c)) p(K =k)
@@ -96,7 +96,7 @@ p(C=2 | P=b ) = 0
 p(C=2 | P=c ) = p(k1) = 0.25
 p(C=2 | P=d ) = 0.75
  
-p(C=3 | P=a ) = p(k1) + p (k2) = 0.75
+p(C=3 | P=a ) = p(k1) + p(k2) = 0.75
 p(C=3 | P=b ) = p(k3) = 0.25
 p(C=3 | P=c ) = 0
 p(C=3 | P=d ) = 0
@@ -109,7 +109,7 @@ p(C=4 | P=d ) = 0
  
  
 [Estimation Method]
-From an attacking point of view that knows the encryption table, 
+Cryptanalysing the data available from an attacking point of view that knows the encryption table, 
 given that c is the cipher character then what could m probably be?
 FORMULA
 p(P=m | C=c) = p(P=m) x p(C=c| P=m) / p(C=c)
@@ -145,7 +145,8 @@ Information = Uncertainty
 Entropy measures the ammount of uncertainty in a random variable.
 Also known as Shannon entropy, which quantifies the expected value of a message's information.
 Thus H(X) will calculate the ammount of information a variable X can reveal based on the certainty of its behaviour
-against a condition with finite outcome of length n.
+against a condition with a finite number of outcomes of length n.
+Entropy requires all values.
 
 [] H(X) >= 0 always (entropy's lower bound)
 [] H(X) only equals 0 if a pᵢ = 0 and a different pᵢ = 1
@@ -189,9 +190,26 @@ H(X) = log2(26) = 4.70
 
 [] Key Equivocation [] 
 Aims at determining if a system leaks information about the key based on how much information about said key is revealed after a single ciphertext is observed.
-Information is measured as bits derived from the probability distribution of ciphertext p(C = c)<Z>, key distribution p(K = k)<X> and plaintext distribution p(P = m)<Y>.
-Based on the values from the above estimations, ..
+Thus, the output of H(K|C) in bits, determines how much of the key has been revealed.
 
+FORMULA
+H( K|C ) = H(K) + H(P) - H(C)
+
+Said information is measured as bits derived from the probability distribution of ciphertext p(C = c)<Z>, key distribution p(K = k)<X> and plaintext distribution p(P = m)<Y>.
+Based on the values from the estimations considered above, working out each's entropy by [only considering non-repeating values(maybe)] is required.
+
+H(P) = 0.25, 0.5, 0.25                = 1.5
+H(K) = 0.3, 0.15, 0.25, 0.3           = 1.9527
+H(K) in particular determines how much uncertainty there is about the key in total.
+H(C) = 0.2625, 0.2125, 0.2625, 0.2625 = 1.9944
+
+
+The output of H(K|C) in bits,determines how much of the key is left to reveal 
+H(K|C) = 1.4583 bits
+
+
+The output of H(K) - H(K|C) in bits, determines how much of the key has been revealed from knowing a single cipher text
+1.9527 - 1.4583 = 0.4944 (32.96%)
 
 
 
