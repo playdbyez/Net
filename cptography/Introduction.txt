@@ -92,7 +92,7 @@ Keysearch on an FPGA based,cryptanalitical algorithm 'Copacobana' key searches c
 Copacabana's max keysearch = 2^56
 
 
-
+Isomorphic lattices have the same number of elements, but they may appear different in structure or representation.
 
 
 
