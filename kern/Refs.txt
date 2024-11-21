@@ -1,0 +1,18 @@
+kernelnewbies.org
+
+kerneltrap.org
+
+https://lkml.org/lkml
+// Linux Kernel Mailing List
+
+lwn.net/Kernel/
+// Linux Weekly News - Kernel
+
+marc.theaimsgroup.com/?l=linux-kernel [DOWN]
+// Mailing List Archives
+
+kerneltraffic.org/
+// Development process archives
+
+linux-mm.org/
+// Kernel memory management documentaion
