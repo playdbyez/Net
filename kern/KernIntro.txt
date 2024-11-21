@@ -13,3 +13,14 @@ Developer community's preferred methods of communicating updates from a project 
 
 [] The most popular kernel is referred to as the stock kernel
 
+
+##:: Patching ::##
+
+[] Due to the bandwith limitations re-downloading a source file,
+    developers prefer to include updates to the kernel via smaller upgrading files called patches
+
+[] A patch file holds information on the differences between releases prior and post patch
+
+[] Linux patches are made by a GNU tool called 'diff' that generates an unified diff file
+
+
