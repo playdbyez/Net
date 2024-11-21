@@ -1,0 +1,22 @@
+
+[] Once the source code for the kernel has been downloaded,
+   initiating it into the system will consist of the following operations :
+   > Build
+   > Configuration
+   > Compile
+
+[] Source code will always have a README or INSTALL file containing 
+   instructions for configuring the installation of the package.
+
+
+$ cd project
+$ ./configure && make
+// 1) Building the makefiles
+
+$ cd linux-2.4.22
+$ make config
+// 2) Configuration of the install preferences
+
+$ cd linux-2.4.22
+$ make bzImage && make modules
+// 3) Compiling the installation
