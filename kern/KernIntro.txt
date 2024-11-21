@@ -1,0 +1,15 @@
+
+######### Dev Communications ###########
+
+Developer community's preferred methods of communicating updates from a project include:
+>> Internet Relay Chat (IRC)
+>> UseNet
+>> Mailing List
+
+
+#########:: Kernel ::#########
+
+[] Usually distributed from repositories as a compressed tape file (tar.bz) plus a patch notes file
+
+[] The most popular kernel is referred to as the stock kernel
+
