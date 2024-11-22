@@ -20,6 +20,26 @@ linux-mm.org/
 
 //PatchSet
 
+//BitKeeper
+
+
+######## VM Benchmarking ########
+
+lmbench.sourceforge.net/
+//lmbench
+
+packagehub.suse.com/packages/dbench/
+//dbench
+
+csn.ul.ie/~mel/projects/vmregress
+//VM Regress
+
+
+//ConTest
+//SPEC
+
+
+
 #### Code Browsing ###
 
 ctags.sourceforge.net
