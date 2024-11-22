@@ -16,11 +16,47 @@ Developer community's preferred methods of communicating updates from a project 
 
 ##:: Patching ::##
 
-[] Due to the bandwith limitations re-downloading a source file,
-    developers prefer to include updates to the kernel via smaller upgrading files called patches
+[] A patch file compares information on the differences between and file and its updated version
+[] A patch file can be distributed in plain text or compressed (.gz / .bz2)
+[] Due to the bandwith limitations of re-downloading a source file, developers prefer to include updates to the kernel via smaller upgrading files called patches
+[] Linux patches are made by a GNU tool called 'diff' that generates an unified diff file, the patch is then applied with the 'patch' command
 
-[] A patch file holds information on the differences between releases prior and post patch
 
-[] Linux patches are made by a GNU tool called 'diff' that generates an unified diff file
+>> file.diff
+[] Any diff file should be generated above the kernel root
+[] Consits of a header section containing information on the two files which diff is comparing
+[] Patch alterations are divided into blocks which are applied separately
+[] If a block fails to be applied, the block section is then saved to file.c.rej
+[] If a block fails to be applied, the original section which was not altered is saved to file.c.orig
 
+BLOCK
+( @@ -76,8 +76,23 @@ )
+Summary section: 
+     from line 76, 8 lines altered
+     from line 76, 23 lines total (15 lines were added)
+
+( + * This line
+  + * is before this one )
+Display section:
+      shows what the new lines (+) and the removed lines (-)
+
+##### Patching a plain file #####
+$ diff -up linux-2.4.22-clean/mm/function.c linux-2.4.22-new/mm/function.c  > example.patch
+$ cd linux-2.4.22-clean/
+$ patch -p1  < ../example.patch
+
+
+##### Patching a compressed file #####
+$ cd linux-2.4.22-clean/
+$ gzip -dc ..example.patch.gz | patch -p1
+
+
+##:: Visualizing sysCalls ::##
+$ cd patchset
+$ download 2.4.22
+$ createset 2.4.22
+$ make-gengraph.sh 2.4.22
+$ cd kernels/linux-2.4.22
+$ gengraph -t -s "alloc_bootmem_low_pages  zones_size_init" -f paging_unit
+$ gv paging.init.ps
 
