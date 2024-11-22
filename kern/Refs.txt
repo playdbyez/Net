@@ -16,3 +16,20 @@ kerneltraffic.org/
 
 linux-mm.org/
 // Kernel memory management documentaion
+
+
+//PatchSet
+
+#### Code Browsing ###
+
+ctags.sourceforge.net
+// C tags
+// Creates tag files based of source file to be viewed via Vi/Emacs
+
+lxr.linux.no
+// Linux Cross Referencer
+// Creates browsable webpage based of the source file
+
+CodeViz + GraphViz
+// Traces C calls via a graphed output
+
